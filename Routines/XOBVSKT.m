@@ -1,8 +1,8 @@
-XOBVSKT ;;2014-11-19  9:02 PM; 07/27/2002  13:00
+XOBVSKT ;;2017-09-08  3:43 PM; 07/27/2002  13:00
  ;;1.6;VistALink;**11310000**;May 08, 2009
  ;Per VHA directive 2004-038, this routine should not be modified.
  ;
- ; **11310000** ven/smh - fixing tiny mistakes to support GT.M
+ ; **11310000** ven/smh - GT.M support + TCP Socket send and receive optimization
  QUIT
  ;
  ; ------------------------------------------------------------------------------------
@@ -14,7 +14,21 @@ READ(XOBROOT,XOBREAD,XOBTO,XOBFIRST,XOBSTOP,XOBDATA,XOBHDLR) ;
  SET STR="",EOT=$CHAR(4),DONE=0,LINE=0,XOBOK=1
  ;
  ; -- READ tcp stream to global buffer | main calling tag NXTCALL^XOBVLL
+ NEW READTRYCOUNT SET READTRYCOUNT=0
  FOR  READ XOBX#XOBREAD:XOBTO SET TOFLAG=$TEST DO:XOBFIRST CHK DO:'XOBSTOP!('DONE)  QUIT:DONE
+ . ;
+ . ; debugging
+ . ; I $I(^SAM(^SAM,"READ"))
+ . ; S ^SAM(^SAM,"READ",^SAM(^SAM,"READ"),"DATA")=XOBX
+ . ; S ^SAM(^SAM,"READ",^SAM(^SAM,"READ"),"TIME")=$G(%ZH2)
+ . ;
+ . ; Throttle GT.M since timeout is zero for GT.M
+ . IF 'TOFLAG,XOBX="",XOBOS="GTM" DO  QUIT
+ . . SET READTRYCOUNT=READTRYCOUNT+1
+ . . IF READTRYCOUNT>3 SET DONE=1,XOBOK=0
+ . . HANG .01
+ . . ; debugging
+ . . ; S ^SAM(^SAM,"READ",^SAM(^SAM,"READ"),"HANG")=$G(^("HANG"))+.01
  . ;
  . ; -- if length of (new intake + current) is too large for buffer then store current
  . IF $LENGTH(STR)+$LENGTH(XOBX)>400 DO ADD(STR) SET STR=""
@@ -27,10 +41,11 @@ READ(XOBROOT,XOBREAD,XOBTO,XOBFIRST,XOBSTOP,XOBDATA,XOBHDLR) ;
  . ;
  . ; -- if end-of-text marker found then wrap up and quit
  . IF STR[EOT SET STR=$PIECE(STR,EOT) DO ADD(STR) SET DONE=1 QUIT
- . ; 
+ . ;
  . ; -- M XML parser cannot handle an element name split across nodes
- . SET PIECES=$LENGTH(STR,">")
- . IF PIECES>1 DO ADD($PIECE(STR,">",1,PIECES-1)_">") SET STR=$PIECE(STR,">",PIECES,999)
+ . ; Not needed in the M XML Parser v2.5 (https://github.com/shabiel/VISTA-xml-processing-utilities)
+ . ;SET PIECES=$LENGTH(STR,">")
+ . ;IF PIECES>1 DO ADD($PIECE(STR,">",1,PIECES-1)_">") SET STR=$PIECE(STR,">",PIECES,999)
  ;
  QUIT XOBOK
  ;
@@ -49,7 +64,8 @@ CHK ; -- check if first read and change timeout and chars to read
  IF $EXTRACT(XOBX)'="<" DO SINK
  ;
  ; -- set up for subsequent reads
- SET XOBREAD=200,XOBTO=1
+ SET XOBREAD=4096,XOBTO=1
+ I XOBOS="GTM" S XOBTO=0
  QUIT
  ;
  ; ------------------------------------------------------------------------------------
@@ -153,15 +169,21 @@ PRE ; -- prepare socket for writing
  QUIT
  ;
 WRITE(STR) ; -- Write a data string to socket
+ ; Optimized by OSEHRA/SMH to buffer.
+ ; NB: No easy way to obtain MTU on M, so I will just assume best case scenario
+ ; of MTU of 64k. Normally it's just 1500. The Linux Kernel will fragment down
+ ; the packet.
  IF XOBOS="MSM" WRITE STR QUIT
- ; 
- ; -- handle a short string
- IF $LENGTH(STR)<511 DO:($X+$LENGTH(STR))>511 FLUSH WRITE STR QUIT
  ;
- ; -- handle a long string
+ ; Short Strings. Just buffer and quit.
+ IF $LENGTH(STR)+$LENGTH(XOBSENDSTR)<32768 SET XOBSENDSTR=XOBSENDSTR_STR QUIT
+ ;
+ ; Long Strings: Case 1: Not too long: Send what's in buffer, and store long string in buffer.
+ ; Long Strings: Case 2: Send what's in the buffer, and send this the long string too.
+ ; NB: Possible only on GT.M--Cache can't do strings > 32k.
  DO FLUSH
- FOR  QUIT:'$LENGTH(STR)  WRITE $EXTRACT(STR,1,511) DO FLUSH SET STR=$EXTRACT(STR,512,99999)
- ;
+ IF $LENGTH(STR)<32767 SET XOBSENDSTR=STR
+ ELSE  WRITE STR
  QUIT
  ;
 POST ; -- send eot and flush socket buffer
@@ -170,10 +192,9 @@ POST ; -- send eot and flush socket buffer
  QUIT
  ;
 FLUSH ; flush buffer
- IF XOBOS="OpenM" WRITE ! QUIT
- IF XOBOS="DSM" WRITE:$X>0 ! QUIT
- ; VEN/SMH **11310000**
- ; was commented out as ;IF XOBOS="GTM" WRITE # QUIT
- IF XOBOS="GTM" WRITE ! QUIT
+ ; debugging
+ ;S ^SAM(^SAM,"WRITE")=$L(XOBSENDSTR)
+ WRITE XOBSENDSTR,!
+ SET XOBSENDSTR=""
  QUIT
  ;

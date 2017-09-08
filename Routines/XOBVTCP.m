@@ -7,9 +7,9 @@ XOBVTCP ;;2014-11-19  9:09 PM; 07/27/2002  13:00
  ;
  QUIT
  ;
- ; -- called from protocol action at START^XOBUM1 
+ ; -- called from protocol action at START^XOBUM1
 START(XOBPORT,XOBCFG) ;
- ; 
+ ;
  ; -- set up environment
  NEW XOBOK
  SET XOBOK=0

@@ -1,0 +1,4788 @@
+KIDS Distribution saved on Sep 08, 2017@15:57:43
+0.2
+**KIDS**:KBAN VL ENHANCEMENTS 0.2^
+
+**INSTALL NAME**
+KBAN VL ENHANCEMENTS 0.2
+"BLD",9703,0)
+KBAN VL ENHANCEMENTS 0.2^^0^3170908^n
+"BLD",9703,1,0)
+^^12^12^3170908^
+"BLD",9703,1,1,0)
+Written by Sam Habiel. Created on Sep 9th 2017.
+"BLD",9703,1,2,0)
+ 
+"BLD",9703,1,3,0)
+Questions? hardhats@googlegroups.com
+"BLD",9703,1,4,0)
+ 
+"BLD",9703,1,5,0)
+This package allows you to use the native Multithreaded listener in GT.M. 
+"BLD",9703,1,6,0)
+It also adds full support for GT.M for all the OS stuff that VistALink 
+"BLD",9703,1,7,0)
+tries to do. To do that, you must have the Kernel-GTM package installed.
+"BLD",9703,1,8,0)
+ 
+"BLD",9703,1,9,0)
+This package also optimizes send and receive in TCP for GT.M and Cache.
+"BLD",9703,1,10,0)
+ 
+"BLD",9703,1,11,0)
+Because we use the job off socket method (like Cache) rather than 
+"BLD",9703,1,12,0)
+round-robin the listener, we need GT.M 6.1 in order to do that.
+"BLD",9703,4,0)
+^9.64PA^^
+"BLD",9703,6.3)
+4
+"BLD",9703,"KRN",0)
+^9.67PA^779.2^20
+"BLD",9703,"KRN",.4,0)
+.4
+"BLD",9703,"KRN",.401,0)
+.401
+"BLD",9703,"KRN",.402,0)
+.402
+"BLD",9703,"KRN",.403,0)
+.403
+"BLD",9703,"KRN",.5,0)
+.5
+"BLD",9703,"KRN",.84,0)
+.84
+"BLD",9703,"KRN",3.6,0)
+3.6
+"BLD",9703,"KRN",3.8,0)
+3.8
+"BLD",9703,"KRN",9.2,0)
+9.2
+"BLD",9703,"KRN",9.2,"NM",0)
+^9.68A^^
+"BLD",9703,"KRN",9.8,0)
+9.8
+"BLD",9703,"KRN",9.8,"NM",0)
+^9.68A^10^10
+"BLD",9703,"KRN",9.8,"NM",1,0)
+XOBUM1^^0^B27756959
+"BLD",9703,"KRN",9.8,"NM",2,0)
+XOBUZAP^^0^B86725065
+"BLD",9703,"KRN",9.8,"NM",3,0)
+XOBVSKT^^0^B23961349
+"BLD",9703,"KRN",9.8,"NM",4,0)
+XOBVTCPL^^0^B29145656
+"BLD",9703,"KRN",9.8,"NM",5,0)
+XOBVTCP^^0^B48703549
+"BLD",9703,"KRN",9.8,"NM",6,0)
+XOBVLIB^^0^B29786939
+"BLD",9703,"KRN",9.8,"NM",7,0)
+XOBVLL^^0^B21623536
+"BLD",9703,"KRN",9.8,"NM",8,0)
+XOBVRPC^^0^B56495819
+"BLD",9703,"KRN",9.8,"NM",9,0)
+XOBVRPCX^^0^B22591311
+"BLD",9703,"KRN",9.8,"NM",10,0)
+XOBVSYSI^^0^B54963166
+"BLD",9703,"KRN",9.8,"NM","B","XOBUM1",1)
+
+"BLD",9703,"KRN",9.8,"NM","B","XOBUZAP",2)
+
+"BLD",9703,"KRN",9.8,"NM","B","XOBVLIB",6)
+
+"BLD",9703,"KRN",9.8,"NM","B","XOBVLL",7)
+
+"BLD",9703,"KRN",9.8,"NM","B","XOBVRPC",8)
+
+"BLD",9703,"KRN",9.8,"NM","B","XOBVRPCX",9)
+
+"BLD",9703,"KRN",9.8,"NM","B","XOBVSKT",3)
+
+"BLD",9703,"KRN",9.8,"NM","B","XOBVSYSI",10)
+
+"BLD",9703,"KRN",9.8,"NM","B","XOBVTCP",5)
+
+"BLD",9703,"KRN",9.8,"NM","B","XOBVTCPL",4)
+
+"BLD",9703,"KRN",19,0)
+19
+"BLD",9703,"KRN",19.1,0)
+19.1
+"BLD",9703,"KRN",101,0)
+101
+"BLD",9703,"KRN",101,"NM",0)
+^9.68A^6^6
+"BLD",9703,"KRN",101,"NM",1,0)
+XOBV LISTENER START^^0
+"BLD",9703,"KRN",101,"NM",2,0)
+XOBV LISTENER STOP^^0
+"BLD",9703,"KRN",101,"NM",3,0)
+XOBV LISTENER BOX-VOL^^0
+"BLD",9703,"KRN",101,"NM",4,0)
+XOBV LISTENER CONFIG^^0
+"BLD",9703,"KRN",101,"NM",5,0)
+XOBU TERMINATE A JOB^^0
+"BLD",9703,"KRN",101,"NM",6,0)
+XOBU TERMINATE ALL JOBS^^0
+"BLD",9703,"KRN",101,"NM","B","XOBU TERMINATE A JOB",5)
+
+"BLD",9703,"KRN",101,"NM","B","XOBU TERMINATE ALL JOBS",6)
+
+"BLD",9703,"KRN",101,"NM","B","XOBV LISTENER BOX-VOL",3)
+
+"BLD",9703,"KRN",101,"NM","B","XOBV LISTENER CONFIG",4)
+
+"BLD",9703,"KRN",101,"NM","B","XOBV LISTENER START",1)
+
+"BLD",9703,"KRN",101,"NM","B","XOBV LISTENER STOP",2)
+
+"BLD",9703,"KRN",409.61,0)
+409.61
+"BLD",9703,"KRN",771,0)
+771
+"BLD",9703,"KRN",779.2,0)
+779.2
+"BLD",9703,"KRN",870,0)
+870
+"BLD",9703,"KRN",8989.51,0)
+8989.51
+"BLD",9703,"KRN",8989.52,0)
+8989.52
+"BLD",9703,"KRN",8994,0)
+8994
+"BLD",9703,"KRN","B",.4,.4)
+
+"BLD",9703,"KRN","B",.401,.401)
+
+"BLD",9703,"KRN","B",.402,.402)
+
+"BLD",9703,"KRN","B",.403,.403)
+
+"BLD",9703,"KRN","B",.5,.5)
+
+"BLD",9703,"KRN","B",.84,.84)
+
+"BLD",9703,"KRN","B",3.6,3.6)
+
+"BLD",9703,"KRN","B",3.8,3.8)
+
+"BLD",9703,"KRN","B",9.2,9.2)
+
+"BLD",9703,"KRN","B",9.8,9.8)
+
+"BLD",9703,"KRN","B",19,19)
+
+"BLD",9703,"KRN","B",19.1,19.1)
+
+"BLD",9703,"KRN","B",101,101)
+
+"BLD",9703,"KRN","B",409.61,409.61)
+
+"BLD",9703,"KRN","B",771,771)
+
+"BLD",9703,"KRN","B",779.2,779.2)
+
+"BLD",9703,"KRN","B",870,870)
+
+"BLD",9703,"KRN","B",8989.51,8989.51)
+
+"BLD",9703,"KRN","B",8989.52,8989.52)
+
+"BLD",9703,"KRN","B",8994,8994)
+
+"BLD",9703,"QUES",0)
+^9.62^^
+"KRN",101,4873,-1)
+0^1
+"KRN",101,4873,0)
+XOBV LISTENER START^Start Listener^^A^^^^^^^^VISTALINK
+"KRN",101,4873,1,0)
+^^1^1^3030410^
+"KRN",101,4873,1,1,0)
+This action protocol will start a single VistALink Listener.
+"KRN",101,4873,20)
+DO START^XOBUM
+"KRN",101,4873,24)
+
+"KRN",101,4873,99)
+64477,48467
+"KRN",101,4874,-1)
+0^2
+"KRN",101,4874,0)
+XOBV LISTENER STOP^Stop Listener^^A^^^^^^^^VISTALINK
+"KRN",101,4874,1,0)
+^^1^1^3030410^
+"KRN",101,4874,1,1,0)
+This action protocol will stop a single VistALink Listener.
+"KRN",101,4874,20)
+DO STOP^XOBUM
+"KRN",101,4874,24)
+
+"KRN",101,4874,99)
+64477,48467
+"KRN",101,4875,-1)
+0^4
+"KRN",101,4875,0)
+XOBV LISTENER CONFIG^Manage Configurations^^A^^^^^^^^VISTALINK
+"KRN",101,4875,1,0)
+^101.06^3^3^3050407^^
+"KRN",101,4875,1,1,0)
+This action protocol will add/edit an entry in the VISTALINK LISTENER
+"KRN",101,4875,1,2,0)
+CONFIGURATION file (#18.03) by invoking the XOBV LISTENER CONFIG EDIT
+"KRN",101,4875,1,3,0)
+input template.
+"KRN",101,4875,20)
+DO CFG^XOBUM
+"KRN",101,4875,24)
+
+"KRN",101,4875,99)
+64477,48467
+"KRN",101,4881,-1)
+0^3
+"KRN",101,4881,0)
+XOBV LISTENER BOX-VOL^Start Box^^A^^^^^^^^VISTALINK
+"KRN",101,4881,1,0)
+^^3^3^3030410^
+"KRN",101,4881,1,1,0)
+This action protocol will start all VistALink Listeners contained in the
+"KRN",101,4881,1,2,0)
+default configuration for the BOX-VOLUME pair whose STARTUP field is set
+"KRN",101,4881,1,3,0)
+to YES.
+"KRN",101,4881,20)
+DO BOX^XOBUM
+"KRN",101,4881,24)
+
+"KRN",101,4881,99)
+64477,48467
+"KRN",101,5851,-1)
+0^6
+"KRN",101,5851,0)
+XOBU TERMINATE ALL JOBS^Terminate All^^A^^^^^^^^FOUNDATIONS
+"KRN",101,5851,1,0)
+^^1^1^3080402^
+"KRN",101,5851,1,1,0)
+Allows user to terminated all the Cache jobs in the list.
+"KRN",101,5851,20)
+DO TERMALL^XOBUZAP
+"KRN",101,5851,24)
+
+"KRN",101,5851,99)
+62119,50718
+"KRN",101,5852,-1)
+0^5
+"KRN",101,5852,0)
+XOBU TERMINATE A JOB^Terminate PID^^A^^^^^^^^FOUNDATIONS
+"KRN",101,5852,1,0)
+^^1^1^3080402^
+"KRN",101,5852,1,1,0)
+Allows user to terminated one Cache job from the list.
+"KRN",101,5852,20)
+DO TERMPID^XOBUZAP
+"KRN",101,5852,24)
+
+"KRN",101,5852,99)
+62119,50718
+"MBREQ")
+0
+"ORD",15,101)
+101;15;;;PRO^XPDTA;PROF1^XPDIA;PROE1^XPDIA;PROF2^XPDIA;;PRODEL^XPDIA
+"ORD",15,101,0)
+PROTOCOL
+"QUES","XPF1",0)
+Y
+"QUES","XPF1","??")
+^D REP^XPDH
+"QUES","XPF1","A")
+Shall I write over your |FLAG| File
+"QUES","XPF1","B")
+YES
+"QUES","XPF1","M")
+D XPF1^XPDIQ
+"QUES","XPF2",0)
+Y
+"QUES","XPF2","??")
+^D DTA^XPDH
+"QUES","XPF2","A")
+Want my data |FLAG| yours
+"QUES","XPF2","B")
+YES
+"QUES","XPF2","M")
+D XPF2^XPDIQ
+"QUES","XPI1",0)
+YO
+"QUES","XPI1","??")
+^D INHIBIT^XPDH
+"QUES","XPI1","A")
+Want KIDS to INHIBIT LOGONs during the install
+"QUES","XPI1","B")
+NO
+"QUES","XPI1","M")
+D XPI1^XPDIQ
+"QUES","XPM1",0)
+PO^VA(200,:EM
+"QUES","XPM1","??")
+^D MG^XPDH
+"QUES","XPM1","A")
+Enter the Coordinator for Mail Group '|FLAG|'
+"QUES","XPM1","B")
+
+"QUES","XPM1","M")
+D XPM1^XPDIQ
+"QUES","XPO1",0)
+Y
+"QUES","XPO1","??")
+^D MENU^XPDH
+"QUES","XPO1","A")
+Want KIDS to Rebuild Menu Trees Upon Completion of Install
+"QUES","XPO1","B")
+NO
+"QUES","XPO1","M")
+D XPO1^XPDIQ
+"QUES","XPZ1",0)
+Y
+"QUES","XPZ1","??")
+^D OPT^XPDH
+"QUES","XPZ1","A")
+Want to DISABLE Scheduled Options, Menu Options, and Protocols
+"QUES","XPZ1","B")
+NO
+"QUES","XPZ1","M")
+D XPZ1^XPDIQ
+"QUES","XPZ2",0)
+Y
+"QUES","XPZ2","??")
+^D RTN^XPDH
+"QUES","XPZ2","A")
+Want to MOVE routines to other CPUs
+"QUES","XPZ2","B")
+NO
+"QUES","XPZ2","M")
+D XPZ2^XPDIQ
+"RTN")
+10
+"RTN","XOBUM1")
+0^1^B27756959
+"RTN","XOBUM1",1,0)
+XOBUM1 ;;2014-11-19  8:53 PM; 07/27/2002  13:00
+"RTN","XOBUM1",2,0)
+ ;;1.6;Foundations;**11310000**;May 08, 2009;Build 4
+"RTN","XOBUM1",3,0)
+ ;Per VHA directive 2004-038, this routine should not be modified.
+"RTN","XOBUM1",4,0)
+ ;
+"RTN","XOBUM1",5,0)
+ ; VEN/SMH **11310000** Support for GT.M in CHKOS.
+"RTN","XOBUM1",6,0)
+ ;
+"RTN","XOBUM1",7,0)
+START(XOBPORT) ;-- Entry point to start a single VistALink Listener
+"RTN","XOBUM1",8,0)
+ ;
+"RTN","XOBUM1",9,0)
+ ;  This procedure will start the VistALink Listener on a specific port.  The port number is optional
+"RTN","XOBUM1",10,0)
+ ;  and will be validated if passed to this procedure.  If the port is not passed, the user will be
+"RTN","XOBUM1",11,0)
+ ;  prompted for a port number.
+"RTN","XOBUM1",12,0)
+ ;
+"RTN","XOBUM1",13,0)
+ ;   Input:
+"RTN","XOBUM1",14,0)
+ ;     XOBPORT  - Port number for the Listener (optional)
+"RTN","XOBUM1",15,0)
+ ;
+"RTN","XOBUM1",16,0)
+ ;  Output:
+"RTN","XOBUM1",17,0)
+ ;     None
+"RTN","XOBUM1",18,0)
+ ;
+"RTN","XOBUM1",19,0)
+ NEW XOBTASK,Y,XOBOK
+"RTN","XOBUM1",20,0)
+ ;
+"RTN","XOBUM1",21,0)
+ ;-- Reset I/O variables
+"RTN","XOBUM1",22,0)
+ SET U="^" DO HOME^%ZIS
+"RTN","XOBUM1",23,0)
+ ;
+"RTN","XOBUM1",24,0)
+ DO
+"RTN","XOBUM1",25,0)
+ . ;
+"RTN","XOBUM1",26,0)
+ . ;-- Check operating system
+"RTN","XOBUM1",27,0)
+ . IF '$$CHKOS() SET XOBOK=0 QUIT
+"RTN","XOBUM1",28,0)
+ . ;
+"RTN","XOBUM1",29,0)
+ . ;-- Validate/prompt for port
+"RTN","XOBUM1",30,0)
+ . IF '$$VALID($GET(XOBPORT)) SET XOBPORT=$$GETPORT("start")
+"RTN","XOBUM1",31,0)
+ . IF 'XOBPORT SET XOBOK=0 QUIT
+"RTN","XOBUM1",32,0)
+ . ;
+"RTN","XOBUM1",33,0)
+ . ;-- Wait msg to user
+"RTN","XOBUM1",34,0)
+ . DO WAIT^DICD WRITE !
+"RTN","XOBUM1",35,0)
+ . ;
+"RTN","XOBUM1",36,0)
+ . ;-- Check if Listener is running on port
+"RTN","XOBUM1",37,0)
+ . IF '$$LOCK^XOBVTCP(XOBPORT) DO  QUIT
+"RTN","XOBUM1",38,0)
+ . . DO EN^DDIOL("VistALink Listener on port "_XOBPORT_" appears to be running already.")
+"RTN","XOBUM1",39,0)
+ . . SET XOBOK=0
+"RTN","XOBUM1",40,0)
+ . ;
+"RTN","XOBUM1",41,0)
+ . ;-- Lock was successful; unlock and queue the listener to startup
+"RTN","XOBUM1",42,0)
+ . DO UNLOCK^XOBVTCP(XOBPORT)
+"RTN","XOBUM1",43,0)
+ . DO UPDATE^XOBVTCP(XOBPORT,1)
+"RTN","XOBUM1",44,0)
+ . SET XOBOK=$$START^XOBVTCP(XOBPORT)
+"RTN","XOBUM1",45,0)
+ . IF 'XOBOK DO
+"RTN","XOBUM1",46,0)
+ . . DO UPDATE^XOBVTCP(XOBPORT,5)
+"RTN","XOBUM1",47,0)
+ . . DO EN^DDIOL("Unable to start VistALink Listener on port "_XOBPORT_".")
+"RTN","XOBUM1",48,0)
+ ;
+"RTN","XOBUM1",49,0)
+ QUIT XOBOK
+"RTN","XOBUM1",50,0)
+ ;
+"RTN","XOBUM1",51,0)
+ ;
+"RTN","XOBUM1",52,0)
+CHKOS() ;-- Check operating system
+"RTN","XOBUM1",53,0)
+ ;
+"RTN","XOBUM1",54,0)
+ ;  This function will determine which operating system is being used.
+"RTN","XOBUM1",55,0)
+ ;
+"RTN","XOBUM1",56,0)
+ ;   Input:
+"RTN","XOBUM1",57,0)
+ ;     None
+"RTN","XOBUM1",58,0)
+ ;
+"RTN","XOBUM1",59,0)
+ ;  Output:
+"RTN","XOBUM1",60,0)
+ ;     Function value - returns 1 on success, 0 on failure
+"RTN","XOBUM1",61,0)
+ ;
+"RTN","XOBUM1",62,0)
+ NEW OPERSYS,RESULT
+"RTN","XOBUM1",63,0)
+ ;
+"RTN","XOBUM1",64,0)
+ SET RESULT=0
+"RTN","XOBUM1",65,0)
+ ;
+"RTN","XOBUM1",66,0)
+ ;-- Get operating system
+"RTN","XOBUM1",67,0)
+ SET OPERSYS=$$GETOS^XOBVTCP()
+"RTN","XOBUM1",68,0)
+ ;
+"RTN","XOBUM1",69,0)
+ DO
+"RTN","XOBUM1",70,0)
+ . ; IF OPERSYS="OpenM-NT" DO  QUIT before **113100000** VEN/SMH
+"RTN","XOBUM1",71,0)
+ . IF OPERSYS="OpenM-NT"!(OPERSYS["GT.M") D  QUIT
+"RTN","XOBUM1",72,0)
+ .. DO EN^DDIOL("Starting VistALink Listener...")
+"RTN","XOBUM1",73,0)
+ .. SET RESULT=1
+"RTN","XOBUM1",74,0)
+ . ;
+"RTN","XOBUM1",75,0)
+ . IF OPERSYS["DSM" DO EN^DDIOL("Use the TCPIP utility in VMS to enable the VistALink Listener.") QUIT
+"RTN","XOBUM1",76,0)
+ . ;
+"RTN","XOBUM1",77,0)
+ . ;-- All other operating systems
+"RTN","XOBUM1",78,0)
+ . DO EN^DDIOL("Starting the VistALink Listener is not yet supported for "_OPERSYS_".") QUIT
+"RTN","XOBUM1",79,0)
+ . ;
+"RTN","XOBUM1",80,0)
+ QUIT RESULT
+"RTN","XOBUM1",81,0)
+ ;
+"RTN","XOBUM1",82,0)
+ ;
+"RTN","XOBUM1",83,0)
+VALID(XOBPORT) ;-- Validate port
+"RTN","XOBUM1",84,0)
+ ;
+"RTN","XOBUM1",85,0)
+ ;  This function will validate a port number passed in.
+"RTN","XOBUM1",86,0)
+ ;  
+"RTN","XOBUM1",87,0)
+ ;   Input:
+"RTN","XOBUM1",88,0)
+ ;     XOBPORT  - Port number for the Listener (Optional)
+"RTN","XOBUM1",89,0)
+ ;
+"RTN","XOBUM1",90,0)
+ ;  Output:
+"RTN","XOBUM1",91,0)
+ ;     Function value - returns 1 if valid, 0 otherwise
+"RTN","XOBUM1",92,0)
+ ;
+"RTN","XOBUM1",93,0)
+ NEW RESULT
+"RTN","XOBUM1",94,0)
+ ;
+"RTN","XOBUM1",95,0)
+ SET XOBPORT=+$GET(XOBPORT)
+"RTN","XOBUM1",96,0)
+ SET RESULT=0
+"RTN","XOBUM1",97,0)
+ ;
+"RTN","XOBUM1",98,0)
+ ;-- Check if port is not defined or invalid
+"RTN","XOBUM1",99,0)
+ DO  ; Drops out of block on failure
+"RTN","XOBUM1",100,0)
+ . QUIT:XOBPORT=0
+"RTN","XOBUM1",101,0)
+ . QUIT:(XOBPORT?.AP)
+"RTN","XOBUM1",102,0)
+ . QUIT:XOBPORT<5000!(XOBPORT>65535)
+"RTN","XOBUM1",103,0)
+ . SET RESULT=1
+"RTN","XOBUM1",104,0)
+ QUIT RESULT
+"RTN","XOBUM1",105,0)
+ ;
+"RTN","XOBUM1",106,0)
+ ;
+"RTN","XOBUM1",107,0)
+GETPORT(XOBST) ;-- Prompt user for port number
+"RTN","XOBUM1",108,0)
+ ;
+"RTN","XOBUM1",109,0)
+ ;  This function will prompt the user for a valid port number.
+"RTN","XOBUM1",110,0)
+ ;  
+"RTN","XOBUM1",111,0)
+ ;   Input:
+"RTN","XOBUM1",112,0)
+ ;     XOBST - start = start Listener
+"RTN","XOBUM1",113,0)
+ ;             stop  = stop Listener
+"RTN","XOBUM1",114,0)
+ ;
+"RTN","XOBUM1",115,0)
+ ;  Output:
+"RTN","XOBUM1",116,0)
+ ;     Function value - returns port # or zero
+"RTN","XOBUM1",117,0)
+ ;
+"RTN","XOBUM1",118,0)
+ NEW DIR,DIRUT,PORT
+"RTN","XOBUM1",119,0)
+ SET XOBST=$GET(XOBST)
+"RTN","XOBUM1",120,0)
+ ;
+"RTN","XOBUM1",121,0)
+ SET DIR(0)="NA^5000:65535"
+"RTN","XOBUM1",122,0)
+ SET DIR("A")="Enter Port: "
+"RTN","XOBUM1",123,0)
+ SET DIR("B")=8000  ; Default port is 8000
+"RTN","XOBUM1",124,0)
+ SET DIR("?")="Choose a numeric port to "_XOBST_" the VistALink Listener on in the range of 5000-65535."
+"RTN","XOBUM1",125,0)
+ DO ^DIR KILL DIR
+"RTN","XOBUM1",126,0)
+ IF $DATA(DIRUT) DO
+"RTN","XOBUM1",127,0)
+ . DO EN^DDIOL("Port not specified.  VistALink Listener not "_$SELECT(XOBST="start":"started",1:"stopped")_".")
+"RTN","XOBUM1",128,0)
+ . SET PORT=0
+"RTN","XOBUM1",129,0)
+ ELSE  SET PORT=+$GET(Y)
+"RTN","XOBUM1",130,0)
+ ;
+"RTN","XOBUM1",131,0)
+ QUIT PORT
+"RTN","XOBUM1",132,0)
+ ;
+"RTN","XOBUM1",133,0)
+ ;
+"RTN","XOBUM1",134,0)
+BOX() ; -- start this BOX-VOl default configuration
+"RTN","XOBUM1",135,0)
+ NEW XOBOX
+"RTN","XOBUM1",136,0)
+ IF $$CHKOS^XOBUM1() DO
+"RTN","XOBUM1",137,0)
+ . SET XOBOK=1
+"RTN","XOBUM1",138,0)
+ . DO WAIT^DICD WRITE !
+"RTN","XOBUM1",139,0)
+ . DO STARTCFG^XOBVTCP($$GETCFG^XOBVTCP())
+"RTN","XOBUM1",140,0)
+ ELSE  DO
+"RTN","XOBUM1",141,0)
+ . SET XOBOK=0
+"RTN","XOBUM1",142,0)
+ QUIT XOBOK
+"RTN","XOBUM1",143,0)
+ ;
+"RTN","XOBUM1",144,0)
+ ;
+"RTN","XOBUM1",145,0)
+STOP(LOGDA) ; -- stop a listener
+"RTN","XOBUM1",146,0)
+ NEW Y,X,LOG0,XOBBOX,XOBPORT,XONCFG,XOBSTAT,XOBOK,XOBCFG
+"RTN","XOBUM1",147,0)
+ SET XOBOK=0
+"RTN","XOBUM1",148,0)
+ ;
+"RTN","XOBUM1",149,0)
+ SET LOG0=$GET(^XOB(18.04,LOGDA,0))
+"RTN","XOBUM1",150,0)
+ SET XOBBOX=$PIECE(LOG0,U)
+"RTN","XOBUM1",151,0)
+ SET XOBPORT=$PIECE(LOG0,U,2)
+"RTN","XOBUM1",152,0)
+ SET XOBSTAT=$PIECE(LOG0,U,3)
+"RTN","XOBUM1",153,0)
+ SET XOBCFG=$PIECE(LOG0,U,6)
+"RTN","XOBUM1",154,0)
+ ; 
+"RTN","XOBUM1",155,0)
+ ; -- must be valid entry with a running status
+"RTN","XOBUM1",156,0)
+ IF XOBPORT,XOBSTAT=2 DO
+"RTN","XOBUM1",157,0)
+ . DO UPDLOG^XOBVTCP(LOGDA,XOBPORT,3,XOBCFG)
+"RTN","XOBUM1",158,0)
+ . SET XOBOK=1
+"RTN","XOBUM1",159,0)
+ ELSE  DO
+"RTN","XOBUM1",160,0)
+ . SET XOBOK=0_U_"Listener is not running!"
+"RTN","XOBUM1",161,0)
+ ;
+"RTN","XOBUM1",162,0)
+ QUIT XOBOK
+"RTN","XOBUM1",163,0)
+ ;
+"RTN","XOBUM1",164,0)
+PARMS() ; -- maintain site parameters
+"RTN","XOBUM1",165,0)
+ NEW DIC,X,Y,DR,DA,DIE,XOBOK
+"RTN","XOBUM1",166,0)
+ SET XOBOK=0
+"RTN","XOBUM1",167,0)
+ ;
+"RTN","XOBUM1",168,0)
+ IF $GET(^XOB(18.01,1,0))["" DO
+"RTN","XOBUM1",169,0)
+ . SET DA=1,DR="[XOBU SITE PARAMETERS]",DIE="^XOB(18.01," DO ^DIE
+"RTN","XOBUM1",170,0)
+ . SET XOBOK=1
+"RTN","XOBUM1",171,0)
+ ELSE  DO
+"RTN","XOBUM1",172,0)
+ . SET XOBOK=0_U_"Error: Site parameter file not initialized."
+"RTN","XOBUM1",173,0)
+ ;
+"RTN","XOBUM1",174,0)
+ QUIT XOBOK
+"RTN","XOBUM1",175,0)
+ ;
+"RTN","XOBUM1",176,0)
+CFG() ; -- listener configuration edit
+"RTN","XOBUM1",177,0)
+ NEW DIC,X,Y,DR,DA,DIE,XOBDONE,XOBOK
+"RTN","XOBUM1",178,0)
+ SET XOBOK=0
+"RTN","XOBUM1",179,0)
+ ;
+"RTN","XOBUM1",180,0)
+ SET XOBDONE=0
+"RTN","XOBUM1",181,0)
+ ;
+"RTN","XOBUM1",182,0)
+ FOR   DO  QUIT:XOBDONE
+"RTN","XOBUM1",183,0)
+ . WRITE !
+"RTN","XOBUM1",184,0)
+ . SET DIC="^XOB(18.03,",DIC(0)="AEMLQ" DO ^DIC
+"RTN","XOBUM1",185,0)
+ . IF Y<1 SET XOBDONE=1 QUIT
+"RTN","XOBUM1",186,0)
+ . SET DA=+Y,DR="[XOBV LISTENER CONFIG EDIT]",DIE="^XOB(18.03," DO ^DIE
+"RTN","XOBUM1",187,0)
+ SET XOBOK=1
+"RTN","XOBUM1",188,0)
+ ;
+"RTN","XOBUM1",189,0)
+ QUIT XOBOK
+"RTN","XOBUM1",190,0)
+ ;
+"RTN","XOBUM1",191,0)
+CP() ; -- add a connector proxy
+"RTN","XOBUM1",192,0)
+ NEW XOBOK
+"RTN","XOBUM1",193,0)
+ SET XOBOK=0
+"RTN","XOBUM1",194,0)
+ DO CONT^XUSAP
+"RTN","XOBUM1",195,0)
+ SET XOBOK=1
+"RTN","XOBUM1",196,0)
+ QUIT XOBOK
+"RTN","XOBUM1",197,0)
+ ;
+"RTN","XOBUZAP")
+0^2^B86725065
+"RTN","XOBUZAP",1,0)
+XOBUZAP ;;2017-09-08  3:42 PM; 08/4/2005  13:00
+"RTN","XOBUZAP",2,0)
+ ;;1.6;Foundations;**11310000**;May 08, 2009;Build 4
+"RTN","XOBUZAP",3,0)
+ ;Per VHA directive 2004-038, this routine should not be modified.
+"RTN","XOBUZAP",4,0)
+ ;
+"RTN","XOBUZAP",5,0)
+ ; VEN/SMH **11310000** GT.M support.
+"RTN","XOBUZAP",6,0)
+ QUIT
+"RTN","XOBUZAP",7,0)
+ ;
+"RTN","XOBUZAP",8,0)
+ ; ----------------------- Main Entry Points -----------------------
+"RTN","XOBUZAP",9,0)
+ ;
+"RTN","XOBUZAP",10,0)
+EN(XOBSEL) ; -- Interactive and main entry point for XOBU TERMINATE JOBS tool
+"RTN","XOBUZAP",11,0)
+ ;
+"RTN","XOBUZAP",12,0)
+ ; Input: XOBSEL array that specifies selection criteria
+"RTN","XOBUZAP",13,0)
+ ;           XOBSEL("ROUTINE")=<routine name>
+"RTN","XOBUZAP",14,0)
+ ;           XOBSEL("STATE")=<job state#> (see STATE tag for list of states)
+"RTN","XOBUZAP",15,0)
+ ;           XOBSEL("TITLE")=optional title text to be used by ListManager (upper right of LM screen)
+"RTN","XOBUZAP",16,0)
+ ;           XOBSEL("VISTA INFO REF")=optional reference to array or global containing "CLIENT IP" and "DUZ" nodes
+"RTN","XOBUZAP",17,0)
+ ;           
+"RTN","XOBUZAP",18,0)
+ ; -- verify job selection critera
+"RTN","XOBUZAP",19,0)
+ IF '$$VERSEL(.XOBSEL) DO  GOTO ENQ
+"RTN","XOBUZAP",20,0)
+ . WRITE !,"Job selection criteria not specified correctly or is missing!"
+"RTN","XOBUZAP",21,0)
+ ;
+"RTN","XOBUZAP",22,0)
+ ; -- start 'Terminate Jobs Utility'
+"RTN","XOBUZAP",23,0)
+ DO EN^VALM("XOBU TERMINATE JOBS UTILITY")
+"RTN","XOBUZAP",24,0)
+ENQ ;
+"RTN","XOBUZAP",25,0)
+ QUIT
+"RTN","XOBUZAP",26,0)
+ ;
+"RTN","XOBUZAP",27,0)
+ZAP(XOBSEL) ; -- Non-interactive entry point for XOBU TERMINATE JOBS tool
+"RTN","XOBUZAP",28,0)
+ ;                  API terminates all jobs that job selection criteria
+"RTN","XOBUZAP",29,0)
+ ;                  
+"RTN","XOBUZAP",30,0)
+ ;  Input: XOBSEL array that specifies selection criteria (See above EN tag for information)
+"RTN","XOBUZAP",31,0)
+ ;
+"RTN","XOBUZAP",32,0)
+ ; Return: Count of how many jobs terminated OR
+"RTN","XOBUZAP",33,0)
+ ;         -1 if MUMPS implementation is not Cache
+"RTN","XOBUZAP",34,0)
+ ;         -2 if XOBSEL arrary is not passed in or is invalid.
+"RTN","XOBUZAP",35,0)
+ ;            
+"RTN","XOBUZAP",36,0)
+ NEW XOBJOBS,XOBPID,XOBCNS,XOBCNT
+"RTN","XOBUZAP",37,0)
+ ; -- check if this is a Cache implementation
+"RTN","XOBUZAP",38,0)
+ IF '$$CACHE()&('$$GTM()) SET XOBCNT=-1 GOTO ZAPQ
+"RTN","XOBUZAP",39,0)
+ ;
+"RTN","XOBUZAP",40,0)
+ ; -- verify job selection critera
+"RTN","XOBUZAP",41,0)
+ IF '$$VERSEL(.XOBSEL) SET XOBCNT=-2 GOTO ZAPQ
+"RTN","XOBUZAP",42,0)
+ ;
+"RTN","XOBUZAP",43,0)
+ DO GETJOBS(.XOBJOBS)
+"RTN","XOBUZAP",44,0)
+ SET XOBCNS=$$CURNS()
+"RTN","XOBUZAP",45,0)
+ SET XOBCNT=0
+"RTN","XOBUZAP",46,0)
+ SET XOBPID=""
+"RTN","XOBUZAP",47,0)
+ FOR  SET XOBPID=$ORDER(XOBJOBS(XOBPID)) QUIT:XOBPID=""  DO
+"RTN","XOBUZAP",48,0)
+ . IF $$CHECK(.XOBSEL,XOBPID,XOBCNS) DO
+"RTN","XOBUZAP",49,0)
+ . . SET XOBRES=$$TERMJOB(XOBPID)
+"RTN","XOBUZAP",50,0)
+ . . IF XOBRES=1 SET XOBCNT=XOBCNT+1
+"RTN","XOBUZAP",51,0)
+ZAPQ ;
+"RTN","XOBUZAP",52,0)
+ QUIT XOBCNT
+"RTN","XOBUZAP",53,0)
+ ;
+"RTN","XOBUZAP",54,0)
+ ; ----------------------- Listman Related Code -----------------------
+"RTN","XOBUZAP",55,0)
+ ;
+"RTN","XOBUZAP",56,0)
+HDR ; -- header code
+"RTN","XOBUZAP",57,0)
+ SET VALMHDR(1)="    "_IOUON_"Job Selection Criteria"_IOUOFF_" (matches: "_+$GET(VALMCNT)_")"
+"RTN","XOBUZAP",58,0)
+ SET VALMHDR(2)="     Box-Volume Pair: "_IOINHI_$$BOXVOL()_IOINORM
+"RTN","XOBUZAP",59,0)
+ SET VALMHDR(3)="   Current Namespace: "_IOINHI_$$CURNS()_IOINORM
+"RTN","XOBUZAP",60,0)
+ SET VALMHDR(4)="             Routine: "_IOINHI_$GET(XOBSEL("ROUTINE"),"Unknown")_IOINORM
+"RTN","XOBUZAP",61,0)
+ SET VALMHDR(5)="           Job State: "_IOINHI_$PIECE($$GETSTATE^XOBUZAP0(+$GET(XOBSEL("STATE"),";;;Unknown")),";",4)_IOINORM
+"RTN","XOBUZAP",62,0)
+ QUIT
+"RTN","XOBUZAP",63,0)
+ ;
+"RTN","XOBUZAP",64,0)
+INIT ; -- init variables and list array
+"RTN","XOBUZAP",65,0)
+ IF $DATA(XOBSEL("TITLE")) SET VALM("TITLE")=XOBSEL("TITLE")
+"RTN","XOBUZAP",66,0)
+ DO BUILD
+"RTN","XOBUZAP",67,0)
+ SET VALMSG=$$CPMSG()
+"RTN","XOBUZAP",68,0)
+ QUIT
+"RTN","XOBUZAP",69,0)
+ ;
+"RTN","XOBUZAP",70,0)
+BUILD ; -- build list based on job selection criteria (XOBSEL)
+"RTN","XOBUZAP",71,0)
+ NEW XOBJOBS,XOBPID,XOBCNS
+"RTN","XOBUZAP",72,0)
+ DO KILL
+"RTN","XOBUZAP",73,0)
+ DO KILL^VALM10()
+"RTN","XOBUZAP",74,0)
+ IF '$$CACHE()&('$$GTM()) DO  GOTO BUILDQ
+"RTN","XOBUZAP",75,0)
+ . DO SET^VALM10(1,"",1)
+"RTN","XOBUZAP",76,0)
+ . DO SET^VALM10(2,"",2)
+"RTN","XOBUZAP",77,0)
+ . DO SET^VALM10(3,"   'Terminate' actions not supported for the current M implementation ["_$$MUMPS()_"].",3)
+"RTN","XOBUZAP",78,0)
+ . SET VALMCNT=3
+"RTN","XOBUZAP",79,0)
+ SET XOBCNS=$$CURNS()
+"RTN","XOBUZAP",80,0)
+ DO GETJOBS(.XOBJOBS)
+"RTN","XOBUZAP",81,0)
+ SET VALMCNT=0
+"RTN","XOBUZAP",82,0)
+ SET XOBPID=""
+"RTN","XOBUZAP",83,0)
+ FOR  SET XOBPID=$ORDER(XOBJOBS(XOBPID)) QUIT:XOBPID=""  DO
+"RTN","XOBUZAP",84,0)
+ . IF $$CHECK(.XOBSEL,XOBPID,XOBCNS) DO
+"RTN","XOBUZAP",85,0)
+ . . NEW XOBJINFO
+"RTN","XOBUZAP",86,0)
+ . . DO JOBINFO(XOBPID,.XOBJINFO,.XOBSEL)
+"RTN","XOBUZAP",87,0)
+ . . SET VALMCNT=VALMCNT+1
+"RTN","XOBUZAP",88,0)
+ . . SET X=""
+"RTN","XOBUZAP",89,0)
+ . . SET X=$$SETFLD^VALM1($JUSTIFY(VALMCNT,4),X,"ENTRY")
+"RTN","XOBUZAP",90,0)
+ . . SET X=$$SETFLD^VALM1(XOBPID,X,"PID")
+"RTN","XOBUZAP",91,0)
+ . . SET X=$$SETFLD^VALM1($EXTRACT($GET(XOBJINFO("DEVICE"))_":"_$GET(XOBJINFO("CLIENT IP")),1,34),X,"DEVICE")
+"RTN","XOBUZAP",92,0)
+ . . SET X=$$SETFLD^VALM1($EXTRACT("User="_$SELECT($GET(XOBJINFO("CONNECTOR USER")):"*",1:"")_$GET(XOBJINFO("VISTA USER NAME")),1,30),X,"COMMENT")
+"RTN","XOBUZAP",93,0)
+ . . DO SET^VALM10(VALMCNT,X,VALMCNT)
+"RTN","XOBUZAP",94,0)
+ . . SET ^TMP("XOB TERMINATE JOBS","IDX",$JOB,VALMCNT,VALMCNT)=XOBPID
+"RTN","XOBUZAP",95,0)
+ ;
+"RTN","XOBUZAP",96,0)
+BUILDQ ;
+"RTN","XOBUZAP",97,0)
+ QUIT
+"RTN","XOBUZAP",98,0)
+ ;
+"RTN","XOBUZAP",99,0)
+KILL ; -- kill off list location
+"RTN","XOBUZAP",100,0)
+ KILL ^TMP("XOB TERMINATE JOBS",$JOB)
+"RTN","XOBUZAP",101,0)
+ KILL ^TMP("XOB TERMINATE JOBS","IDX",$JOB)
+"RTN","XOBUZAP",102,0)
+ QUIT
+"RTN","XOBUZAP",103,0)
+ ;
+"RTN","XOBUZAP",104,0)
+HELP ; -- help code
+"RTN","XOBUZAP",105,0)
+ SET X="?" DO DISP^XQORM1 WRITE !!
+"RTN","XOBUZAP",106,0)
+ QUIT
+"RTN","XOBUZAP",107,0)
+ ;
+"RTN","XOBUZAP",108,0)
+EXIT ; -- exit code
+"RTN","XOBUZAP",109,0)
+ QUIT
+"RTN","XOBUZAP",110,0)
+ ;
+"RTN","XOBUZAP",111,0)
+EXPND ; -- expand code
+"RTN","XOBUZAP",112,0)
+ QUIT
+"RTN","XOBUZAP",113,0)
+ ;
+"RTN","XOBUZAP",114,0)
+MSG ; -- set default message
+"RTN","XOBUZAP",115,0)
+ SET VALMSG="Use RE (Refresh) to display only alive jobs "
+"RTN","XOBUZAP",116,0)
+ QUIT
+"RTN","XOBUZAP",117,0)
+ ;
+"RTN","XOBUZAP",118,0)
+CPMSG() ; -- connection proxy user message
+"RTN","XOBUZAP",119,0)
+ QUIT "* Connector Proxy User"
+"RTN","XOBUZAP",120,0)
+ ;
+"RTN","XOBUZAP",121,0)
+REFRESH ; -- refresh display
+"RTN","XOBUZAP",122,0)
+ ; -- Protocol: XOBU TERMINATE JOBS REFRESH
+"RTN","XOBUZAP",123,0)
+ DO BUILD
+"RTN","XOBUZAP",124,0)
+ SET VALMSG=$$CPMSG()
+"RTN","XOBUZAP",125,0)
+ KILL VALMHDR
+"RTN","XOBUZAP",126,0)
+ SET VALMBCK="R"
+"RTN","XOBUZAP",127,0)
+ QUIT
+"RTN","XOBUZAP",128,0)
+ ;
+"RTN","XOBUZAP",129,0)
+SS ; -- display M os system status
+"RTN","XOBUZAP",130,0)
+ ; -- Protocol: XOBU TERMINATE SYSTEM STATUS
+"RTN","XOBUZAP",131,0)
+ DO FULL^VALM1
+"RTN","XOBUZAP",132,0)
+ IF $DATA(^%ZOSF("SS")) DO
+"RTN","XOBUZAP",133,0)
+ . XECUTE ^%ZOSF("SS")
+"RTN","XOBUZAP",134,0)
+ ELSE  DO
+"RTN","XOBUZAP",135,0)
+ . WRITE !,"Error: ^%ZOSF(""SS"") node is not defined."
+"RTN","XOBUZAP",136,0)
+ DO PAUSE^VALM1
+"RTN","XOBUZAP",137,0)
+ DO REFRESH
+"RTN","XOBUZAP",138,0)
+ QUIT
+"RTN","XOBUZAP",139,0)
+ ;
+"RTN","XOBUZAP",140,0)
+TERMALL ; -- terminate all pid/job
+"RTN","XOBUZAP",141,0)
+ ; -- Protocol: XOBU TERMINATE ALL JOBS
+"RTN","XOBUZAP",142,0)
+ IF '$$ASK() GOTO TERMALLQ
+"RTN","XOBUZAP",143,0)
+ NEW XOBI,XOBPID
+"RTN","XOBUZAP",144,0)
+ SET XOBI=""
+"RTN","XOBUZAP",145,0)
+ FOR  SET XOBI=$ORDER(^TMP("XOB TERMINATE JOBS","IDX",$JOB,XOBI)) QUIT:XOBI=""  DO
+"RTN","XOBUZAP",146,0)
+ . SET XOBPID=$GET(^TMP("XOB TERMINATE JOBS","IDX",$JOB,XOBI,XOBI))
+"RTN","XOBUZAP",147,0)
+ . DO TERMONE(XOBPID,XOBI)
+"RTN","XOBUZAP",148,0)
+ DO MSG
+"RTN","XOBUZAP",149,0)
+TERMALLQ ;
+"RTN","XOBUZAP",150,0)
+ SET VALMBCK=""
+"RTN","XOBUZAP",151,0)
+ QUIT
+"RTN","XOBUZAP",152,0)
+ ;
+"RTN","XOBUZAP",153,0)
+TERMPID ; -- terminate pid/job
+"RTN","XOBUZAP",154,0)
+ ; -- Protocol: XOBU TERMINATE A JOB 
+"RTN","XOBUZAP",155,0)
+ NEW XOBI,VALMY,XOBPID,XOBRES
+"RTN","XOBUZAP",156,0)
+ DO EN^VALM2(XQORNOD(0),"OS")
+"RTN","XOBUZAP",157,0)
+ SET XOBI=+$ORDER(VALMY(""))
+"RTN","XOBUZAP",158,0)
+ IF XOBI>0 DO
+"RTN","XOBUZAP",159,0)
+ . NEW XOBPID
+"RTN","XOBUZAP",160,0)
+ . SET XOBPID=$GET(^TMP("XOB TERMINATE JOBS","IDX",$JOB,XOBI,XOBI))
+"RTN","XOBUZAP",161,0)
+ . ; -- highlight entire line
+"RTN","XOBUZAP",162,0)
+ . DO SELECT^VALM10(XOBI,1)
+"RTN","XOBUZAP",163,0)
+ . IF XOBPID="<terminated>" DO  QUIT
+"RTN","XOBUZAP",164,0)
+ . . WRITE !,"Job has already been terminated!" DO PAUSE^VALM1
+"RTN","XOBUZAP",165,0)
+ . ;
+"RTN","XOBUZAP",166,0)
+ . IF $$ASK() DO
+"RTN","XOBUZAP",167,0)
+ . . DO TERMONE(XOBPID,XOBI),MSG
+"RTN","XOBUZAP",168,0)
+ . ELSE  DO
+"RTN","XOBUZAP",169,0)
+ . . ; -- unhighlight entire line
+"RTN","XOBUZAP",170,0)
+ . . DO SELECT^VALM10(XOBI,0)
+"RTN","XOBUZAP",171,0)
+ SET VALMBCK=""
+"RTN","XOBUZAP",172,0)
+ QUIT
+"RTN","XOBUZAP",173,0)
+ ;
+"RTN","XOBUZAP",174,0)
+TERMONE(XOBPID,XOBI) ; -- zap one pid and update display
+"RTN","XOBUZAP",175,0)
+ NEW XOBRES
+"RTN","XOBUZAP",176,0)
+ ; -- quit if already terminated
+"RTN","XOBUZAP",177,0)
+ IF XOBPID="<terminated>" QUIT
+"RTN","XOBUZAP",178,0)
+ ; -- make sure criteris is still met
+"RTN","XOBUZAP",179,0)
+ IF '$$CHECK(.XOBSEL,XOBPID,$$CURNS()) DO  QUIT
+"RTN","XOBUZAP",180,0)
+ . ; -- insert warning comment into display line
+"RTN","XOBUZAP",181,0)
+ . DO FLDTEXT^VALM10(XOBI,"COMMENT","Criteria not met!")
+"RTN","XOBUZAP",182,0)
+ . ; -- highlight entire line
+"RTN","XOBUZAP",183,0)
+ . DO SELECT^VALM10(XOBI,1)
+"RTN","XOBUZAP",184,0)
+ ; -- terminate job
+"RTN","XOBUZAP",185,0)
+ SET XOBRES=$$TERMJOB(XOBPID)
+"RTN","XOBUZAP",186,0)
+ ; -- insert comment into display line
+"RTN","XOBUZAP",187,0)
+ DO FLDTEXT^VALM10(XOBI,"COMMENT",$EXTRACT($$RESULT(XOBRES),1,25))
+"RTN","XOBUZAP",188,0)
+ ; -- highlight entire line
+"RTN","XOBUZAP",189,0)
+ DO SELECT^VALM10(XOBI,1)
+"RTN","XOBUZAP",190,0)
+ ; -- remove PID so it can't be terminated again
+"RTN","XOBUZAP",191,0)
+ SET ^TMP("XOB TERMINATE JOBS","IDX",$JOB,XOBI,XOBI)="<terminated>"
+"RTN","XOBUZAP",192,0)
+ QUIT
+"RTN","XOBUZAP",193,0)
+ ;
+"RTN","XOBUZAP",194,0)
+ASK(PROMPT) ; -- ask if user is sure
+"RTN","XOBUZAP",195,0)
+ NEW DIR,Y
+"RTN","XOBUZAP",196,0)
+ SET DIR("A")=$GET(PROMPT,"Are you sure")
+"RTN","XOBUZAP",197,0)
+ SET DIR("B")="NO",DIR(0)="Y"
+"RTN","XOBUZAP",198,0)
+ DO ^DIR
+"RTN","XOBUZAP",199,0)
+ QUIT +$GET(Y)
+"RTN","XOBUZAP",200,0)
+ ;
+"RTN","XOBUZAP",201,0)
+RESULT(RESULT) ; -- return result text
+"RTN","XOBUZAP",202,0)
+ ; -- Note: Code number conversions found in RESJOB routine in %SYS namespace
+"RTN","XOBUZAP",203,0)
+ IF RESULT=1 QUIT "Process terminated"
+"RTN","XOBUZAP",204,0)
+ IF RESULT=-1 QUIT "Process not responding"
+"RTN","XOBUZAP",205,0)
+ IF RESULT=-2 QUIT "Process died, not responding"
+"RTN","XOBUZAP",206,0)
+ IF RESULT=-3 QUIT "Process already died"
+"RTN","XOBUZAP",207,0)
+ QUIT RESULT_" --> unknown result type"
+"RTN","XOBUZAP",208,0)
+ ;
+"RTN","XOBUZAP",209,0)
+ ; ---------- Code used by Interactive and Non-Interactive Entry Points ----------
+"RTN","XOBUZAP",210,0)
+ ;
+"RTN","XOBUZAP",211,0)
+VERSEL(XOBSEL) ; -- every job selection criteria
+"RTN","XOBUZAP",212,0)
+ NEW XOBOK
+"RTN","XOBUZAP",213,0)
+ IF $GET(XOBSEL("ROUTINE"))=""!($GET(XOBSEL("STATE"))="") SET XOBOK=0 GOTO VERSELQ
+"RTN","XOBUZAP",214,0)
+ SET XOBOK=1
+"RTN","XOBUZAP",215,0)
+VERSELQ ;
+"RTN","XOBUZAP",216,0)
+ QUIT XOBOK
+"RTN","XOBUZAP",217,0)
+ ;
+"RTN","XOBUZAP",218,0)
+GETJOBS(XOBJOBS) ; -- build XOBJOBS()=pid information
+"RTN","XOBUZAP",219,0)
+ NEW XOBPID,XOBCNT
+"RTN","XOBUZAP",220,0)
+ SET XOBPID="",XOBCNT=0
+"RTN","XOBUZAP",221,0)
+ I $$MUMPS()="GTM" D  QUIT
+"RTN","XOBUZAP",222,0)
+ . N JOBS
+"RTN","XOBUZAP",223,0)
+ . S XOBCNT=$$UNIXLSOF^ZSY(.JOBS)
+"RTN","XOBUZAP",224,0)
+ . N I F I=0:0 S I=$O(JOBS(I)) Q:'I  S XOBJOBS(JOBS(I))=""
+"RTN","XOBUZAP",225,0)
+ FOR  SET XOBPID=$ORDER(^$JOB(XOBPID)) QUIT:XOBPID=""  DO
+"RTN","XOBUZAP",226,0)
+ . SET XOBCNT=XOBCNT+1,XOBJOBS(XOBPID)=""
+"RTN","XOBUZAP",227,0)
+ QUIT
+"RTN","XOBUZAP",228,0)
+ ;
+"RTN","XOBUZAP",229,0)
+CHECK(XOBSEL,XOBPID,XOBNS) ; -- check job info against selection criteria
+"RTN","XOBUZAP",230,0)
+ ; -- use if 1) in correct namespace [XOBNS],
+"RTN","XOBUZAP",231,0)
+ ;           2) in correct routine [XOBSEL("ROUTINE")] and
+"RTN","XOBUZAP",232,0)
+ ;           3) in correct process state [XOBSEL("STATE")]
+"RTN","XOBUZAP",233,0)
+ NEW XOBJINFO
+"RTN","XOBUZAP",234,0)
+ DO JOBINFO(XOBPID,.XOBJINFO,.XOBSEL)
+"RTN","XOBUZAP",235,0)
+ IF XOBJINFO("NAMESPACE")=XOBNS,XOBJINFO("ROUTINE")=$GET(XOBSEL("ROUTINE")),XOBJINFO("STATE")=$GET(XOBSEL("STATE")) QUIT 1
+"RTN","XOBUZAP",236,0)
+ QUIT 0
+"RTN","XOBUZAP",237,0)
+ ;
+"RTN","XOBUZAP",238,0)
+JOBINFO(XOBPID,XOBJINFO,XOBSEL) ; -- get PID info
+"RTN","XOBUZAP",239,0)
+ I $$MUMPS()="GTM" D JOBGTM(XOBPID,.XOBJINFO,.XOBSEL)
+"RTN","XOBUZAP",240,0)
+ ; -- In future (Cache v5+) use instance proprties of %SYSTEM.Process
+"RTN","XOBUZAP",241,0)
+ I $$MUMPS()="OpenM" D
+"RTN","XOBUZAP",242,0)
+ . SET XOBJINFO("STATE")=+$ZUTIL(67,4,XOBPID)
+"RTN","XOBUZAP",243,0)
+ . SET XOBJINFO("ROUTINE")=$ZUTIL(67,5,XOBPID)
+"RTN","XOBUZAP",244,0)
+ . SET XOBJINFO("NAMESPACE")=$ZUTIL(67,6,XOBPID)
+"RTN","XOBUZAP",245,0)
+ . SET XOBJINFO("DEVICE")=$ZUTIL(67,7,XOBPID)
+"RTN","XOBUZAP",246,0)
+ . SET XOBJINFO("OS USERNAME")=$ZUTIL(67,11,XOBPID) ; currently not used
+"RTN","XOBUZAP",247,0)
+ ;
+"RTN","XOBUZAP",248,0)
+ ; -- get VistA Info is available
+"RTN","XOBUZAP",249,0)
+ IF $GET(XOBSEL("VISTA INFO REF"))]"" DO
+"RTN","XOBUZAP",250,0)
+ . NEW XOBY,XOBREF
+"RTN","XOBUZAP",251,0)
+ . SET XOBREF=$$GETREF^XOBUZAP0(XOBSEL("VISTA INFO REF"),XOBPID)
+"RTN","XOBUZAP",252,0)
+ . ;
+"RTN","XOBUZAP",253,0)
+ . SET XOBJINFO("VISTA DUZ")=+$$GETDUZ^XOBUZAP0(XOBREF)
+"RTN","XOBUZAP",254,0)
+ . SET XOBY=$PIECE($GET(^VA(200,XOBJINFO("VISTA DUZ"),0)),U)
+"RTN","XOBUZAP",255,0)
+ . SET XOBJINFO("VISTA USER NAME")=$SELECT(XOBY]"":XOBY,1:"<unknown>")
+"RTN","XOBUZAP",256,0)
+ . SET XOBJINFO("CONNECTOR USER")=$$CPCHK^XUSAP(XOBJINFO("VISTA DUZ"))
+"RTN","XOBUZAP",257,0)
+ . ;
+"RTN","XOBUZAP",258,0)
+ . SET XOBY=$$GETIP^XOBUZAP0(XOBREF)
+"RTN","XOBUZAP",259,0)
+ . SET XOBJINFO("CLIENT IP")=$SELECT(XOBY]"":XOBY,1:"<unknown>")
+"RTN","XOBUZAP",260,0)
+ QUIT
+"RTN","XOBUZAP",261,0)
+ ;
+"RTN","XOBUZAP",262,0)
+JOBGTM(XOBPID,XOBJINFO,XOBSEL) ; -- get Job Info for GT.M
+"RTN","XOBUZAP",263,0)
+ IF XOBPID=$JOB DO  QUIT
+"RTN","XOBUZAP",264,0)
+ . SET XOBJINFO("STATE")="INTERACTIVE"
+"RTN","XOBUZAP",265,0)
+ . SET XOBJINFO("ROUTINE")=$P($ST($ST,"PLACE"),U,2)
+"RTN","XOBUZAP",266,0)
+ . SET XOBJINFO("NAMESPACE")=$ZGBLDIR
+"RTN","XOBUZAP",267,0)
+ . SET XOBJINFO("DEVICE")=$PRINCIPAL
+"RTN","XOBUZAP",268,0)
+ . SET XOBJINFO("OS USERNAME")="" ; currently not used
+"RTN","XOBUZAP",269,0)
+ ;
+"RTN","XOBUZAP",270,0)
+ DO INTRPT^ZSY(XOBPID)
+"RTN","XOBUZAP",271,0)
+ NEW DATA MERGE DATA=^XUTL("XUSYS",XOBPID)
+"RTN","XOBUZAP",272,0)
+ SET XOBJINFO("STATE")=5
+"RTN","XOBUZAP",273,0)
+ SET XOBJINFO("ROUTINE")=$G(DATA("INTERRUPT"),"UNAVAILABLE")
+"RTN","XOBUZAP",274,0)
+ IF XOBJINFO("ROUTINE")["^" SET XOBJINFO("ROUTINE")=$P(XOBJINFO("ROUTINE"),U,2)
+"RTN","XOBUZAP",275,0)
+ SET XOBJINFO("NAMESPACE")=$ZGBLDIR
+"RTN","XOBUZAP",276,0)
+ SET XOBJINFO("DEVICE")=$G(DATA("JE","D",1),"UNAVAILABLE")
+"RTN","XOBUZAP",277,0)
+ SET XOBJINFO("OS USERNAME")="" ; currently not used
+"RTN","XOBUZAP",278,0)
+ QUIT
+"RTN","XOBUZAP",279,0)
+ ; 
+"RTN","XOBUZAP",280,0)
+TERMJOB(XOBPID) ; -- terminate pid/job
+"RTN","XOBUZAP",281,0)
+ ; -- In future (Cache v5+) use instance method %SYSTEM.Process.Terminate()
+"RTN","XOBUZAP",282,0)
+ ;QUIT 1  ; -- used for testing
+"RTN","XOBUZAP",283,0)
+ I $$MUMPS()="GTM" D HALTONE^ZSY(XOBPID) Q 1
+"RTN","XOBUZAP",284,0)
+ QUIT $ZUTIL(4,XOBPID)
+"RTN","XOBUZAP",285,0)
+ ;
+"RTN","XOBUZAP",286,0)
+BOXVOL() ; -- cpu volume pair
+"RTN","XOBUZAP",287,0)
+ NEW Y DO GETENV^%ZOSV
+"RTN","XOBUZAP",288,0)
+ QUIT $P(Y,U,4)
+"RTN","XOBUZAP",289,0)
+ ;
+"RTN","XOBUZAP",290,0)
+CURNS() ; -- get current namespace
+"RTN","XOBUZAP",291,0)
+ Q:(+$SY=47) $ZG  ; nmsp for GT.M; **11310000** ven/smh
+"RTN","XOBUZAP",292,0)
+ QUIT $ZUTIL(5)
+"RTN","XOBUZAP",293,0)
+ ;
+"RTN","XOBUZAP",294,0)
+MUMPS() ; -- get MUMPS implementation
+"RTN","XOBUZAP",295,0)
+ ; VEN/SMH **11310000**
+"RTN","XOBUZAP",296,0)
+ ; QUIT $SELECT(^%ZOSF("OS")["OpenM":"OpenM",^("OS")["DSM":"DSM",^("OS")["UNIX":"UNIX",^("OS")["MSM":"MSM",1:"")
+"RTN","XOBUZAP",297,0)
+ QUIT $SELECT(^%ZOSF("OS")["OpenM":"OpenM",^("OS")["DSM":"DSM",^("OS")["GT.M":"GTM",^("OS")["MSM":"MSM",1:"")
+"RTN","XOBUZAP",298,0)
+ ;
+"RTN","XOBUZAP",299,0)
+CACHE() ; -- is this a Cache implementation
+"RTN","XOBUZAP",300,0)
+ QUIT $$MUMPS()["OpenM"
+"RTN","XOBUZAP",301,0)
+ ;
+"RTN","XOBUZAP",302,0)
+GTM() ; -- is this GT.M or YottaDB?
+"RTN","XOBUZAP",303,0)
+ QUIT $$MUMPS()["GTM"
+"RTN","XOBVLIB")
+0^6^B29786939
+"RTN","XOBVLIB",1,0)
+XOBVLIB ;mjk/alb - VistaLink Programmer Library ;2017-09-08  3:45 PM; 07/27/2002  13:00
+"RTN","XOBVLIB",2,0)
+ ;;1.6;VistALink;**11310000**;May 08, 2009;Build 4
+"RTN","XOBVLIB",3,0)
+ ; **11310000** by OSE/SMH - TCP Optimization
+"RTN","XOBVLIB",4,0)
+ QUIT
+"RTN","XOBVLIB",5,0)
+ ; --------------------------------------------------------------
+"RTN","XOBVLIB",6,0)
+ ;              Application Developer Supported Calls
+"RTN","XOBVLIB",7,0)
+ ; --------------------------------------------------------------
+"RTN","XOBVLIB",8,0)
+ ;
+"RTN","XOBVLIB",9,0)
+XMLHDR() ; -- provides current XML standard header 
+"RTN","XOBVLIB",10,0)
+ QUIT "<?xml version=""1.0"" encoding=""utf-8"" ?>"
+"RTN","XOBVLIB",11,0)
+ ;
+"RTN","XOBVLIB",12,0)
+CHARCHK(STR) ; -- replace xml character limits with entities
+"RTN","XOBVLIB",13,0)
+ NEW A,I,X,Y,Z,NEWSTR
+"RTN","XOBVLIB",14,0)
+ SET (Y,Z)=""
+"RTN","XOBVLIB",15,0)
+ IF STR["&" SET NEWSTR=STR DO  SET STR=Y_Z
+"RTN","XOBVLIB",16,0)
+ . FOR X=1:1  SET Y=Y_$PIECE(NEWSTR,"&",X)_"&amp;",Z=$PIECE(STR,"&",X+1,999) QUIT:Z'["&"
+"RTN","XOBVLIB",17,0)
+ IF STR["<" FOR  SET STR=$PIECE(STR,"<",1)_"&lt;"_$PIECE(STR,"<",2,99) QUIT:STR'["<"
+"RTN","XOBVLIB",18,0)
+ IF STR[">" FOR  SET STR=$PIECE(STR,">",1)_"&gt;"_$PIECE(STR,">",2,99) QUIT:STR'[">"
+"RTN","XOBVLIB",19,0)
+ IF STR["'" FOR  SET STR=$PIECE(STR,"'",1)_"&apos;"_$PIECE(STR,"'",2,99) QUIT:STR'["'"
+"RTN","XOBVLIB",20,0)
+ IF STR["""" FOR  SET STR=$PIECE(STR,"""",1)_"&quot;"_$PIECE(STR,"""",2,99) QUIT:STR'[""""
+"RTN","XOBVLIB",21,0)
+ ;
+"RTN","XOBVLIB",22,0)
+ FOR I=1:1:$LENGTH(STR) DO
+"RTN","XOBVLIB",23,0)
+ . SET X=$EXTRACT(STR,I)
+"RTN","XOBVLIB",24,0)
+ . SET A=$ASCII(X)
+"RTN","XOBVLIB",25,0)
+ . IF A<31 SET STR=$PIECE(STR,X,1)_$PIECE(STR,X,2,99)
+"RTN","XOBVLIB",26,0)
+ QUIT STR
+"RTN","XOBVLIB",27,0)
+ ;
+"RTN","XOBVLIB",28,0)
+STOP() ; -- called by application to determine if processing should stop gracefully
+"RTN","XOBVLIB",29,0)
+ NEW XOBFLAG
+"RTN","XOBVLIB",30,0)
+ ;
+"RTN","XOBVLIB",31,0)
+ ; -- do checks (only one now is time out)
+"RTN","XOBVLIB",32,0)
+ DO TOFLAG
+"RTN","XOBVLIB",33,0)
+ ;
+"RTN","XOBVLIB",34,0)
+ ; -- set 'stop' flag
+"RTN","XOBVLIB",35,0)
+ SET XOBFLAG=$$TOCHK()
+"RTN","XOBVLIB",36,0)
+ ;
+"RTN","XOBVLIB",37,0)
+ QUIT XOBFLAG
+"RTN","XOBVLIB",38,0)
+ ;
+"RTN","XOBVLIB",39,0)
+GETTO() ; -- get time out value
+"RTN","XOBVLIB",40,0)
+ QUIT $GET(XOBDATA("XOB RPC","TIMEOUT"),300)
+"RTN","XOBVLIB",41,0)
+ ;
+"RTN","XOBVLIB",42,0)
+SETTO(TO) ; -- set time out value on the fly
+"RTN","XOBVLIB",43,0)
+ SET XOBDATA("XOB RPC","TIMEOUT")=TO
+"RTN","XOBVLIB",44,0)
+ QUIT 1
+"RTN","XOBVLIB",45,0)
+ ;
+"RTN","XOBVLIB",46,0)
+ ; --------------------------------------------------------------
+"RTN","XOBVLIB",47,0)
+ ;                 Foundations Developer Calls (Unsupported)
+"RTN","XOBVLIB",48,0)
+ ; --------------------------------------------------------------
+"RTN","XOBVLIB",49,0)
+ ; 
+"RTN","XOBVLIB",50,0)
+VLHDR(NUM) ; -- provides current VistaLink standard header
+"RTN","XOBVLIB",51,0)
+ NEW X,TYPE,SCHEMA
+"RTN","XOBVLIB",52,0)
+ ;
+"RTN","XOBVLIB",53,0)
+ ; -- get type info
+"RTN","XOBVLIB",54,0)
+ SET X=$PIECE($TEXT(TYPE+NUM),";;",2)
+"RTN","XOBVLIB",55,0)
+ SET TYPE=$PIECE(X,"^",2)
+"RTN","XOBVLIB",56,0)
+ SET SCHEMA=$PIECE(X,"^",3)
+"RTN","XOBVLIB",57,0)
+ QUIT $$ENVHDR(TYPE,SCHEMA)
+"RTN","XOBVLIB",58,0)
+ ;
+"RTN","XOBVLIB",59,0)
+TYPE ; -- return message types [ number ^ message type ^ schema file ]
+"RTN","XOBVLIB",60,0)
+ ;;1^gov.va.med.foundations.rpc.response^rpcResponse.xsd
+"RTN","XOBVLIB",61,0)
+ ;;2^gov.va.med.foundations.rpc.fault^rpcFault.xsd
+"RTN","XOBVLIB",62,0)
+ ;;3^gov.va.med.foundations.vistalink.system.fault^vlFault.xsd
+"RTN","XOBVLIB",63,0)
+ ;;4^gov.va.med.foundations.vistalink.system.response^vlSimpleResponse.xsd
+"RTN","XOBVLIB",64,0)
+ ;
+"RTN","XOBVLIB",65,0)
+ERROR(XOBDAT) ; -- send error type message
+"RTN","XOBVLIB",66,0)
+ NEW XOBI,XOBY,XOBOS
+"RTN","XOBVLIB",67,0)
+ SET XOBY="XOBY"
+"RTN","XOBVLIB",68,0)
+ ; -- build xml
+"RTN","XOBVLIB",69,0)
+ DO BUILD(.XOBY,.XOBDAT)
+"RTN","XOBVLIB",70,0)
+ ;
+"RTN","XOBVLIB",71,0)
+ USE XOBPORT
+"RTN","XOBVLIB",72,0)
+ DO OS^XOBVSKT
+"RTN","XOBVLIB",73,0)
+ NEW XOBSENDSTR SET XOBSENDSTR=""
+"RTN","XOBVLIB",74,0)
+ ; -- write xml
+"RTN","XOBVLIB",75,0)
+ DO PRE^XOBVSKT
+"RTN","XOBVLIB",76,0)
+ SET XOBI=0 FOR  SET XOBI=$ORDER(XOBY(XOBI)) QUIT:'XOBI  DO WRITE^XOBVSKT(XOBY(XOBI))
+"RTN","XOBVLIB",77,0)
+ ; -- send eot and flush buffer
+"RTN","XOBVLIB",78,0)
+ DO POST^XOBVSKT
+"RTN","XOBVLIB",79,0)
+ QUIT
+"RTN","XOBVLIB",80,0)
+ ;
+"RTN","XOBVLIB",81,0)
+BUILD(XOBY,XOBDAT) ;  -- store built xml in passed store reference (XOBY)
+"RTN","XOBVLIB",82,0)
+ ; -- input format
+"RTN","XOBVLIB",83,0)
+ ; XOBDAT("MESSAGE TYPE") = # type of message (ex. 2 = gov.va.med.foundations.vistalink.rpc.fault :: See TYPE tag) 
+"RTN","XOBVLIB",84,0)
+ ; XOBDAT("ERRORS",<integer>,"CODE")         = error code
+"RTN","XOBVLIB",85,0)
+ ; XOBDAT("ERRORS",<integer>,"ERROR TYPE")   = type of error (system/application/security)
+"RTN","XOBVLIB",86,0)
+ ; XOBDAT("ERRORS",<integer>,"MESSAGE",<integer>) = error message
+"RTN","XOBVLIB",87,0)
+ ; 
+"RTN","XOBVLIB",88,0)
+ ;  -- SOAP related information
+"RTN","XOBVLIB",89,0)
+ ; XOBDAT("ERRORS",<integer>,"FAULT CODE")   = high level code on where error occurred (ex. Client, Server, etc.)
+"RTN","XOBVLIB",90,0)
+ ;          - Default: Server
+"RTN","XOBVLIB",91,0)
+ ; XOBDAT("ERRORS",<integer>,"FAULT STRING") = high level fault type text (ex. System Error)
+"RTN","XOBVLIB",92,0)
+ ;          - Default: System Error
+"RTN","XOBVLIB",93,0)
+ ; XOBDAT("ERRORS",<integer>,"FAULT ACTOR")  = RPC, routine, etc. running when error occurred
+"RTN","XOBVLIB",94,0)
+ ;          - Default: [none]
+"RTN","XOBVLIB",95,0)
+ ; 
+"RTN","XOBVLIB",96,0)
+ NEW XOBCODE,XOBI,XOBERR,XOBLINE,XOBETYPE
+"RTN","XOBVLIB",97,0)
+ SET XOBLINE=0
+"RTN","XOBVLIB",98,0)
+ ;
+"RTN","XOBVLIB",99,0)
+ DO ADD($$VLHDR($GET(XOBDAT("MESSAGE TYPE"))))
+"RTN","XOBVLIB",100,0)
+ DO ADD("<Fault>")
+"RTN","XOBVLIB",101,0)
+ DO ADD("<FaultCode>"_$GET(XOBDAT("ERRORS",1,"FAULT CODE"),"Server")_"</FaultCode>")
+"RTN","XOBVLIB",102,0)
+ DO ADD("<FaultString>"_$GET(XOBDAT("ERRORS",1,"FAULT STRING"),"System Error")_"</FaultString>")
+"RTN","XOBVLIB",103,0)
+ DO ADD("<FaultActor>"_$GET(XOBDAT("ERRORS",1,"FAULT ACTOR"))_"</FaultActor>")
+"RTN","XOBVLIB",104,0)
+ DO ADD("<Detail>")
+"RTN","XOBVLIB",105,0)
+ SET XOBERR=0
+"RTN","XOBVLIB",106,0)
+ FOR  SET XOBERR=$ORDER(XOBDAT("ERRORS",XOBERR)) QUIT:'XOBERR  DO
+"RTN","XOBVLIB",107,0)
+ . SET XOBCODE=$GET(XOBDAT("ERRORS",XOBERR,"CODE"),0)
+"RTN","XOBVLIB",108,0)
+ . SET XOBETYPE=$GET(XOBDAT("ERRORS",XOBERR,"ERROR TYPE"),0)
+"RTN","XOBVLIB",109,0)
+ . DO ADD("<Error type="""_XOBETYPE_""" code="""_XOBCODE_""" >")
+"RTN","XOBVLIB",110,0)
+ . DO ADD("<Message>")
+"RTN","XOBVLIB",111,0)
+ . IF $GET(XOBDAT("ERRORS",XOBERR,"CDATA")) DO ADD("<![CDATA[")
+"RTN","XOBVLIB",112,0)
+ . SET XOBI=0
+"RTN","XOBVLIB",113,0)
+ . FOR  SET XOBI=$ORDER(XOBDAT("ERRORS",XOBERR,"MESSAGE",XOBI)) QUIT:'XOBI  DO
+"RTN","XOBVLIB",114,0)
+ . . DO ADD(XOBDAT("ERRORS",XOBERR,"MESSAGE",XOBI))
+"RTN","XOBVLIB",115,0)
+ . IF $GET(XOBDAT("ERRORS",XOBERR,"CDATA")) DO ADD("]]>")
+"RTN","XOBVLIB",116,0)
+ . DO ADD("</Message>")
+"RTN","XOBVLIB",117,0)
+ . DO ADD("</Error>")
+"RTN","XOBVLIB",118,0)
+ DO ADD("</Detail>")
+"RTN","XOBVLIB",119,0)
+ DO ADD("</Fault>")
+"RTN","XOBVLIB",120,0)
+ DO ADD($$ENVFTR())
+"RTN","XOBVLIB",121,0)
+ ;
+"RTN","XOBVLIB",122,0)
+ QUIT
+"RTN","XOBVLIB",123,0)
+ ;
+"RTN","XOBVLIB",124,0)
+ADD(TXT) ; -- add line
+"RTN","XOBVLIB",125,0)
+ SET XOBLINE=XOBLINE+1
+"RTN","XOBVLIB",126,0)
+ SET @XOBY@(XOBLINE)=TXT
+"RTN","XOBVLIB",127,0)
+ QUIT
+"RTN","XOBVLIB",128,0)
+ ;
+"RTN","XOBVLIB",129,0)
+GETRATE() ; -- get J2SE heartbeat rate in seconds
+"RTN","XOBVLIB",130,0)
+ NEW X
+"RTN","XOBVLIB",131,0)
+ SET X=$PIECE($GET(^XOB(18.01,1,0)),"^",2)
+"RTN","XOBVLIB",132,0)
+ QUIT $SELECT(X:X,1:180)
+"RTN","XOBVLIB",133,0)
+ ;
+"RTN","XOBVLIB",134,0)
+GETDELTA() ; -- get J2SE latency delta in seconds
+"RTN","XOBVLIB",135,0)
+ NEW X
+"RTN","XOBVLIB",136,0)
+ SET X=$PIECE($GET(^XOB(18.01,1,0)),"^",3)
+"RTN","XOBVLIB",137,0)
+ QUIT $SELECT(X:X,1:180)
+"RTN","XOBVLIB",138,0)
+ ;
+"RTN","XOBVLIB",139,0)
+GETASTO() ; -- get J2EE application server time out in seconds (one day = 86400)
+"RTN","XOBVLIB",140,0)
+ NEW X
+"RTN","XOBVLIB",141,0)
+ SET X=$PIECE($GET(^XOB(18.01,1,0)),"^",4)
+"RTN","XOBVLIB",142,0)
+ QUIT $SELECT(X:X,1:86400)
+"RTN","XOBVLIB",143,0)
+ ;
+"RTN","XOBVLIB",144,0)
+GETRASTO() ; -- get J2EE application server reauthenticated session time out in seconds (ten minutes = 600)
+"RTN","XOBVLIB",145,0)
+ NEW X
+"RTN","XOBVLIB",146,0)
+ SET X=$PIECE($GET(^XOB(18.01,1,0)),"^",5)
+"RTN","XOBVLIB",147,0)
+ QUIT $SELECT(X:X,1:600)
+"RTN","XOBVLIB",148,0)
+ ;
+"RTN","XOBVLIB",149,0)
+TOFLAG ; -- set timed out flag
+"RTN","XOBVLIB",150,0)
+ ; -- if run in non-VistALink environment never time out ; set both now & start = $h
+"RTN","XOBVLIB",151,0)
+ SET XOBDATA("XOB RPC","TIMED OUT")=($$HDIFF^XLFDT($HOROLOG,$GET(XOBDATA("XOB RPC","START"),$HOROLOG),2)>$$GETTO())
+"RTN","XOBVLIB",152,0)
+ QUIT
+"RTN","XOBVLIB",153,0)
+ ;
+"RTN","XOBVLIB",154,0)
+TOCHK() ; -- did RPC timeout?
+"RTN","XOBVLIB",155,0)
+ QUIT +$GET(XOBDATA("XOB RPC","TIMED OUT"))
+"RTN","XOBVLIB",156,0)
+ ;
+"RTN","XOBVLIB",157,0)
+ENVHDR(TYPE,SCHEMA) ; -- vistalink beg tag (header)
+"RTN","XOBVLIB",158,0)
+ NEW X,VLVER
+"RTN","XOBVLIB",159,0)
+ SET X=$$XMLHDR()
+"RTN","XOBVLIB",160,0)
+ SET X=X_"<VistaLink"
+"RTN","XOBVLIB",161,0)
+ SET X=X_" messageType="""_TYPE_""""
+"RTN","XOBVLIB",162,0)
+ SET VLVER="1.6"
+"RTN","XOBVLIB",163,0)
+ ; -- indicates to VL v1.5 client that this VL v1.6 server is backwards compatible
+"RTN","XOBVLIB",164,0)
+ IF $GET(XOBDATA("VL VERSION"))="1.5" SET VLVER="1.5"
+"RTN","XOBVLIB",165,0)
+ ; -- indicates to VL v1.0 client that this VL v1.6 server is backwards compatible
+"RTN","XOBVLIB",166,0)
+ IF $GET(XOBDATA("VL VERSION"))="1.0" SET VLVER="1.0"
+"RTN","XOBVLIB",167,0)
+ SET X=X_" version="""_VLVER_""""
+"RTN","XOBVLIB",168,0)
+ SET X=X_" xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"""
+"RTN","XOBVLIB",169,0)
+ SET X=X_" xsi:noNamespaceSchemaLocation="""_SCHEMA_""""
+"RTN","XOBVLIB",170,0)
+ ;SET X=X_" xmlns=""http://med.va.gov/Foundations"""
+"RTN","XOBVLIB",171,0)
+ SET X=X_">"
+"RTN","XOBVLIB",172,0)
+ QUIT X
+"RTN","XOBVLIB",173,0)
+ ;
+"RTN","XOBVLIB",174,0)
+ENVFTR() ; -- vistalink end tag (footer)
+"RTN","XOBVLIB",175,0)
+ QUIT "</VistaLink>"
+"RTN","XOBVLIB",176,0)
+ ;
+"RTN","XOBVLIB",177,0)
+SYSOS(XOBOS) ; -- get system operating system
+"RTN","XOBVLIB",178,0)
+ ; -- DBIA #3522
+"RTN","XOBVLIB",179,0)
+ QUIT $SELECT(XOBOS["OpenM":$$OS^%ZOSV(),XOBOS["DSM":"VMS",1:"Unknown")
+"RTN","XOBVLIB",180,0)
+ ;
+"RTN","XOBVLL")
+0^7^B21623536
+"RTN","XOBVLL",1,0)
+XOBVLL ;mjk/alb - VistALink Listen and Spawn Code;2017-09-08  3:46 PM; 07/27/2002  13:00
+"RTN","XOBVLL",2,0)
+ ;;1.6;VistALink;**11310000**;May 08, 2009;Build 4
+"RTN","XOBVLL",3,0)
+ ; **11310000** by OSE/SMH - TCP Optimization
+"RTN","XOBVLL",4,0)
+ QUIT
+"RTN","XOBVLL",5,0)
+ ;
+"RTN","XOBVLL",6,0)
+ ; ***deprecated*** tag ; Use START^XOBVTCP instead
+"RTN","XOBVLL",7,0)
+START(SOCKET) ; -- start listener
+"RTN","XOBVLL",8,0)
+ DO START^XOBVTCP(SOCKET)
+"RTN","XOBVLL",9,0)
+ QUIT
+"RTN","XOBVLL",10,0)
+ ;
+"RTN","XOBVLL",11,0)
+ ; ***deprecated*** tag ; Use UCX^XOBVTCP instead
+"RTN","XOBVLL",12,0)
+UCX ; -- VMS TCPIP (UCX) multi-thread entry point
+"RTN","XOBVLL",13,0)
+ ; -- Called from VistALink .com files
+"RTN","XOBVLL",14,0)
+ GOTO UCX^XOBVTCP
+"RTN","XOBVLL",15,0)
+ ;
+"RTN","XOBVLL",16,0)
+SPAWN ; -- spawned process
+"RTN","XOBVLL",17,0)
+ NEW X,XOBSTOP,XOBPORT,XOBHDLR,XOBLASTR,XOBCMREF
+"RTN","XOBVLL",18,0)
+ ;
+"RTN","XOBVLL",19,0)
+ SET XOBSTOP=0
+"RTN","XOBVLL",20,0)
+ SET XOBPORT=IO
+"RTN","XOBVLL",21,0)
+ SET U="^"
+"RTN","XOBVLL",22,0)
+ ;
+"RTN","XOBVLL",23,0)
+ ; -- initialize timestamp for last time request made (used for debugging)
+"RTN","XOBVLL",24,0)
+ SET XOBLASTR=0
+"RTN","XOBVLL",25,0)
+ ;
+"RTN","XOBVLL",26,0)
+ ; -- set error trap
+"RTN","XOBVLL",27,0)
+ ;Set up the error trap
+"RTN","XOBVLL",28,0)
+ SET $ETRAP="DO ^%ZTER HALT"
+"RTN","XOBVLL",29,0)
+ ;
+"RTN","XOBVLL",30,0)
+ ; -- attempt to share the license; must have TCP port open first
+"RTN","XOBVLL",31,0)
+ USE XOBPORT IF $TEXT(SHARELIC^%ZOSV)'="" DO SHARELIC^%ZOSV(1)
+"RTN","XOBVLL",32,0)
+ ;
+"RTN","XOBVLL",33,0)
+ ; -- start RUM for VistALink Handler
+"RTN","XOBVLL",34,0)
+ DO LOGRSRC^%ZOSV("$VISTALINK HANDLER$",2,1)
+"RTN","XOBVLL",35,0)
+ ;
+"RTN","XOBVLL",36,0)
+ ; -- cache/initialize startup request handlers 
+"RTN","XOBVLL",37,0)
+ SET X=$$CACHE^XOBVRH(.XOBHDLR)
+"RTN","XOBVLL",38,0)
+ IF 'X DO RMERR^XOBVRM(184001,$PIECE(X,U,2)) QUIT
+"RTN","XOBVLL",39,0)
+ ;
+"RTN","XOBVLL",40,0)
+ ; -- initialize tcp processing variables
+"RTN","XOBVLL",41,0)
+ DO INIT^XOBVSKT
+"RTN","XOBVLL",42,0)
+ ;
+"RTN","XOBVLL",43,0)
+ ; -- change job name if possible
+"RTN","XOBVLL",44,0)
+ DO SETNM^%ZOSV("VLinkC_"_$J) ;
+"RTN","XOBVLL",45,0)
+ ; -- setup for Connection Mgr: get ref; kill data @ ref
+"RTN","XOBVLL",46,0)
+ SET XOBCMREF=$$GETREF^XOBUZAP1()
+"RTN","XOBVLL",47,0)
+ DO KILL^XOBUZAP0(XOBCMREF)
+"RTN","XOBVLL",48,0)
+ ;
+"RTN","XOBVLL",49,0)
+ ; -- loop until told to stop
+"RTN","XOBVLL",50,0)
+ FOR  DO NXTCALL QUIT:XOBSTOP
+"RTN","XOBVLL",51,0)
+ ;
+"RTN","XOBVLL",52,0)
+ ; -- kill ^XTMP ref node
+"RTN","XOBVLL",53,0)
+ DO KILL^XOBUZAP0(XOBCMREF)
+"RTN","XOBVLL",54,0)
+ ;
+"RTN","XOBVLL",55,0)
+ ; -- final/clean tcp processing variables
+"RTN","XOBVLL",56,0)
+ DO FINAL^XOBVSKT
+"RTN","XOBVLL",57,0)
+ ;
+"RTN","XOBVLL",58,0)
+ ; -- stop RUM for VistALink Handler
+"RTN","XOBVLL",59,0)
+ DO LOGRSRC^%ZOSV("$VISTALINK HANDLER$",2,2)
+"RTN","XOBVLL",60,0)
+ ;
+"RTN","XOBVLL",61,0)
+ QUIT
+"RTN","XOBVLL",62,0)
+ ;
+"RTN","XOBVLL",63,0)
+NXTCALL ; -- do next call
+"RTN","XOBVLL",64,0)
+ NEW X,XOBROOT,XOBREAD,XOBTO,XOBFIRST,XOBOK,XOBRL,XOBDATA
+"RTN","XOBVLL",65,0)
+ ;
+"RTN","XOBVLL",66,0)
+ ; -- set up error trap
+"RTN","XOBVLL",67,0)
+ NEW $ESTACK SET $ETRAP="DO SYSERR^XOBVLL"
+"RTN","XOBVLL",68,0)
+ ;
+"RTN","XOBVLL",69,0)
+ ; -- setup environment variables
+"RTN","XOBVLL",70,0)
+ NEW DIQUIET SET DIQUIET=1
+"RTN","XOBVLL",71,0)
+ SET U="^",DTIME=$GET(DTIME,900),DT=$$DT^XLFDT()
+"RTN","XOBVLL",72,0)
+ ;
+"RTN","XOBVLL",73,0)
+ ; -- set ^XTMP for Connection Mgr usage if DUZ not 1st piece
+"RTN","XOBVLL",74,0)
+ IF '$$GETDUZ^XOBUZAP0(XOBCMREF) DO
+"RTN","XOBVLL",75,0)
+ . NEW XOBDUZ,XOBIP
+"RTN","XOBVLL",76,0)
+ . SET XOBDUZ=$GET(XOBSYS("DUZ"),$GET(DUZ))
+"RTN","XOBVLL",77,0)
+ . SET XOBIP=$GET(IO("IP"))
+"RTN","XOBVLL",78,0)
+ . DO SETVI^XOBUZAP0(XOBCMREF,XOBDUZ,XOBIP,$$GETDESC^XOBUZAP1())
+"RTN","XOBVLL",79,0)
+ ;
+"RTN","XOBVLL",80,0)
+ ; -- initialize 'current' request handler to empty string
+"RTN","XOBVLL",81,0)
+ SET XOBHDLR=""
+"RTN","XOBVLL",82,0)
+ ;
+"RTN","XOBVLL",83,0)
+ ; -- # of chars to get on first read / read 11 for Broker initial read
+"RTN","XOBVLL",84,0)
+ SET XOBREAD=11
+"RTN","XOBVLL",85,0)
+ ;
+"RTN","XOBVLL",86,0)
+ ; -- get J2SE heartbeat rate for timeout plus network latency factor
+"RTN","XOBVLL",87,0)
+ SET XOBTO=$$GETRATE^XOBVLIB()+$$GETDELTA^XOBVLIB()
+"RTN","XOBVLL",88,0)
+ ;
+"RTN","XOBVLL",89,0)
+ ; -- get J2EE timeout value for app serv environment
+"RTN","XOBVLL",90,0)
+ IF $GET(XOBSYS("ENV"))="j2ee" SET XOBTO=$$GETASTO^XOBVLIB()
+"RTN","XOBVLL",91,0)
+ ;
+"RTN","XOBVLL",92,0)
+ ; -- set first read flag
+"RTN","XOBVLL",93,0)
+ SET XOBFIRST=1
+"RTN","XOBVLL",94,0)
+ ;
+"RTN","XOBVLL",95,0)
+ ; -- setup intake global
+"RTN","XOBVLL",96,0)
+ SET XOBROOT=$NAME(^TMP("XOBVLL",$JOB))
+"RTN","XOBVLL",97,0)
+ KILL @XOBROOT
+"RTN","XOBVLL",98,0)
+ ;
+"RTN","XOBVLL",99,0)
+ ; -- read from socket port
+"RTN","XOBVLL",100,0)
+ ; debug code -- leave in
+"RTN","XOBVLL",101,0)
+ ; D T0^%ZOSV
+"RTN","XOBVLL",102,0)
+ ;
+"RTN","XOBVLL",103,0)
+ USE XOBPORT
+"RTN","XOBVLL",104,0)
+ SET XOBOK=$$READ^XOBVSKT(XOBROOT,.XOBREAD,.XOBTO,.XOBFIRST,.XOBSTOP,.XOBDATA,.XOBHDLR)
+"RTN","XOBVLL",105,0)
+ ;
+"RTN","XOBVLL",106,0)
+ ; debug code -- leave in
+"RTN","XOBVLL",107,0)
+ ; D T1^%ZOSV
+"RTN","XOBVLL",108,0)
+ ; D ZHDIF^%ZOSV
+"RTN","XOBVLL",109,0)
+ ; S ^SAM=$I(^SAM)
+"RTN","XOBVLL",110,0)
+ ; S ^SAM(^SAM,"READTIME")=%ZH2
+"RTN","XOBVLL",111,0)
+ ;
+"RTN","XOBVLL",112,0)
+ ; -- timed out ; cleanup user and exit
+"RTN","XOBVLL",113,0)
+ IF 'XOBOK!(XOBSTOP) DO  GOTO NXTCALLQ
+"RTN","XOBVLL",114,0)
+ . IF $GET(DUZ) DO CLEAN^XOBSCAV1
+"RTN","XOBVLL",115,0)
+ . SET XOBSTOP=1
+"RTN","XOBVLL",116,0)
+ ;
+"RTN","XOBVLL",117,0)
+ ; -- need null device
+"RTN","XOBVLL",118,0)
+ IF '$DATA(XOBNULL) DO ERROR(181002,$$EZBLD^DIALOG(181002),XOBPORT) SET XOBSTOP=1 GOTO NXTCALLQ
+"RTN","XOBVLL",119,0)
+ ;
+"RTN","XOBVLL",120,0)
+ ; -- call request manager                   
+"RTN","XOBVLL",121,0)
+ ; debug code -- leave in
+"RTN","XOBVLL",122,0)
+ ; D T0^%ZOSV
+"RTN","XOBVLL",123,0)
+ ; S ^SAM(^SAM,"%ZH0")=%ZH0
+"RTN","XOBVLL",124,0)
+ ; zshow "V":^SAM(^SAM,"VARS")
+"RTN","XOBVLL",125,0)
+ SET XOBOK=$$EN^XOBVRM(XOBROOT,.XOBDATA,.XOBHDLR)
+"RTN","XOBVLL",126,0)
+ ;D T1^%ZOSV
+"RTN","XOBVLL",127,0)
+ ;S %ZH0=^SAM(^SAM,"%ZH0")
+"RTN","XOBVLL",128,0)
+ ;D ZHDIF^%ZOSV
+"RTN","XOBVLL",129,0)
+ ;S ^SAM(^SAM,"EXECUTE")=%ZH2
+"RTN","XOBVLL",130,0)
+ ; -- timestamp last time request made
+"RTN","XOBVLL",131,0)
+ SET XOBLASTR=$$NOW^XLFDT()
+"RTN","XOBVLL",132,0)
+ ; -- cleanup intake global
+"RTN","XOBVLL",133,0)
+ KILL @XOBROOT
+"RTN","XOBVLL",134,0)
+ ;
+"RTN","XOBVLL",135,0)
+NXTCALLQ ; -- exit
+"RTN","XOBVLL",136,0)
+ QUIT
+"RTN","XOBVLL",137,0)
+ ;
+"RTN","XOBVLL",138,0)
+ ; ----------------------------------------------------------------------------------
+"RTN","XOBVLL",139,0)
+ ;                                System Error Handler
+"RTN","XOBVLL",140,0)
+ ; ----------------------------------------------------------------------------------
+"RTN","XOBVLL",141,0)
+SYSERR ; -- send system error message
+"RTN","XOBVLL",142,0)
+ ; -- If we get an error in the error handler just Halt
+"RTN","XOBVLL",143,0)
+ SET $ETRAP="D ^%ZTER HALT"
+"RTN","XOBVLL",144,0)
+ ;
+"RTN","XOBVLL",145,0)
+ DO ERROR(181001,$$EZBLD^DIALOG(181001,$$EC^%ZOSV),XOBPORT)      ; -- Get the error code
+"RTN","XOBVLL",146,0)
+ QUIT
+"RTN","XOBVLL",147,0)
+ ;
+"RTN","XOBVLL",148,0)
+ERROR(XOBEC,XOBMSG,XOBPORT) ; -- send error message
+"RTN","XOBVLL",149,0)
+ NEW XOBDAT
+"RTN","XOBVLL",150,0)
+ ;
+"RTN","XOBVLL",151,0)
+ ; -- If we get an error in the error handler just Halt
+"RTN","XOBVLL",152,0)
+ SET $ETRAP="D ^%ZTER HALT"
+"RTN","XOBVLL",153,0)
+ ;
+"RTN","XOBVLL",154,0)
+ ; -- set up error info
+"RTN","XOBVLL",155,0)
+ SET XOBDAT("MESSAGE TYPE")=3
+"RTN","XOBVLL",156,0)
+ SET XOBDAT("ERRORS",1,"CODE")=XOBEC
+"RTN","XOBVLL",157,0)
+ SET XOBDAT("ERRORS",1,"ERROR TYPE")="system"
+"RTN","XOBVLL",158,0)
+ SET XOBDAT("ERRORS",1,"FAULT STRING")="System Error"
+"RTN","XOBVLL",159,0)
+ SET XOBDAT("ERRORS",1,"CDATA")=1
+"RTN","XOBVLL",160,0)
+ SET XOBDAT("ERRORS",1,"MESSAGE",1)=XOBMSG
+"RTN","XOBVLL",161,0)
+ ;
+"RTN","XOBVLL",162,0)
+ ; -- if serious error, save error info, logout, and halt
+"RTN","XOBVLL",163,0)
+ IF XOBMSG["<READ>"!(XOBMSG["<WRITE>")!(XOBMSG["<SYSTEM>")!(XOBMSG["READERR")!(XOBMSG["WRITERR")!(XOBMSG["SYSERR") DO  HALT
+"RTN","XOBVLL",164,0)
+ . DO ^%ZTER
+"RTN","XOBVLL",165,0)
+ . IF $GET(DUZ) DO CLEAN^XOBSCAV1
+"RTN","XOBVLL",166,0)
+ ;
+"RTN","XOBVLL",167,0)
+ ; -- send error back to client
+"RTN","XOBVLL",168,0)
+ USE XOBPORT
+"RTN","XOBVLL",169,0)
+ DO ERROR^XOBVLIB(.XOBDAT)
+"RTN","XOBVLL",170,0)
+ ;
+"RTN","XOBVLL",171,0)
+ ; -- just quit if no slots are available or logins are disabled
+"RTN","XOBVLL",172,0)
+ IF (XOBEC=181003)!(XOBEC=181004) QUIT
+"RTN","XOBVLL",173,0)
+ ;
+"RTN","XOBVLL",174,0)
+ ; -- need to make sure any locks are released since code aborted ungracefully
+"RTN","XOBVLL",175,0)
+ LOCK
+"RTN","XOBVLL",176,0)
+ ;
+"RTN","XOBVLL",177,0)
+ ; -- Save off the error
+"RTN","XOBVLL",178,0)
+ DO ^%ZTER
+"RTN","XOBVLL",179,0)
+ ;
+"RTN","XOBVLL",180,0)
+ ; -- go back to listening
+"RTN","XOBVLL",181,0)
+ SET $ETRAP="Q:($ESTACK&'$QUIT)  Q:$ESTACK -9 S $ECODE="""" DO KILL^XOBVLL G NXTCALLQ^XOBVLL",$ECODE=",U99,"
+"RTN","XOBVLL",182,0)
+ QUIT
+"RTN","XOBVLL",183,0)
+ ;
+"RTN","XOBVLL",184,0)
+KILL ; -- new VistALink variables and then do big KILL
+"RTN","XOBVLL",185,0)
+ NEW XOBPORT,XOBSTOP,XOBNULL,XOBOS,XOBSYS,XOBHDLR,XOBOK,XOBLASTR,XOBCMREF
+"RTN","XOBVLL",186,0)
+ DO KILL^XUSCLEAN
+"RTN","XOBVLL",187,0)
+ QUIT
+"RTN","XOBVLL",188,0)
+ ;
+"RTN","XOBVRPC")
+0^8^B56495819
+"RTN","XOBVRPC",1,0)
+XOBVRPC ;mjk/alb - VistaLink RPC Server Listener Code;2017-09-08  3:47 PM; 07/27/2002  13:00
+"RTN","XOBVRPC",2,0)
+ ;;1.6;VistALink;**11310000**;May 08, 2009;Build 4
+"RTN","XOBVRPC",3,0)
+ ; **11310000** by OSE/SMH - TCP Optimization
+"RTN","XOBVRPC",4,0)
+ QUIT
+"RTN","XOBVRPC",5,0)
+ ;
+"RTN","XOBVRPC",6,0)
+ ; ------------------------------------------------------------------------
+"RTN","XOBVRPC",7,0)
+ ;                   RPC Server: Message Request Handler         
+"RTN","XOBVRPC",8,0)
+ ; ------------------------------------------------------------------------
+"RTN","XOBVRPC",9,0)
+ ; 
+"RTN","XOBVRPC",10,0)
+EN(XOBDATA) ; -- handle parsed messages request
+"RTN","XOBVRPC",11,0)
+ NEW DX,DY,RPC0,RPCNAME,RPCIEN,TAG,ROU,METHSIG,XOBERR,XOBR,XOBSEC,XOBWRAP,XOBPTYPE,XRTN,XOBRA,XOBVER
+"RTN","XOBVRPC",12,0)
+ ;
+"RTN","XOBVRPC",13,0)
+ IF $GET(XOBDATA("XOB RPC","RPC NAME"))="" DO  GOTO ENQ
+"RTN","XOBVRPC",14,0)
+ . DO ERROR(182001,"[No RPC]","")
+"RTN","XOBVRPC",15,0)
+ ;
+"RTN","XOBVRPC",16,0)
+ SET RPCNAME=XOBDATA("XOB RPC","RPC NAME")
+"RTN","XOBVRPC",17,0)
+ ;
+"RTN","XOBVRPC",18,0)
+ IF $DATA(^XWB(8994,"B",RPCNAME))=0 DO  GOTO ENQ
+"RTN","XOBVRPC",19,0)
+ . DO ERROR(182002,RPCNAME,RPCNAME)
+"RTN","XOBVRPC",20,0)
+ ;
+"RTN","XOBVRPC",21,0)
+ IF $DATA(^XWB(8994,"B",RPCNAME))=10 SET RPCIEN=+$ORDER(^XWB(8994,"B",RPCNAME,""))
+"RTN","XOBVRPC",22,0)
+ ;
+"RTN","XOBVRPC",23,0)
+ ; -- get zero node
+"RTN","XOBVRPC",24,0)
+ SET RPC0=$GET(^XWB(8994,RPCIEN,0))
+"RTN","XOBVRPC",25,0)
+ ;
+"RTN","XOBVRPC",26,0)
+ ; -- make sure there is data on node
+"RTN","XOBVRPC",27,0)
+ IF RPC0="" DO  GOTO ENQ
+"RTN","XOBVRPC",28,0)
+ . DO ERROR(182003,RPCNAME,RPCNAME)
+"RTN","XOBVRPC",29,0)
+ ;
+"RTN","XOBVRPC",30,0)
+ ; -- make sure x-ref is not corrupt and found the wrong entry
+"RTN","XOBVRPC",31,0)
+ IF RPCNAME'=$PIECE(RPC0,U) DO  GOTO ENQ
+"RTN","XOBVRPC",32,0)
+ . NEW PARAMS SET PARAMS(1)=RPCNAME,PARAMS(2)=$PIECE(RPC0,U)
+"RTN","XOBVRPC",33,0)
+ . DO ERROR(182008,RPCNAME,.PARAMS)
+"RTN","XOBVRPC",34,0)
+ ;
+"RTN","XOBVRPC",35,0)
+ ; -- check inactive flag
+"RTN","XOBVRPC",36,0)
+ IF $PIECE(RPC0,U,6)=1!($PIECE(RPC0,U,6)=2) DO  GOTO ENQ
+"RTN","XOBVRPC",37,0)
+ . DO ERROR(182004,RPCNAME,RPCNAME)
+"RTN","XOBVRPC",38,0)
+ ;
+"RTN","XOBVRPC",39,0)
+ ; -- if not already performed, check version, environment and set re-auth check flag
+"RTN","XOBVRPC",40,0)
+ SET XOBERR=$SELECT($DATA(XOBSYS("RPC REAUTH")):0,1:$$VER())
+"RTN","XOBVRPC",41,0)
+ IF XOBERR DO  GOTO ENQ
+"RTN","XOBVRPC",42,0)
+ . DO ERROR(XOBERR,RPCNAME)
+"RTN","XOBVRPC",43,0)
+ ;
+"RTN","XOBVRPC",44,0)
+ ; -- reauthentication checks
+"RTN","XOBVRPC",45,0)
+ SET XOBERR=0
+"RTN","XOBVRPC",46,0)
+ IF +$GET(XOBSYS("RPC REAUTH")) DO  GOTO:XOBERR ENQ
+"RTN","XOBVRPC",47,0)
+ . ;
+"RTN","XOBVRPC",48,0)
+ . ; -- reauthenticate user based on type (i.e. DUZ,AV,VPID,CCOW,APPPROXY)
+"RTN","XOBVRPC",49,0)
+ . SET XOBERR=$$SETUPDUZ^XOBSRA()
+"RTN","XOBVRPC",50,0)
+ . IF XOBERR DO ERROR(XOBERR,RPCNAME) QUIT
+"RTN","XOBVRPC",51,0)
+ . ;
+"RTN","XOBVRPC",52,0)
+ . ; -- if application proxy user, check if allowed to run RPC
+"RTN","XOBVRPC",53,0)
+ . IF $$UP^XLFSTR(XOBDATA("XOB RPC","SECURITY","TYPE"))="APPPROXY",'$$RPC^XUSAP($GET(RPCIEN)) DO  QUIT
+"RTN","XOBVRPC",54,0)
+ .. SET XOBERR=182010
+"RTN","XOBVRPC",55,0)
+ .. DO ERROR(XOBERR,RPCNAME,RPCNAME)
+"RTN","XOBVRPC",56,0)
+ ;
+"RTN","XOBVRPC",57,0)
+ ; -- set context
+"RTN","XOBVRPC",58,0)
+ SET XOBSEC=$$CRCONTXT^XOBSCAV($GET(XOBDATA("XOB RPC","RPC CONTEXT")))
+"RTN","XOBVRPC",59,0)
+ IF '+XOBSEC DO  GOTO ENQ
+"RTN","XOBVRPC",60,0)
+ . DO ERROR(182005,RPCNAME,XOBSEC)
+"RTN","XOBVRPC",61,0)
+ ;
+"RTN","XOBVRPC",62,0)
+ ; -- check if appropriate context created
+"RTN","XOBVRPC",63,0)
+ SET XOBSEC=$$CHKCTXT^XOBSCAV(RPCNAME)
+"RTN","XOBVRPC",64,0)
+ IF '+XOBSEC DO  GOTO ENQ
+"RTN","XOBVRPC",65,0)
+ . DO ERROR(182006,RPCNAME,XOBSEC)
+"RTN","XOBVRPC",66,0)
+ ;
+"RTN","XOBVRPC",67,0)
+ ; -- setup timeout info
+"RTN","XOBVRPC",68,0)
+ SET XOBDATA("XOB RPC","TIMED OUT")=0
+"RTN","XOBVRPC",69,0)
+ SET XOBDATA("XOB RPC","START")=$HOROLOG
+"RTN","XOBVRPC",70,0)
+ ;
+"RTN","XOBVRPC",71,0)
+ ; -- setup info needed for RPC execution
+"RTN","XOBVRPC",72,0)
+ SET TAG=$PIECE(RPC0,U,2)
+"RTN","XOBVRPC",73,0)
+ SET ROU=$PIECE(RPC0,U,3)
+"RTN","XOBVRPC",74,0)
+ SET XOBPTYPE=$PIECE(RPC0,U,4)
+"RTN","XOBVRPC",75,0)
+ SET XOBWRAP=$PIECE(RPC0,U,8)
+"RTN","XOBVRPC",76,0)
+ SET XOBVER=$$GETVER^XOBVRPCX()
+"RTN","XOBVRPC",77,0)
+ ;
+"RTN","XOBVRPC",78,0)
+ ; -- build method signature
+"RTN","XOBVRPC",79,0)
+ SET METHSIG=TAG_"^"_ROU_"(.XOBR"_$GET(XOBDATA("XOB RPC","PARAMS"))_")"
+"RTN","XOBVRPC",80,0)
+ ;
+"RTN","XOBVRPC",81,0)
+ ; -- start RTL
+"RTN","XOBVRPC",82,0)
+ DO:$DATA(XRTL) T0^%ZOSV
+"RTN","XOBVRPC",83,0)
+ ;
+"RTN","XOBVRPC",84,0)
+ ; -- use null device in case of writing during RPC execution
+"RTN","XOBVRPC",85,0)
+ USE XOBNULL
+"RTN","XOBVRPC",86,0)
+ ;
+"RTN","XOBVRPC",87,0)
+ ; -- start RUM for RPC Name
+"RTN","XOBVRPC",88,0)
+ DO LOGRSRC^%ZOSV(RPCNAME,2,1)
+"RTN","XOBVRPC",89,0)
+ ;
+"RTN","XOBVRPC",90,0)
+ ; -- execute RPC
+"RTN","XOBVRPC",91,0)
+ DO CALLRPC(.XOBPTYPE,.XOBWRAP,.XOBVER,METHSIG)
+"RTN","XOBVRPC",92,0)
+ ;
+"RTN","XOBVRPC",93,0)
+ ; -- re-start RUM for VistaLink Handler
+"RTN","XOBVRPC",94,0)
+ DO LOGRSRC^%ZOSV("$VISTALINK HANDLER$",2,1)
+"RTN","XOBVRPC",95,0)
+ ;
+"RTN","XOBVRPC",96,0)
+ ; -- stop RTL
+"RTN","XOBVRPC",97,0)
+ SET:$DATA(XRT0) XRTN=RPCNAME DO:$DATA(XRT0) T1^%ZOSV
+"RTN","XOBVRPC",98,0)
+ ;
+"RTN","XOBVRPC",99,0)
+ ; -- empty write buffer of null device
+"RTN","XOBVRPC",100,0)
+ USE XOBNULL SET DX=0,DY=0 XECUTE ^%ZOSF("XY")
+"RTN","XOBVRPC",101,0)
+ ;
+"RTN","XOBVRPC",102,0)
+ ; -- reset to use tcp port device to send results
+"RTN","XOBVRPC",103,0)
+ USE XOBPORT
+"RTN","XOBVRPC",104,0)
+ ;
+"RTN","XOBVRPC",105,0)
+ ; -- check for RPC processing timeout
+"RTN","XOBVRPC",106,0)
+ IF $$TOCHK^XOBVLIB() DO  GOTO ENQ
+"RTN","XOBVRPC",107,0)
+ . NEW PARAMS SET PARAMS(1)=RPCNAME,PARAMS(2)=$$GETTO^XOBVLIB()
+"RTN","XOBVRPC",108,0)
+ . DO ERROR(182007,RPCNAME,.PARAMS)
+"RTN","XOBVRPC",109,0)
+ ;
+"RTN","XOBVRPC",110,0)
+ ; -- send results
+"RTN","XOBVRPC",111,0)
+ DO SEND(.XOBR)
+"RTN","XOBVRPC",112,0)
+ ;
+"RTN","XOBVRPC",113,0)
+ENQ ; -- end message handler
+"RTN","XOBVRPC",114,0)
+ DO CLEAN
+"RTN","XOBVRPC",115,0)
+ QUIT
+"RTN","XOBVRPC",116,0)
+ ;
+"RTN","XOBVRPC",117,0)
+CALLRPC(XWBPTYPE,XWBWRAP,XWBAPVER,METHSIG) ;-- execute RPC (use Broker RPC return type & wrap flag if there)
+"RTN","XOBVRPC",118,0)
+ DO @METHSIG
+"RTN","XOBVRPC",119,0)
+ QUIT
+"RTN","XOBVRPC",120,0)
+ ;
+"RTN","XOBVRPC",121,0)
+CLEAN ; -- clean up message handler environment
+"RTN","XOBVRPC",122,0)
+ NEW POS
+"RTN","XOBVRPC",123,0)
+ ; -- kill parameters
+"RTN","XOBVRPC",124,0)
+ SET POS=0
+"RTN","XOBVRPC",125,0)
+ FOR  SET POS=$ORDER(XOBDATA("XOB RPC","PARAMS",POS)) QUIT:'POS  KILL @XOBDATA("XOB RPC","PARAMS",POS)
+"RTN","XOBVRPC",126,0)
+ QUIT
+"RTN","XOBVRPC",127,0)
+ ;
+"RTN","XOBVRPC",128,0)
+SEND(XOBR) ; -- stream rpc data to client
+"RTN","XOBVRPC",129,0)
+ NEW XOBFMT,XOBFILL
+"RTN","XOBVRPC",130,0)
+ ;
+"RTN","XOBVRPC",131,0)
+ ; Send buffer
+"RTN","XOBVRPC",132,0)
+ NEW XOBSENDSTR SET XOBSENDSTR=""
+"RTN","XOBVRPC",133,0)
+ ;
+"RTN","XOBVRPC",134,0)
+ SET XOBFMT=$$GETFMT()
+"RTN","XOBVRPC",135,0)
+ ; -- prepare socket for writing
+"RTN","XOBVRPC",136,0)
+ DO PRE^XOBVSKT
+"RTN","XOBVRPC",137,0)
+ ; -- initialize XML headers
+"RTN","XOBVRPC",138,0)
+ DO WRITE^XOBVSKT($$VLHDR^XOBVLIB(1))
+"RTN","XOBVRPC",139,0)
+ ; -- start response
+"RTN","XOBVRPC",140,0)
+ DO WRITE^XOBVSKT("<Response type="""_XOBFMT_""" ><![CDATA[")
+"RTN","XOBVRPC",141,0)
+ ; -- results
+"RTN","XOBVRPC",142,0)
+ DO PROCESS
+"RTN","XOBVRPC",143,0)
+ ; -- finalize
+"RTN","XOBVRPC",144,0)
+ DO WRITE^XOBVSKT("]]></Response>"_$$ENVFTR^XOBVLIB())
+"RTN","XOBVRPC",145,0)
+ ; -- send eot and flush buffer
+"RTN","XOBVRPC",146,0)
+ DO POST^XOBVSKT
+"RTN","XOBVRPC",147,0)
+ ;
+"RTN","XOBVRPC",148,0)
+ QUIT
+"RTN","XOBVRPC",149,0)
+ ;
+"RTN","XOBVRPC",150,0)
+DOCTYPE ;
+"RTN","XOBVRPC",151,0)
+ DO WRITE^XOBVSKT("<!DOCTYPE vistalink [<!ELEMENT vistalink (results) ><!ELEMENT results (#PCDATA)><!ATTLIST vistalink type CDATA ""Gov.VA.Med.RPC.Response"" ><!ATTLIST results type (array|string) >]>")
+"RTN","XOBVRPC",152,0)
+ QUIT
+"RTN","XOBVRPC",153,0)
+ ;
+"RTN","XOBVRPC",154,0)
+GETFMT() ; -- determine response format type
+"RTN","XOBVRPC",155,0)
+ IF XOBPTYPE=1!(XOBPTYPE=5)!(XOBPTYPE=6) QUIT "string"
+"RTN","XOBVRPC",156,0)
+ IF XOBPTYPE=2 QUIT "array"
+"RTN","XOBVRPC",157,0)
+ ;
+"RTN","XOBVRPC",158,0)
+ QUIT $SELECT(XOBWRAP:"array",1:"string")
+"RTN","XOBVRPC",159,0)
+ ;
+"RTN","XOBVRPC",160,0)
+PROCESS ; -- send the real results
+"RTN","XOBVRPC",161,0)
+ NEW I,T,D
+"RTN","XOBVRPC",162,0)
+ ; -- single value
+"RTN","XOBVRPC",163,0)
+ IF XOBPTYPE=1 SET XOBR=$GET(XOBR) DO WRITE^XOBVSKT(XOBR) QUIT
+"RTN","XOBVRPC",164,0)
+ ; -- table delimited by CR+LF
+"RTN","XOBVRPC",165,0)
+ IF XOBPTYPE=2 DO  QUIT
+"RTN","XOBVRPC",166,0)
+ . SET I="" FOR  SET I=$ORDER(XOBR(I)) QUIT:I=""  DO WRITE^XOBVSKT(XOBR(I)),WRITE^XOBVSKT($CHAR(10))
+"RTN","XOBVRPC",167,0)
+ ; -- word processing
+"RTN","XOBVRPC",168,0)
+ IF XOBPTYPE=3 DO  QUIT
+"RTN","XOBVRPC",169,0)
+ . SET I="" FOR  SET I=$ORDER(XOBR(I)) QUIT:I=""  DO WRITE^XOBVSKT(XOBR(I)) DO:XOBWRAP WRITE^XOBVSKT($CHAR(10))
+"RTN","XOBVRPC",170,0)
+ ; -- global array
+"RTN","XOBVRPC",171,0)
+ IF XOBPTYPE=4 DO  QUIT
+"RTN","XOBVRPC",172,0)
+ . IF $EXTRACT($GET(XOBR))'="^" QUIT
+"RTN","XOBVRPC",173,0)
+ . SET I=$GET(XOBR) QUIT:I=""  SET T=$EXTRACT(I,1,$LENGTH(I)-1)
+"RTN","XOBVRPC",174,0)
+ . ;Only send root node if non-null.
+"RTN","XOBVRPC",175,0)
+ . IF $DATA(@I)>10 SET D=@I IF $LENGTH(D) DO WRITE^XOBVSKT(D),WRITE^XOBVSKT($CHAR(10)):XOBWRAP&(D'=$CHAR(10))
+"RTN","XOBVRPC",176,0)
+ . FOR  SET I=$QUERY(@I) QUIT:I=""!(I'[T)  SET D=@I DO WRITE^XOBVSKT(D),WRITE^XOBVSKT($CHAR(10)):XOBWRAP&(D'=$CHAR(10))
+"RTN","XOBVRPC",177,0)
+ . IF $DATA(@XOBR) KILL @XOBR
+"RTN","XOBVRPC",178,0)
+ ; -- global instance
+"RTN","XOBVRPC",179,0)
+ IF XOBPTYPE=5 DO  QUIT
+"RTN","XOBVRPC",180,0)
+ . IF $EXTRACT($GET(XOBR))'="^" QUIT
+"RTN","XOBVRPC",181,0)
+ . SET XOBR=$GET(@XOBR) DO WRITE^XOBVSKT(XOBR)
+"RTN","XOBVRPC",182,0)
+ ; -- variable length records only good up to 255 char)
+"RTN","XOBVRPC",183,0)
+ IF XOBPTYPE=6 DO
+"RTN","XOBVRPC",184,0)
+ . SET I="" FOR  SET I=$ORDER(XOBR(I)) QUIT:I=""  DO WRITE^XOBVSKT($CHAR($LENGTH(XOBR(I)))),WRITE^XOBVSKT(XOBR(I))
+"RTN","XOBVRPC",185,0)
+ QUIT
+"RTN","XOBVRPC",186,0)
+ ;
+"RTN","XOBVRPC",187,0)
+ERROR(CODE,RPCNAME,PARAMS) ; -- send rpc application error
+"RTN","XOBVRPC",188,0)
+ NEW XOBI,XOBDAT
+"RTN","XOBVRPC",189,0)
+ ; -- if parameters are passed as in CODE (where CODE = code^param1^param2^...)
+"RTN","XOBVRPC",190,0)
+ ; -- parse CODE and put parameters into PARAMS array.
+"RTN","XOBVRPC",191,0)
+ IF CODE[U,$DATA(PARAMS)=0 DO
+"RTN","XOBVRPC",192,0)
+ . KILL PARAMS
+"RTN","XOBVRPC",193,0)
+ . FOR XOBI=2:1:$LENGTH(XOBERR,U) SET PARAMS(XOBI-1)=$PIECE(XOBERR,U,XOBI)
+"RTN","XOBVRPC",194,0)
+ . SET CODE=+CODE
+"RTN","XOBVRPC",195,0)
+ ;
+"RTN","XOBVRPC",196,0)
+ SET XOBDAT("MESSAGE TYPE")=2
+"RTN","XOBVRPC",197,0)
+ SET XOBDAT("ERRORS",1,"FAULT STRING")="Internal Application Error"
+"RTN","XOBVRPC",198,0)
+ SET XOBDAT("ERRORS",1,"FAULT ACTOR")=RPCNAME
+"RTN","XOBVRPC",199,0)
+ SET XOBDAT("ERRORS",1,"CODE")=CODE
+"RTN","XOBVRPC",200,0)
+ SET XOBDAT("ERRORS",1,"ERROR TYPE")=RPCNAME
+"RTN","XOBVRPC",201,0)
+ SET XOBDAT("ERRORS",1,"CDATA")=0
+"RTN","XOBVRPC",202,0)
+ SET XOBDAT("ERRORS",1,"MESSAGE",1)=$$EZBLD^DIALOG(CODE,.PARAMS)
+"RTN","XOBVRPC",203,0)
+ DO ERROR^XOBVLIB(.XOBDAT)
+"RTN","XOBVRPC",204,0)
+ ;
+"RTN","XOBVRPC",205,0)
+ ; -- save info in error system
+"RTN","XOBVRPC",206,0)
+ ;DO ^%ZTER
+"RTN","XOBVRPC",207,0)
+ QUIT
+"RTN","XOBVRPC",208,0)
+ ;
+"RTN","XOBVRPC",209,0)
+VER() ; -- check version and if re-authentication check is needed
+"RTN","XOBVRPC",210,0)
+ ; -- IMPORTANT: This tag needs updating for version numbers for each target release.
+"RTN","XOBVRPC",211,0)
+ ; -- This call needs only be called once per connection.
+"RTN","XOBVRPC",212,0)
+ ; 
+"RTN","XOBVRPC",213,0)
+ NEW XOBERR,CV,SV,ENV
+"RTN","XOBVRPC",214,0)
+ ;
+"RTN","XOBVRPC",215,0)
+ KILL XOBSYS("RPC REAUTH")
+"RTN","XOBVRPC",216,0)
+ ;
+"RTN","XOBVRPC",217,0)
+ SET XOBERR=0
+"RTN","XOBVRPC",218,0)
+ ; -- default re-auh flag to true
+"RTN","XOBVRPC",219,0)
+ SET XOBRA=1
+"RTN","XOBVRPC",220,0)
+ ; -- client version
+"RTN","XOBVRPC",221,0)
+ SET CV=XOBDATA("XOB RPC","RPC HANDLER VERSION")
+"RTN","XOBVRPC",222,0)
+ ; -- current server version
+"RTN","XOBVRPC",223,0)
+ SET SV="1.6"
+"RTN","XOBVRPC",224,0)
+ ; -- client environment
+"RTN","XOBVRPC",225,0)
+ SET ENV=XOBSYS("ENV")
+"RTN","XOBVRPC",226,0)
+ ;
+"RTN","XOBVRPC",227,0)
+ ; -- if client version is not supported then return error
+"RTN","XOBVRPC",228,0)
+ IF ("^1.0^1.5^1.6^")'[(U_CV_U) DO  GOTO VERQ
+"RTN","XOBVRPC",229,0)
+ . SET XOBERR=182009_U_CV_U_SV_U_"Client version not supported"
+"RTN","XOBVRPC",230,0)
+ ;
+"RTN","XOBVRPC",231,0)
+ ; -- if client environment is not supported then return error
+"RTN","XOBVRPC",232,0)
+ IF ("^j2se^j2ee^.net^")'[(U_ENV_U) DO  GOTO VERQ
+"RTN","XOBVRPC",233,0)
+ . SET XOBERR=182009_U_CV_U_SV_U_"Client environment ("_$$UP^XLFSTR(ENV)_") not supported"
+"RTN","XOBVRPC",234,0)
+ ;
+"RTN","XOBVRPC",235,0)
+ ; -- if client/server environment then ok
+"RTN","XOBVRPC",236,0)
+ IF ("^j2se^.net^")[(U_ENV_U) SET XOBRA=0 GOTO VERQ
+"RTN","XOBVRPC",237,0)
+ ;
+"RTN","XOBVRPC",238,0)
+ ; -- if client version is "1.0" and client is j2ee then return error
+"RTN","XOBVRPC",239,0)
+ IF CV="1.0",ENV="j2ee" DO  GOTO VERQ
+"RTN","XOBVRPC",240,0)
+ . SET XOBERR=182009_U_CV_U_SV_U_"Client RPC version does not support "_$$UP^XLFSTR(ENV)
+"RTN","XOBVRPC",241,0)
+ ;
+"RTN","XOBVRPC",242,0)
+ ; -- if client version supports j2ee and client is j2ee then ok (default)
+"RTN","XOBVRPC",243,0)
+ ;IF ENV="j2ee" GOTO VERQ
+"RTN","XOBVRPC",244,0)
+ ;
+"RTN","XOBVRPC",245,0)
+VERQ ;
+"RTN","XOBVRPC",246,0)
+ IF 'XOBERR SET XOBSYS("RPC REAUTH")=XOBRA
+"RTN","XOBVRPC",247,0)
+ QUIT XOBERR
+"RTN","XOBVRPC",248,0)
+ ;
+"RTN","XOBVRPCX")
+0^9^B22591311
+"RTN","XOBVRPCX",1,0)
+XOBVRPCX ; mjk/alb - VistaLink RPC Formatter Sink;2017-09-08  3:47 PM; 07/27/2002  13:00
+"RTN","XOBVRPCX",2,0)
+ ;;1.6;VistALink;**11310000**;May 08, 2009;Build 4
+"RTN","XOBVRPCX",3,0)
+ ; **11310000** by OSE/SMH - TCP Optimization
+"RTN","XOBVRPCX",4,0)
+ QUIT
+"RTN","XOBVRPCX",5,0)
+ ;
+"RTN","XOBVRPCX",6,0)
+ ; -- unwrap stream
+"RTN","XOBVRPCX",7,0)
+START(XOBUF,XOBDATA) ;
+"RTN","XOBVRPCX",8,0)
+ NEW PARAMS,POS,TYP,PCNT,CNTP,ICNT,CNTI,XOBPN,SUB,VAL,DEBUG,EOT,RESV,LENSIZE,X
+"RTN","XOBVRPCX",9,0)
+ ;
+"RTN","XOBVRPCX",10,0)
+ ; -- get debugging byte
+"RTN","XOBVRPCX",11,0)
+ SET DEBUG=$$GETSTR(1)
+"RTN","XOBVRPCX",12,0)
+ ;
+"RTN","XOBVRPCX",13,0)
+ ; -- get size of length chunk
+"RTN","XOBVRPCX",14,0)
+ SET LENSIZE=$$GETSTR(1)
+"RTN","XOBVRPCX",15,0)
+ ;
+"RTN","XOBVRPCX",16,0)
+ ; -- get VistaLink version
+"RTN","XOBVRPCX",17,0)
+ SET XOBDATA("VL VERSION")=$$GETVAL()
+"RTN","XOBVRPCX",18,0)
+ ;
+"RTN","XOBVRPCX",19,0)
+ ; -- get RpcHandler version
+"RTN","XOBVRPCX",20,0)
+ SET XOBDATA("XOB RPC","RPC HANDLER VERSION")=$$GETVAL()
+"RTN","XOBVRPCX",21,0)
+ ;
+"RTN","XOBVRPCX",22,0)
+ ; -- Set basic constant attributes
+"RTN","XOBVRPCX",23,0)
+ SET XOBDATA("MODE")="singleton"
+"RTN","XOBVRPCX",24,0)
+ ;
+"RTN","XOBVRPCX",25,0)
+ ; -- get RPC info from stream
+"RTN","XOBVRPCX",26,0)
+ IF XOBDATA("XOB RPC","RPC HANDLER VERSION")>1.0 SET X=$$SETVER($$GETVAL())
+"RTN","XOBVRPCX",27,0)
+ SET XOBDATA("XOB RPC","RPC NAME")=$$GETVAL()
+"RTN","XOBVRPCX",28,0)
+ SET XOBDATA("XOB RPC","RPC CONTEXT")=$$GETVAL()
+"RTN","XOBVRPCX",29,0)
+ ;
+"RTN","XOBVRPCX",30,0)
+ ; -- set RPC time out
+"RTN","XOBVRPCX",31,0)
+ SET X=$$SETTO^XOBVLIB($$GETVAL())
+"RTN","XOBVRPCX",32,0)
+ ;
+"RTN","XOBVRPCX",33,0)
+ ; -- set security info
+"RTN","XOBVRPCX",34,0)
+ DO SECURITY
+"RTN","XOBVRPCX",35,0)
+ ;
+"RTN","XOBVRPCX",36,0)
+ ; -- set RPC parameters
+"RTN","XOBVRPCX",37,0)
+ DO PARMS
+"RTN","XOBVRPCX",38,0)
+ ;
+"RTN","XOBVRPCX",39,0)
+ ; -- read end of text character EOT to empty buffer
+"RTN","XOBVRPCX",40,0)
+ SET EOT=$$GETSTR(1)
+"RTN","XOBVRPCX",41,0)
+ QUIT
+"RTN","XOBVRPCX",42,0)
+ ;
+"RTN","XOBVRPCX",43,0)
+GETVAL() ; -- get next VALue from stream buffer
+"RTN","XOBVRPCX",44,0)
+ QUIT $$GETSTR($$GETLEN())
+"RTN","XOBVRPCX",45,0)
+ ;
+"RTN","XOBVRPCX",46,0)
+GETLEN() ; -- get the length of the next value
+"RTN","XOBVRPCX",47,0)
+ IF 'DEBUG QUIT +$$GETSTR(LENSIZE)
+"RTN","XOBVRPCX",48,0)
+ ; -- Ex. of why 4: VAL=00001
+"RTN","XOBVRPCX",49,0)
+ QUIT +$PIECE($$GETSTR(LENSIZE+4),"=",2)
+"RTN","XOBVRPCX",50,0)
+ ;
+"RTN","XOBVRPCX",51,0)
+GETSTR(LEN) ; -- extracts string of length, LEN, from stream buffer and returns extracted string 
+"RTN","XOBVRPCX",52,0)
+ NEW X
+"RTN","XOBVRPCX",53,0)
+ FOR  QUIT:($LENGTH(XOBUF)'<LEN)  DO READ(LEN-$LENGTH(XOBUF))
+"RTN","XOBVRPCX",54,0)
+ SET X=$EXTRACT(XOBUF,1,LEN)
+"RTN","XOBVRPCX",55,0)
+ SET XOBUF=$EXTRACT(XOBUF,LEN+1,999)
+"RTN","XOBVRPCX",56,0)
+ QUIT X
+"RTN","XOBVRPCX",57,0)
+ ;
+"RTN","XOBVRPCX",58,0)
+READ(LEN) ; -- read more from stream buffer but only needed amount
+"RTN","XOBVRPCX",59,0)
+ NEW X
+"RTN","XOBVRPCX",60,0)
+ FOR  QUIT:LEN<512  SET LEN=LEN-511 READ X#511:1 SET XOBUF=XOBUF_X
+"RTN","XOBVRPCX",61,0)
+ IF LEN>0 READ X#LEN:1 SET XOBUF=XOBUF_X
+"RTN","XOBVRPCX",62,0)
+ ; read timing debugging code
+"RTN","XOBVRPCX",63,0)
+ ;FOR  QUIT:LEN<512  S %ZH0=$ZH SET LEN=LEN-511 READ X#511:1 SET XOBUF=XOBUF_X S %ZH1=$ZH D ZHDIF^%ZOSV I $I(^SAM(^SAM,"READ")) S ^SAM(^SAM,"READ",^SAM(^SAM,"READ"),"DATA")=X,^SAM(^SAM,"READ",^SAM(^SAM,"READ"),"TIME")=$G(%ZH2)
+"RTN","XOBVRPCX",64,0)
+ ;IF LEN>0 S %ZH0=$ZH READ X#LEN:1 SET XOBUF=XOBUF_X S %ZH1=$ZH D ZHDIF^%ZOSV I $I(^SAM(^SAM,"READ")) S ^SAM(^SAM,"READ",^SAM(^SAM,"READ"),"DATA")=X,^SAM(^SAM,"READ",^SAM(^SAM,"READ"),"TIME")=$G(%ZH2)
+"RTN","XOBVRPCX",65,0)
+ ; end debugging code
+"RTN","XOBVRPCX",66,0)
+ QUIT
+"RTN","XOBVRPCX",67,0)
+ ;
+"RTN","XOBVRPCX",68,0)
+ ;
+"RTN","XOBVRPCX",69,0)
+ ; ----------------  Security Information Processing ----------------
+"RTN","XOBVRPCX",70,0)
+SECURITY ;
+"RTN","XOBVRPCX",71,0)
+ ;
+"RTN","XOBVRPCX",72,0)
+ ; -- if called from VL v1.0 client then set up J2SE defaults
+"RTN","XOBVRPCX",73,0)
+ IF $GET(XOBDATA("VL VERSION"))="1.0" DO V1 QUIT
+"RTN","XOBVRPCX",74,0)
+ ;
+"RTN","XOBVRPCX",75,0)
+ ; -- set security info
+"RTN","XOBVRPCX",76,0)
+ SET XOBDATA("XOB RPC","SECURITY","TYPE")=$$GETVAL()
+"RTN","XOBVRPCX",77,0)
+ SET XOBDATA("XOB RPC","SECURITY","DIV")=$$GETVAL()
+"RTN","XOBVRPCX",78,0)
+ SET XOBDATA("XOB RPC","SECURITY","STATE")=$$GETVAL()
+"RTN","XOBVRPCX",79,0)
+ ;
+"RTN","XOBVRPCX",80,0)
+ ; -- get needed type vars if not authenticated
+"RTN","XOBVRPCX",81,0)
+ IF XOBDATA("XOB RPC","SECURITY","STATE")'="authenticated" DO
+"RTN","XOBVRPCX",82,0)
+ . DO @($$UP^XLFSTR($GET(XOBDATA("XOB RPC","SECURITY","TYPE"))))
+"RTN","XOBVRPCX",83,0)
+ ;
+"RTN","XOBVRPCX",84,0)
+ QUIT
+"RTN","XOBVRPCX",85,0)
+ ;
+"RTN","XOBVRPCX",86,0)
+AV ; -- access and verify code type (KAAJEE)
+"RTN","XOBVRPCX",87,0)
+ SET XOBDATA("XOB RPC","SECURITY","TYPE","AVCODE")=$$GETVAL()
+"RTN","XOBVRPCX",88,0)
+ QUIT
+"RTN","XOBVRPCX",89,0)
+ ;
+"RTN","XOBVRPCX",90,0)
+CCOW ; -- CCOW type (FatKAAT)
+"RTN","XOBVRPCX",91,0)
+ SET XOBDATA("XOB RPC","SECURITY","TYPE","CCOW")=$$GETVAL()
+"RTN","XOBVRPCX",92,0)
+ QUIT
+"RTN","XOBVRPCX",93,0)
+ ;
+"RTN","XOBVRPCX",94,0)
+DUZ ; -- simple duz type
+"RTN","XOBVRPCX",95,0)
+ SET XOBDATA("XOB RPC","SECURITY","TYPE","VALUE")=$$GETVAL()
+"RTN","XOBVRPCX",96,0)
+ QUIT
+"RTN","XOBVRPCX",97,0)
+ ;
+"RTN","XOBVRPCX",98,0)
+VPID ; -- vpid type
+"RTN","XOBVRPCX",99,0)
+ SET XOBDATA("XOB RPC","SECURITY","TYPE","VALUE")=$$GETVAL()
+"RTN","XOBVRPCX",100,0)
+ QUIT
+"RTN","XOBVRPCX",101,0)
+ ;
+"RTN","XOBVRPCX",102,0)
+APPPROXY ; -- application proxy type
+"RTN","XOBVRPCX",103,0)
+ SET XOBDATA("XOB RPC","SECURITY","TYPE","VALUE")=$$GETVAL()
+"RTN","XOBVRPCX",104,0)
+ QUIT
+"RTN","XOBVRPCX",105,0)
+ ;
+"RTN","XOBVRPCX",106,0)
+J2SE ; -- c/s type
+"RTN","XOBVRPCX",107,0)
+ ; -- this line should never be executed since state will
+"RTN","XOBVRPCX",108,0)
+ ;    always be authenticated ; entered for completeness
+"RTN","XOBVRPCX",109,0)
+ QUIT
+"RTN","XOBVRPCX",110,0)
+ ;
+"RTN","XOBVRPCX",111,0)
+V1 ; -- set up security compatibility for VL v1.0 client
+"RTN","XOBVRPCX",112,0)
+ ;      (tag also called by ELST^XOBRPCI)
+"RTN","XOBVRPCX",113,0)
+ ;     
+"RTN","XOBVRPCX",114,0)
+ SET XOBDATA("XOB RPC","SECURITY","TYPE")="j2se"
+"RTN","XOBVRPCX",115,0)
+ SET XOBDATA("XOB RPC","SECURITY","DIV")=""
+"RTN","XOBVRPCX",116,0)
+ SET XOBDATA("XOB RPC","SECURITY","STATE")="authenticated"
+"RTN","XOBVRPCX",117,0)
+ QUIT
+"RTN","XOBVRPCX",118,0)
+ ; ---------------------   RPC Parameter Processing  -----------------
+"RTN","XOBVRPCX",119,0)
+PARMS ;
+"RTN","XOBVRPCX",120,0)
+ ;
+"RTN","XOBVRPCX",121,0)
+ ; -- get how many parameters to expect
+"RTN","XOBVRPCX",122,0)
+ SET XOBDATA("XOB RPC","PARAMS")=""
+"RTN","XOBVRPCX",123,0)
+ SET PCNT=+$$GETVAL()
+"RTN","XOBVRPCX",124,0)
+ ;
+"RTN","XOBVRPCX",125,0)
+ ; -- get the parameters
+"RTN","XOBVRPCX",126,0)
+ IF PCNT>0 FOR CNTP=1:1:PCNT DO
+"RTN","XOBVRPCX",127,0)
+ . SET TYP=$$GETVAL()
+"RTN","XOBVRPCX",128,0)
+ . SET POS=+$$GETVAL()
+"RTN","XOBVRPCX",129,0)
+ . SET XOBPN="XOBP"_POS
+"RTN","XOBVRPCX",130,0)
+ . SET XOBDATA("XOB RPC","PARAMS",POS)=XOBPN
+"RTN","XOBVRPCX",131,0)
+ . ;
+"RTN","XOBVRPCX",132,0)
+ . ; -- get single value 
+"RTN","XOBVRPCX",133,0)
+ . IF TYP'="array" DO  QUIT
+"RTN","XOBVRPCX",134,0)
+ . . ; -- get value for ref type
+"RTN","XOBVRPCX",135,0)
+ . . IF TYP="ref" SET @XOBPN=@$$GETVAL() QUIT
+"RTN","XOBVRPCX",136,0)
+ . . ;
+"RTN","XOBVRPCX",137,0)
+ . . ; -- get value for other non-array types
+"RTN","XOBVRPCX",138,0)
+ . . SET @XOBPN=$$GETVAL()
+"RTN","XOBVRPCX",139,0)
+ . ;
+"RTN","XOBVRPCX",140,0)
+ . ; -- get how many subscripts to expect for an array
+"RTN","XOBVRPCX",141,0)
+ . SET ICNT=+$$GETVAL()
+"RTN","XOBVRPCX",142,0)
+ . ;
+"RTN","XOBVRPCX",143,0)
+ . ; -- set root node of array to ""
+"RTN","XOBVRPCX",144,0)
+ . SET @XOBPN=""
+"RTN","XOBVRPCX",145,0)
+ . ;
+"RTN","XOBVRPCX",146,0)
+ . ; -- get the subscripts and values for the array
+"RTN","XOBVRPCX",147,0)
+ . IF ICNT>0 FOR CNTI=1:1:ICNT DO
+"RTN","XOBVRPCX",148,0)
+ . . SET SUB=$$GETVAL()
+"RTN","XOBVRPCX",149,0)
+ . . SET VAL=$$GETVAL()
+"RTN","XOBVRPCX",150,0)
+ . . IF $EXTRACT(SUB,1)=$CHAR(13) DO
+"RTN","XOBVRPCX",151,0)
+ . . . SET @("@XOBPN@("_$EXTRACT(SUB,2,$LENGTH(SUB))_")=VAL")
+"RTN","XOBVRPCX",152,0)
+ . . ELSE  DO
+"RTN","XOBVRPCX",153,0)
+ . . . SET @XOBPN@(SUB)=VAL
+"RTN","XOBVRPCX",154,0)
+ ;
+"RTN","XOBVRPCX",155,0)
+ ; -- build parameter signature for RPC call
+"RTN","XOBVRPCX",156,0)
+ SET PARAMS="",POS=0
+"RTN","XOBVRPCX",157,0)
+ FOR  SET POS=$ORDER(XOBDATA("XOB RPC","PARAMS",POS)) QUIT:'POS  SET PARAMS=PARAMS_",."_XOBDATA("XOB RPC","PARAMS",POS)
+"RTN","XOBVRPCX",158,0)
+ SET XOBDATA("XOB RPC","PARAMS")=PARAMS
+"RTN","XOBVRPCX",159,0)
+ ;
+"RTN","XOBVRPCX",160,0)
+ QUIT
+"RTN","XOBVRPCX",161,0)
+ ;
+"RTN","XOBVRPCX",162,0)
+ ; ------------------------------------------------------------------
+"RTN","XOBVRPCX",163,0)
+ ;
+"RTN","XOBVRPCX",164,0)
+GETVER() ; -- get rpc version
+"RTN","XOBVRPCX",165,0)
+ QUIT $GET(XOBDATA("XOB RPC","VERSION"),0)
+"RTN","XOBVRPCX",166,0)
+ ;
+"RTN","XOBVRPCX",167,0)
+SETVER(VERSION) ; -- set rpc version
+"RTN","XOBVRPCX",168,0)
+ SET XOBDATA("XOB RPC","VERSION")=VERSION
+"RTN","XOBVRPCX",169,0)
+ QUIT 1
+"RTN","XOBVRPCX",170,0)
+ ;
+"RTN","XOBVSKT")
+0^3^B23961349
+"RTN","XOBVSKT",1,0)
+XOBVSKT ;;2017-09-08  3:43 PM; 07/27/2002  13:00
+"RTN","XOBVSKT",2,0)
+ ;;1.6;VistALink;**11310000**;May 08, 2009;Build 4
+"RTN","XOBVSKT",3,0)
+ ;Per VHA directive 2004-038, this routine should not be modified.
+"RTN","XOBVSKT",4,0)
+ ;
+"RTN","XOBVSKT",5,0)
+ ; **11310000** ven/smh - GT.M support + TCP Socket send and receive optimization
+"RTN","XOBVSKT",6,0)
+ QUIT
+"RTN","XOBVSKT",7,0)
+ ;
+"RTN","XOBVSKT",8,0)
+ ; ------------------------------------------------------------------------------------
+"RTN","XOBVSKT",9,0)
+ ;                          Methods for Read from/to TCP/IP Socket
+"RTN","XOBVSKT",10,0)
+ ; ------------------------------------------------------------------------------------
+"RTN","XOBVSKT",11,0)
+READ(XOBROOT,XOBREAD,XOBTO,XOBFIRST,XOBSTOP,XOBDATA,XOBHDLR) ;
+"RTN","XOBVSKT",12,0)
+ NEW X,EOT,OUT,STR,LINE,PIECES,DONE,TOFLAG,XOBCNT,XOBLEN,XOBBH,XOBEH,BS,ES,XOBOK,XOBX
+"RTN","XOBVSKT",13,0)
+ ;
+"RTN","XOBVSKT",14,0)
+ SET STR="",EOT=$CHAR(4),DONE=0,LINE=0,XOBOK=1
+"RTN","XOBVSKT",15,0)
+ ;
+"RTN","XOBVSKT",16,0)
+ ; -- READ tcp stream to global buffer | main calling tag NXTCALL^XOBVLL
+"RTN","XOBVSKT",17,0)
+ NEW READTRYCOUNT SET READTRYCOUNT=0
+"RTN","XOBVSKT",18,0)
+ FOR  READ XOBX#XOBREAD:XOBTO SET TOFLAG=$TEST DO:XOBFIRST CHK DO:'XOBSTOP!('DONE)  QUIT:DONE
+"RTN","XOBVSKT",19,0)
+ . ;
+"RTN","XOBVSKT",20,0)
+ . ; debugging
+"RTN","XOBVSKT",21,0)
+ . ; I $I(^SAM(^SAM,"READ"))
+"RTN","XOBVSKT",22,0)
+ . ; S ^SAM(^SAM,"READ",^SAM(^SAM,"READ"),"DATA")=XOBX
+"RTN","XOBVSKT",23,0)
+ . ; S ^SAM(^SAM,"READ",^SAM(^SAM,"READ"),"TIME")=$G(%ZH2)
+"RTN","XOBVSKT",24,0)
+ . ;
+"RTN","XOBVSKT",25,0)
+ . ; Throttle GT.M since timeout is zero for GT.M
+"RTN","XOBVSKT",26,0)
+ . IF 'TOFLAG,XOBX="",XOBOS="GTM" DO  QUIT
+"RTN","XOBVSKT",27,0)
+ . . SET READTRYCOUNT=READTRYCOUNT+1
+"RTN","XOBVSKT",28,0)
+ . . IF READTRYCOUNT>3 SET DONE=1,XOBOK=0
+"RTN","XOBVSKT",29,0)
+ . . HANG .01
+"RTN","XOBVSKT",30,0)
+ . . ; debugging
+"RTN","XOBVSKT",31,0)
+ . . ; S ^SAM(^SAM,"READ",^SAM(^SAM,"READ"),"HANG")=$G(^("HANG"))+.01
+"RTN","XOBVSKT",32,0)
+ . ;
+"RTN","XOBVSKT",33,0)
+ . ; -- if length of (new intake + current) is too large for buffer then store current
+"RTN","XOBVSKT",34,0)
+ . IF $LENGTH(STR)+$LENGTH(XOBX)>400 DO ADD(STR) SET STR=""
+"RTN","XOBVSKT",35,0)
+ . SET STR=STR_XOBX
+"RTN","XOBVSKT",36,0)
+ . ;
+"RTN","XOBVSKT",37,0)
+ . ; -- add node at each line-feed character
+"RTN","XOBVSKT",38,0)
+ . ; COMMENTED OUT: Not needed anymore, and has side effect of stripping out line feeds in input
+"RTN","XOBVSKT",39,0)
+ . ;                array-type parameter values (in XML mode)
+"RTN","XOBVSKT",40,0)
+ . ; FOR  QUIT:STR'[$CHAR(10)  DO ADD($PIECE(STR,$CHAR(10))) SET STR=$PIECE(STR,$CHAR(10),2,999)
+"RTN","XOBVSKT",41,0)
+ . ;
+"RTN","XOBVSKT",42,0)
+ . ; -- if end-of-text marker found then wrap up and quit
+"RTN","XOBVSKT",43,0)
+ . IF STR[EOT SET STR=$PIECE(STR,EOT) DO ADD(STR) SET DONE=1 QUIT
+"RTN","XOBVSKT",44,0)
+ . ; 
+"RTN","XOBVSKT",45,0)
+ . ; -- M XML parser cannot handle an element name split across nodes
+"RTN","XOBVSKT",46,0)
+ . ; Not needed in the M XML Parser v2.5 (https://github.com/shabiel/VISTA-xml-processing-utilities)
+"RTN","XOBVSKT",47,0)
+ . ;SET PIECES=$LENGTH(STR,">")
+"RTN","XOBVSKT",48,0)
+ . ;IF PIECES>1 DO ADD($PIECE(STR,">",1,PIECES-1)_">") SET STR=$PIECE(STR,">",PIECES,999)
+"RTN","XOBVSKT",49,0)
+ ;
+"RTN","XOBVSKT",50,0)
+ QUIT XOBOK
+"RTN","XOBVSKT",51,0)
+ ;
+"RTN","XOBVSKT",52,0)
+ADD(TXT) ; -- add new intake line
+"RTN","XOBVSKT",53,0)
+ SET LINE=LINE+1
+"RTN","XOBVSKT",54,0)
+ SET @XOBROOT@(LINE)=TXT
+"RTN","XOBVSKT",55,0)
+ QUIT
+"RTN","XOBVSKT",56,0)
+ ;
+"RTN","XOBVSKT",57,0)
+CHK ; -- check if first read and change timeout and chars to read
+"RTN","XOBVSKT",58,0)
+ SET XOBFIRST=0
+"RTN","XOBVSKT",59,0)
+ ;
+"RTN","XOBVSKT",60,0)
+ ; -- abort if time out occurred and nothing was read
+"RTN","XOBVSKT",61,0)
+ IF 'TOFLAG,$GET(XOBX)="" SET XOBSTOP=1,DONE=1,XOBOK=0 QUIT
+"RTN","XOBVSKT",62,0)
+ ;
+"RTN","XOBVSKT",63,0)
+ ; -- intercept for transport sinks
+"RTN","XOBVSKT",64,0)
+ IF $EXTRACT(XOBX)'="<" DO SINK
+"RTN","XOBVSKT",65,0)
+ ;
+"RTN","XOBVSKT",66,0)
+ ; -- set up for subsequent reads
+"RTN","XOBVSKT",67,0)
+ SET XOBREAD=4096,XOBTO=1
+"RTN","XOBVSKT",68,0)
+ I XOBOS="GTM" S XOBTO=0
+"RTN","XOBVSKT",69,0)
+ QUIT
+"RTN","XOBVSKT",70,0)
+ ;
+"RTN","XOBVSKT",71,0)
+ ; ------------------------------------------------------------------------------------
+"RTN","XOBVSKT",72,0)
+ ;                      Execute Proprietary Format Reader
+"RTN","XOBVSKT",73,0)
+ ; ------------------------------------------------------------------------------------
+"RTN","XOBVSKT",74,0)
+SINK ;
+"RTN","XOBVSKT",75,0)
+ ; -- get size of sink indicator >> then get sink indicator >> load req handler
+"RTN","XOBVSKT",76,0)
+ SET XOBHDLR=$$MSGSINK^XOBVRH($$GETSTR(+$$GETSTR(2,.XOBX),.XOBX),.XOBHDLR)
+"RTN","XOBVSKT",77,0)
+ ;
+"RTN","XOBVSKT",78,0)
+ ; -- execute proprietary stream reader
+"RTN","XOBVSKT",79,0)
+ IF $GET(XOBHDLR(XOBHDLR)) XECUTE $GET(XOBHDLR(XOBHDLR,"READER"))
+"RTN","XOBVSKT",80,0)
+ ;
+"RTN","XOBVSKT",81,0)
+ SET DONE=1
+"RTN","XOBVSKT",82,0)
+ QUIT
+"RTN","XOBVSKT",83,0)
+ ;
+"RTN","XOBVSKT",84,0)
+ ; -- get string of length LEN from stream buffer
+"RTN","XOBVSKT",85,0)
+GETSTR(LEN,XOBUF) ;
+"RTN","XOBVSKT",86,0)
+ NEW X
+"RTN","XOBVSKT",87,0)
+ FOR  QUIT:($LENGTH(XOBUF)'<LEN)  DO RMORE(LEN-$LENGTH(XOBUF),.XOBUF)
+"RTN","XOBVSKT",88,0)
+ SET X=$EXTRACT(XOBUF,1,LEN)
+"RTN","XOBVSKT",89,0)
+ SET XOBUF=$EXTRACT(XOBUF,LEN+1,999)
+"RTN","XOBVSKT",90,0)
+ QUIT X
+"RTN","XOBVSKT",91,0)
+ ;
+"RTN","XOBVSKT",92,0)
+ ; -- read more from stream buffer but only needed amount
+"RTN","XOBVSKT",93,0)
+RMORE(LEN,XOBUF) ;
+"RTN","XOBVSKT",94,0)
+ NEW X
+"RTN","XOBVSKT",95,0)
+ READ X#LEN:1 SET XOBUF=XOBUF_X
+"RTN","XOBVSKT",96,0)
+ QUIT
+"RTN","XOBVSKT",97,0)
+ ;
+"RTN","XOBVSKT",98,0)
+ ; ------------------------------------------------------------------------------------
+"RTN","XOBVSKT",99,0)
+ ;                      Methods for Opening and Closing Socket
+"RTN","XOBVSKT",100,0)
+ ; ------------------------------------------------------------------------------------
+"RTN","XOBVSKT",101,0)
+OPEN(XOBPARMS) ; -- Open tcp/ip socket
+"RTN","XOBVSKT",102,0)
+ NEW I,POP
+"RTN","XOBVSKT",103,0)
+ SET POP=1
+"RTN","XOBVSKT",104,0)
+ ;
+"RTN","XOBVSKT",105,0)
+ ; -- set up os var
+"RTN","XOBVSKT",106,0)
+ DO OS
+"RTN","XOBVSKT",107,0)
+ ;
+"RTN","XOBVSKT",108,0)
+ ; -- preserve client io
+"RTN","XOBVSKT",109,0)
+ DO SAVDEV^%ZISUTL("XOB CLIENT")
+"RTN","XOBVSKT",110,0)
+ ;
+"RTN","XOBVSKT",111,0)
+ FOR I=1:1:XOBPARMS("RETRIES") DO CALL^%ZISTCP(XOBPARMS("ADDRESS"),XOBPARMS("PORT")) QUIT:'POP
+"RTN","XOBVSKT",112,0)
+ ; -- device open
+"RTN","XOBVSKT",113,0)
+ IF 'POP USE IO QUIT 1
+"RTN","XOBVSKT",114,0)
+ ; -- device not open
+"RTN","XOBVSKT",115,0)
+ QUIT 0
+"RTN","XOBVSKT",116,0)
+ ;
+"RTN","XOBVSKT",117,0)
+CLOSE(XOBPARMS) ; -- close tcp/ip socket
+"RTN","XOBVSKT",118,0)
+ ; -- tell server to Stop() connection if close message is needed to close
+"RTN","XOBVSKT",119,0)
+ IF $GET(XOBPARMS("CLOSE MESSAGE"))]"" DO
+"RTN","XOBVSKT",120,0)
+ . DO PRE
+"RTN","XOBVSKT",121,0)
+ . DO WRITE($$XMLHDR^XOBVLIB()_XOBPARMS("CLOSE MESSAGE"))
+"RTN","XOBVSKT",122,0)
+ . DO POST
+"RTN","XOBVSKT",123,0)
+ ;
+"RTN","XOBVSKT",124,0)
+ DO FINAL
+"RTN","XOBVSKT",125,0)
+ DO CLOSE^%ZISTCP
+"RTN","XOBVSKT",126,0)
+ DO USE^%ZISUTL("XOB CLIENT")
+"RTN","XOBVSKT",127,0)
+ DO RMDEV^%ZISUTL("XOB CLIENT")
+"RTN","XOBVSKT",128,0)
+ QUIT
+"RTN","XOBVSKT",129,0)
+ ;
+"RTN","XOBVSKT",130,0)
+INIT ; -- set up variables needed in tcp/ip processing
+"RTN","XOBVSKT",131,0)
+ KILL XOBNULL
+"RTN","XOBVSKT",132,0)
+ ;
+"RTN","XOBVSKT",133,0)
+ ; -- setup os var
+"RTN","XOBVSKT",134,0)
+ DO OS
+"RTN","XOBVSKT",135,0)
+ ;
+"RTN","XOBVSKT",136,0)
+ ; -- set RPC Broker os variable (so $$BROKER^XWBLIB returns true)
+"RTN","XOBVSKT",137,0)
+ SET XWBOS=XOBOS
+"RTN","XOBVSKT",138,0)
+ ;
+"RTN","XOBVSKT",139,0)
+ ; -- setup null device called "NULL"
+"RTN","XOBVSKT",140,0)
+ SET %ZIS="0H",IOP="NULL" DO ^%ZIS
+"RTN","XOBVSKT",141,0)
+ IF 'POP DO
+"RTN","XOBVSKT",142,0)
+ . SET XOBNULL=IO
+"RTN","XOBVSKT",143,0)
+ . DO SAVDEV^%ZISUTL("XOBNULL")
+"RTN","XOBVSKT",144,0)
+ QUIT
+"RTN","XOBVSKT",145,0)
+ ;
+"RTN","XOBVSKT",146,0)
+OS ; -- os var
+"RTN","XOBVSKT",147,0)
+ ; VEN/SMH **11310000**
+"RTN","XOBVSKT",148,0)
+ ; was SET XOBOS=$SELECT(^%ZOSF("OS")["OpenM":"OpenM",^("OS")["DSM":"DSM",^("OS")["UNIX":"UNIX",^("OS")["MSM":"MSM",1:"")
+"RTN","XOBVSKT",149,0)
+ SET XOBOS=$SELECT(^%ZOSF("OS")["OpenM":"OpenM",^("OS")["DSM":"DSM",^("OS")["GT.M":"GTM",^("OS")["MSM":"MSM",1:"")
+"RTN","XOBVSKT",150,0)
+ QUIT
+"RTN","XOBVSKT",151,0)
+ ;
+"RTN","XOBVSKT",152,0)
+FINAL ; -- kill variables used in tcp/ip processing
+"RTN","XOBVSKT",153,0)
+ ;
+"RTN","XOBVSKT",154,0)
+ ; -- close null device
+"RTN","XOBVSKT",155,0)
+ IF $DATA(XOBNULL) DO
+"RTN","XOBVSKT",156,0)
+ . DO USE^%ZISUTL("XOBNULL")
+"RTN","XOBVSKT",157,0)
+ . DO CLOSE^%ZISUTL("XOBNULL")
+"RTN","XOBVSKT",158,0)
+ . KILL XOBNULL
+"RTN","XOBVSKT",159,0)
+ ;
+"RTN","XOBVSKT",160,0)
+ KILL XOBOS,XWBOS
+"RTN","XOBVSKT",161,0)
+ ;
+"RTN","XOBVSKT",162,0)
+ QUIT
+"RTN","XOBVSKT",163,0)
+ ;
+"RTN","XOBVSKT",164,0)
+ ; ------------------------------------------------------------------------------------
+"RTN","XOBVSKT",165,0)
+ ;                          Methods for Writing to TCP/IP Socket
+"RTN","XOBVSKT",166,0)
+ ; ------------------------------------------------------------------------------------
+"RTN","XOBVSKT",167,0)
+PRE ; -- prepare socket for writing
+"RTN","XOBVSKT",168,0)
+ SET $X=0
+"RTN","XOBVSKT",169,0)
+ QUIT
+"RTN","XOBVSKT",170,0)
+ ;
+"RTN","XOBVSKT",171,0)
+WRITE(STR) ; -- Write a data string to socket
+"RTN","XOBVSKT",172,0)
+ ; Optimized by OSEHRA/SMH to buffer.
+"RTN","XOBVSKT",173,0)
+ ; NB: No easy way to obtain MTU on M, so I will just assume best case scenario
+"RTN","XOBVSKT",174,0)
+ ; of MTU of 64k. Normally it's just 1500. The Linux Kernel will fragment down
+"RTN","XOBVSKT",175,0)
+ ; the packet.
+"RTN","XOBVSKT",176,0)
+ IF XOBOS="MSM" WRITE STR QUIT
+"RTN","XOBVSKT",177,0)
+ ; 
+"RTN","XOBVSKT",178,0)
+ ; Short Strings. Just buffer and quit.
+"RTN","XOBVSKT",179,0)
+ IF $LENGTH(STR)+$LENGTH(XOBSENDSTR)<32768 SET XOBSENDSTR=XOBSENDSTR_STR QUIT
+"RTN","XOBVSKT",180,0)
+ ;
+"RTN","XOBVSKT",181,0)
+ ; Long Strings: Case 1: Not too long: Send what's in buffer, and store long string in buffer.
+"RTN","XOBVSKT",182,0)
+ ; Long Strings: Case 2: Send what's in the buffer, and send this the long string too.
+"RTN","XOBVSKT",183,0)
+ ; NB: Possible only on GT.M--Cache can't do strings > 32k.
+"RTN","XOBVSKT",184,0)
+ DO FLUSH
+"RTN","XOBVSKT",185,0)
+ IF $LENGTH(STR)<32767 SET XOBSENDSTR=STR
+"RTN","XOBVSKT",186,0)
+ ELSE  WRITE STR
+"RTN","XOBVSKT",187,0)
+ QUIT
+"RTN","XOBVSKT",188,0)
+ ;
+"RTN","XOBVSKT",189,0)
+POST ; -- send eot and flush socket buffer
+"RTN","XOBVSKT",190,0)
+ DO WRITE($CHAR(4))
+"RTN","XOBVSKT",191,0)
+ DO FLUSH
+"RTN","XOBVSKT",192,0)
+ QUIT
+"RTN","XOBVSKT",193,0)
+ ;
+"RTN","XOBVSKT",194,0)
+FLUSH ; flush buffer
+"RTN","XOBVSKT",195,0)
+ ; debugging
+"RTN","XOBVSKT",196,0)
+ ;S ^SAM(^SAM,"WRITE")=$L(XOBSENDSTR)
+"RTN","XOBVSKT",197,0)
+ WRITE XOBSENDSTR,!
+"RTN","XOBVSKT",198,0)
+ SET XOBSENDSTR=""
+"RTN","XOBVSKT",199,0)
+ QUIT
+"RTN","XOBVSKT",200,0)
+ ;
+"RTN","XOBVSYSI")
+0^10^B54963166
+"RTN","XOBVSYSI",1,0)
+XOBVSYSI ;ld,mjk/alb - VistaLink Interface Implementation;2017-09-08  3:47 PM; 07/27/2002  13:00
+"RTN","XOBVSYSI",2,0)
+ ;;1.6;VistALink;**11310000**;May 08, 2009;Build 4
+"RTN","XOBVSYSI",3,0)
+ ; **11310000** by OSE/SMH - TCP Optimization
+"RTN","XOBVSYSI",4,0)
+CALLBACK(CB) ; -- init callbacks implementation
+"RTN","XOBVSYSI",5,0)
+ SET CB("STARTELEMENT")="ELEST^XOBVSYSI"
+"RTN","XOBVSYSI",6,0)
+ QUIT
+"RTN","XOBVSYSI",7,0)
+ ;
+"RTN","XOBVSYSI",8,0)
+ ; ------------------------------------------------------------------------
+"RTN","XOBVSYSI",9,0)
+ ;             RPC Server: Request Message XML SAX Parser Callbacks         
+"RTN","XOBVSYSI",10,0)
+ ; ------------------------------------------------------------------------
+"RTN","XOBVSYSI",11,0)
+ELEST(ELE,ATR) ; -- element start event handler
+"RTN","XOBVSYSI",12,0)
+ IF ELE="VistaLink" DO  QUIT
+"RTN","XOBVSYSI",13,0)
+ . SET XOBDATA("MODE")=$GET(ATR("mode"),"single call")
+"RTN","XOBVSYSI",14,0)
+ ;
+"RTN","XOBVSYSI",15,0)
+ IF ELE="Request" DO  QUIT
+"RTN","XOBVSYSI",16,0)
+ . SET XOBDATA("XOB SYSTEM","TYPE")=$GET(ATR("type"),"unknown")
+"RTN","XOBVSYSI",17,0)
+ . SET XOBDATA("XOB SYSTEM","ENV")=$$LOW^XLFSTR($GET(ATR("environment"),"j2se"))
+"RTN","XOBVSYSI",18,0)
+ ;
+"RTN","XOBVSYSI",19,0)
+ QUIT
+"RTN","XOBVSYSI",20,0)
+ ;
+"RTN","XOBVSYSI",21,0)
+READER(XOBUF,XOBDATA) ; -- proprietary format reader implementation
+"RTN","XOBVSYSI",22,0)
+ QUIT
+"RTN","XOBVSYSI",23,0)
+ ;
+"RTN","XOBVSYSI",24,0)
+REQHDLR(XOBDATA) ; -- request handler implementation
+"RTN","XOBVSYSI",25,0)
+ NEW TYPE
+"RTN","XOBVSYSI",26,0)
+ SET TYPE=$GET(XOBDATA("XOB SYSTEM","TYPE"),"unknown")
+"RTN","XOBVSYSI",27,0)
+ ;
+"RTN","XOBVSYSI",28,0)
+ ; -- initialize socket partition request
+"RTN","XOBVSYSI",29,0)
+ IF TYPE="initializeSocket" DO INIT(.TYPE) GOTO REQHDLRQ
+"RTN","XOBVSYSI",30,0)
+ ;
+"RTN","XOBVSYSI",31,0)
+ ; -- set stop flag to close socket request
+"RTN","XOBVSYSI",32,0)
+ IF TYPE="closeSocket" DO CLOSE(.TYPE) GOTO REQHDLRQ
+"RTN","XOBVSYSI",33,0)
+ ;
+"RTN","XOBVSYSI",34,0)
+ ; -- cleanup partition request 
+"RTN","XOBVSYSI",35,0)
+ IF TYPE="cleanupPartition" DO CLEANUP(.TYPE) GOTO REQHDLRQ
+"RTN","XOBVSYSI",36,0)
+ ;
+"RTN","XOBVSYSI",37,0)
+ ; --  heartbeat request 
+"RTN","XOBVSYSI",38,0)
+ IF TYPE="heartbeat" DO HB(.TYPE) GOTO REQHDLRQ
+"RTN","XOBVSYSI",39,0)
+ ;
+"RTN","XOBVSYSI",40,0)
+ ; --  system info request 
+"RTN","XOBVSYSI",41,0)
+ IF TYPE="systemInfo" DO SYSINFO(.TYPE) GOTO REQHDLRQ
+"RTN","XOBVSYSI",42,0)
+ ;
+"RTN","XOBVSYSI",43,0)
+ ; -- failure if processing get here
+"RTN","XOBVSYSI",44,0)
+ DO RESPONSE(.TYPE,"failure")
+"RTN","XOBVSYSI",45,0)
+ ;
+"RTN","XOBVSYSI",46,0)
+REQHDLRQ ;
+"RTN","XOBVSYSI",47,0)
+ QUIT
+"RTN","XOBVSYSI",48,0)
+ ;
+"RTN","XOBVSYSI",49,0)
+ENV ; -- set env variable
+"RTN","XOBVSYSI",50,0)
+ SET XOBSYS("ENV")=$GET(XOBDATA("XOB SYSTEM","ENV"))
+"RTN","XOBVSYSI",51,0)
+ QUIT
+"RTN","XOBVSYSI",52,0)
+ ;
+"RTN","XOBVSYSI",53,0)
+PSTANUM ; -- set primary station number
+"RTN","XOBVSYSI",54,0)
+ SET XOBSYS("PRIMARY STATION#")=$$TRUNCCH($$STA^XUAF4($$KSP^XUPARAM("INST")))
+"RTN","XOBVSYSI",55,0)
+ ; note: AAC 200M is truncated to 200
+"RTN","XOBVSYSI",56,0)
+ QUIT
+"RTN","XOBVSYSI",57,0)
+ ;
+"RTN","XOBVSYSI",58,0)
+INIT(TYPE) ; -- handle initialize request
+"RTN","XOBVSYSI",59,0)
+ KILL XOBSYS
+"RTN","XOBVSYSI",60,0)
+ DO ENV
+"RTN","XOBVSYSI",61,0)
+ DO PSTANUM
+"RTN","XOBVSYSI",62,0)
+ ;
+"RTN","XOBVSYSI",63,0)
+ IF "^j2se^j2ee^.net^"[(U_XOBSYS("ENV")_U) DO
+"RTN","XOBVSYSI",64,0)
+ . DO RESPONSE(.TYPE,"success",$$RATE()_$$JOB()_$$RASTO())
+"RTN","XOBVSYSI",65,0)
+ ELSE  DO
+"RTN","XOBVSYSI",66,0)
+ . DO RESPONSE(.TYPE,"failure")
+"RTN","XOBVSYSI",67,0)
+ QUIT
+"RTN","XOBVSYSI",68,0)
+ ;
+"RTN","XOBVSYSI",69,0)
+CLOSE(TYPE) ; -- handle close socket request
+"RTN","XOBVSYSI",70,0)
+ SET XOBSTOP=1
+"RTN","XOBVSYSI",71,0)
+ DO RESPONSE(.TYPE,"success")
+"RTN","XOBVSYSI",72,0)
+ QUIT
+"RTN","XOBVSYSI",73,0)
+ ;
+"RTN","XOBVSYSI",74,0)
+CLEANUP(TYPE) ; -- handle cleanup partition request
+"RTN","XOBVSYSI",75,0)
+ ; -- unlock any pending locks
+"RTN","XOBVSYSI",76,0)
+ LOCK
+"RTN","XOBVSYSI",77,0)
+ ;
+"RTN","XOBVSYSI",78,0)
+ ; -- clean ^TMP, ^UTILITY, ^XUTL
+"RTN","XOBVSYSI",79,0)
+ DO XUTL^XUSCLEAN
+"RTN","XOBVSYSI",80,0)
+ ;
+"RTN","XOBVSYSI",81,0)
+ ; -- restore DUZ to connector user
+"RTN","XOBVSYSI",82,0)
+ KILL DUZ
+"RTN","XOBVSYSI",83,0)
+ MERGE DUZ=XOBSYS("DUZ")
+"RTN","XOBVSYSI",84,0)
+ ;
+"RTN","XOBVSYSI",85,0)
+ ; -- clean symbol table
+"RTN","XOBVSYSI",86,0)
+ DO KILL^XOBVLL
+"RTN","XOBVSYSI",87,0)
+ ;
+"RTN","XOBVSYSI",88,0)
+ DO RESPONSE(.TYPE,"success")
+"RTN","XOBVSYSI",89,0)
+ QUIT
+"RTN","XOBVSYSI",90,0)
+ ;
+"RTN","XOBVSYSI",91,0)
+DUZSV(DUZ) ; -- save initial DUZ info for session
+"RTN","XOBVSYSI",92,0)
+ IF $GET(XOBSYS("ENV"))="j2ee" DO
+"RTN","XOBVSYSI",93,0)
+ . KILL XOBSYS("DUZ")
+"RTN","XOBVSYSI",94,0)
+ . MERGE XOBSYS("DUZ")=DUZ
+"RTN","XOBVSYSI",95,0)
+ QUIT
+"RTN","XOBVSYSI",96,0)
+ ;
+"RTN","XOBVSYSI",97,0)
+HB(TYPE) ; -- handle heartbeat request
+"RTN","XOBVSYSI",98,0)
+ DO ENV
+"RTN","XOBVSYSI",99,0)
+ DO RESPONSE(.TYPE,"success",$$RATE())
+"RTN","XOBVSYSI",100,0)
+ QUIT
+"RTN","XOBVSYSI",101,0)
+ ;
+"RTN","XOBVSYSI",102,0)
+RATE() ; -- set up rate attribute for response
+"RTN","XOBVSYSI",103,0)
+ NEW XOBRATE
+"RTN","XOBVSYSI",104,0)
+ ; -- get J2EE timeout value for app serv environment
+"RTN","XOBVSYSI",105,0)
+ IF $GET(XOBSYS("ENV"))="j2ee" DO
+"RTN","XOBVSYSI",106,0)
+ . SET XOBRATE=$$GETASTO^XOBVLIB()
+"RTN","XOBVSYSI",107,0)
+ ELSE  DO
+"RTN","XOBVSYSI",108,0)
+ . SET XOBRATE=$$GETRATE^XOBVLIB()
+"RTN","XOBVSYSI",109,0)
+ QUIT " rate="""_XOBRATE_""""
+"RTN","XOBVSYSI",110,0)
+ ;
+"RTN","XOBVSYSI",111,0)
+JOB() ; -- set up $JOB attribute for response
+"RTN","XOBVSYSI",112,0)
+ QUIT " mJob="""_$JOB_""""
+"RTN","XOBVSYSI",113,0)
+ ;
+"RTN","XOBVSYSI",114,0)
+RASTO() ; -- set up ReAuthenticated Session TimeOut
+"RTN","XOBVSYSI",115,0)
+ QUIT " reAuthSessionTimeout="""_$$GETRASTO^XOBVLIB()_""""
+"RTN","XOBVSYSI",116,0)
+ ;
+"RTN","XOBVSYSI",117,0)
+RESPONSE(TYPE,STATUS,ATTRS) ; -- build xml response
+"RTN","XOBVSYSI",118,0)
+ ; -- send buffer
+"RTN","XOBVSYSI",119,0)
+ NEW XOBSENDSTR SET XOBSENDSTR=""
+"RTN","XOBVSYSI",120,0)
+ ; -- initialize
+"RTN","XOBVSYSI",121,0)
+ DO PRE^XOBVSKT
+"RTN","XOBVSYSI",122,0)
+ DO WRITE^XOBVSKT($$VLHDR^XOBVLIB(4))
+"RTN","XOBVSYSI",123,0)
+ DO WRITE^XOBVSKT("<Response type="""_$GET(TYPE)_""" status="""_$GET(STATUS)_""""_$GET(ATTRS,"")_" />")
+"RTN","XOBVSYSI",124,0)
+ DO WRITE^XOBVSKT($$ENVFTR^XOBVLIB())
+"RTN","XOBVSYSI",125,0)
+ ; -- send eot and flush buffer
+"RTN","XOBVSYSI",126,0)
+ DO POST^XOBVSKT
+"RTN","XOBVSYSI",127,0)
+ QUIT
+"RTN","XOBVSYSI",128,0)
+ ;
+"RTN","XOBVSYSI",129,0)
+SYSINFO(TYPE) ; -- build system info response
+"RTN","XOBVSYSI",130,0)
+ NEW XOBINFO,XOBELE,XOBDEFLT,XOBINTRO,XOBI
+"RTN","XOBVSYSI",131,0)
+ ;
+"RTN","XOBVSYSI",132,0)
+ ; -- set up default value
+"RTN","XOBVSYSI",133,0)
+ SET XOBDEFLT="unknown"
+"RTN","XOBVSYSI",134,0)
+ ;
+"RTN","XOBVSYSI",135,0)
+ ; -- get system info array
+"RTN","XOBVSYSI",136,0)
+ DO GETSINFO(.XOBINFO)
+"RTN","XOBVSYSI",137,0)
+ ;
+"RTN","XOBVSYSI",138,0)
+ ; -- build <SystemInfo> element
+"RTN","XOBVSYSI",139,0)
+ SET XOBELE="<SystemInfo"
+"RTN","XOBVSYSI",140,0)
+ SET XOBELE=XOBELE_" vistalinkVersion="""_$GET(XOBINFO("version"),XOBDEFLT)_""""
+"RTN","XOBVSYSI",141,0)
+ SET XOBELE=XOBELE_" vistalinkBuild="""_$GET(XOBINFO("build"),XOBDEFLT)_""""
+"RTN","XOBVSYSI",142,0)
+ SET XOBELE=XOBELE_" appServerTimeout="""_$GET(XOBINFO("appServerTimeout"),XOBDEFLT)_""""
+"RTN","XOBVSYSI",143,0)
+ SET XOBELE=XOBELE_" reAuthSessionTimeout="""_$GET(XOBINFO("reAuthSessionTimeout"),XOBDEFLT)_""""
+"RTN","XOBVSYSI",144,0)
+ SET XOBELE=XOBELE_" uci="""_$GET(XOBINFO("uci"),XOBDEFLT)_""""
+"RTN","XOBVSYSI",145,0)
+ SET XOBELE=XOBELE_" vol="""_$GET(XOBINFO("vol"),XOBDEFLT)_""""
+"RTN","XOBVSYSI",146,0)
+ SET XOBELE=XOBELE_" boxVolume="""_$GET(XOBINFO("boxVolume"),XOBDEFLT)_""""
+"RTN","XOBVSYSI",147,0)
+ SET XOBELE=XOBELE_" mVersion="""_$GET(XOBINFO("mVersion"),XOBDEFLT)_""""
+"RTN","XOBVSYSI",148,0)
+ SET XOBELE=XOBELE_" operatingSystem="""_$GET(XOBINFO("operatingSystem"),XOBDEFLT)_""""
+"RTN","XOBVSYSI",149,0)
+ SET XOBELE=XOBELE_" domainName="""_$GET(XOBINFO("domainName"),XOBDEFLT)_""""
+"RTN","XOBVSYSI",150,0)
+ SET XOBELE=XOBELE_" vistaProduction="""_$GET(XOBINFO("vistaProduction"),XOBDEFLT)_""""
+"RTN","XOBVSYSI",151,0)
+ SET XOBELE=XOBELE_" defaultInstitution="""_$GET(XOBINFO("defaultInstitution"),XOBDEFLT)_""""
+"RTN","XOBVSYSI",152,0)
+ SET XOBELE=XOBELE_" cpName="""_$GET(XOBINFO("cpName"),XOBDEFLT)_""""
+"RTN","XOBVSYSI",153,0)
+ SET XOBELE=XOBELE_" />"
+"RTN","XOBVSYSI",154,0)
+ ;
+"RTN","XOBVSYSI",155,0)
+ SET XOBINTRO=$GET(XOBINFO("introductoryText"))
+"RTN","XOBVSYSI",156,0)
+ ;
+"RTN","XOBVSYSI",157,0)
+ ; -- build and send complete message
+"RTN","XOBVSYSI",158,0)
+ NEW XOBSENDSTR SET XOBSENDSTR=""
+"RTN","XOBVSYSI",159,0)
+ DO PRE^XOBVSKT
+"RTN","XOBVSYSI",160,0)
+ DO WRITE^XOBVSKT($$VLHDR^XOBVLIB(4))
+"RTN","XOBVSYSI",161,0)
+ DO WRITE^XOBVSKT("<Response type="""_$GET(TYPE)_""" status=""success"" >")
+"RTN","XOBVSYSI",162,0)
+ DO WRITE^XOBVSKT(XOBELE)
+"RTN","XOBVSYSI",163,0)
+ FOR XOBI=1:1  QUIT:'$DATA(XOBINFO("introductoryText",XOBI))  DO
+"RTN","XOBVSYSI",164,0)
+ . DO WRITE^XOBVSKT(XOBINFO("introductoryText",XOBI))
+"RTN","XOBVSYSI",165,0)
+ DO WRITE^XOBVSKT("</Response>")
+"RTN","XOBVSYSI",166,0)
+ DO WRITE^XOBVSKT($$ENVFTR^XOBVLIB())
+"RTN","XOBVSYSI",167,0)
+ DO POST^XOBVSKT
+"RTN","XOBVSYSI",168,0)
+ ;
+"RTN","XOBVSYSI",169,0)
+ QUIT
+"RTN","XOBVSYSI",170,0)
+ ;
+"RTN","XOBVSYSI",171,0)
+GETSINFO(XOBINFO) ; -- gather system info into array
+"RTN","XOBVSYSI",172,0)
+ NEW X,Y
+"RTN","XOBVSYSI",173,0)
+ ;
+"RTN","XOBVSYSI",174,0)
+ ; -- get version
+"RTN","XOBVSYSI",175,0)
+ SET XOBINFO("version")=$PIECE($TEXT(XOBVSYSI+1),";",3)
+"RTN","XOBVSYSI",176,0)
+ ;
+"RTN","XOBVSYSI",177,0)
+ ; -- get build number
+"RTN","XOBVSYSI",178,0)
+ SET XOBINFO("build")=$PIECE($TEXT(XOBVSYSI+1),";",7)
+"RTN","XOBVSYSI",179,0)
+ ;
+"RTN","XOBVSYSI",180,0)
+ ; -- get application server connection timeout
+"RTN","XOBVSYSI",181,0)
+ SET XOBINFO("appServerTimeout")=$$GETASTO^XOBVLIB()
+"RTN","XOBVSYSI",182,0)
+ ;
+"RTN","XOBVSYSI",183,0)
+ ; -- get reauthentication session timeout
+"RTN","XOBVSYSI",184,0)
+ SET XOBINFO("reAuthSessionTimeout")=$$GETRASTO^XOBVLIB()
+"RTN","XOBVSYSI",185,0)
+ ;
+"RTN","XOBVSYSI",186,0)
+ ; -- get basic M environment information
+"RTN","XOBVSYSI",187,0)
+ SET Y=""
+"RTN","XOBVSYSI",188,0)
+ DO GETENV^%ZOSV
+"RTN","XOBVSYSI",189,0)
+ ;
+"RTN","XOBVSYSI",190,0)
+ ; -- get uci
+"RTN","XOBVSYSI",191,0)
+ SET XOBINFO("uci")=$PIECE(Y,U,1)
+"RTN","XOBVSYSI",192,0)
+ ;
+"RTN","XOBVSYSI",193,0)
+ ; -- get vol
+"RTN","XOBVSYSI",194,0)
+ SET XOBINFO("vol")=$PIECE(Y,U,2)
+"RTN","XOBVSYSI",195,0)
+ ;
+"RTN","XOBVSYSI",196,0)
+ ; -- get box volume
+"RTN","XOBVSYSI",197,0)
+ SET XOBINFO("boxVolume")=$PIECE(Y,U,4)
+"RTN","XOBVSYSI",198,0)
+ ;
+"RTN","XOBVSYSI",199,0)
+ ; -- get M version (full name)
+"RTN","XOBVSYSI",200,0)
+ SET XOBINFO("mVersion")=$$SYMENC^MXMLUTL($$VERSION^%ZOSV(1))
+"RTN","XOBVSYSI",201,0)
+ ;
+"RTN","XOBVSYSI",202,0)
+ ; -- get operating system
+"RTN","XOBVSYSI",203,0)
+ SET XOBINFO("operatingSystem")=$$SYMENC^MXMLUTL($$SYSOS^XOBVLIB(XOBOS))
+"RTN","XOBVSYSI",204,0)
+ ;
+"RTN","XOBVSYSI",205,0)
+ ; -- get domain name
+"RTN","XOBVSYSI",206,0)
+ SET XOBINFO("domainName")=$$SYMENC^MXMLUTL($$KSP^XUPARAM("WHERE"))
+"RTN","XOBVSYSI",207,0)
+ ;
+"RTN","XOBVSYSI",208,0)
+ ; -- production or test
+"RTN","XOBVSYSI",209,0)
+ SET XOBINFO("vistaProduction")=$S($$PROD^XUPROD(0):"true",1:"false")
+"RTN","XOBVSYSI",210,0)
+ ;
+"RTN","XOBVSYSI",211,0)
+ ; -- default institution
+"RTN","XOBVSYSI",212,0)
+ SET XOBINFO("defaultInstitution")=$$SYMENC^MXMLUTL($$STA^XUAF4($$KSP^XUPARAM("INST"))_"/"_$$NAME^XUAF4($$KSP^XUPARAM("INST")))
+"RTN","XOBVSYSI",213,0)
+ ;
+"RTN","XOBVSYSI",214,0)
+ ; -- get intro text
+"RTN","XOBVSYSI",215,0)
+ D GETINTRO^XOBSCAV2("XOBINFO(""introductoryText"")",1)
+"RTN","XOBVSYSI",216,0)
+ ;
+"RTN","XOBVSYSI",217,0)
+ ; -- get c/p username
+"RTN","XOBVSYSI",218,0)
+ SET XOBINFO("cpName")=$$NAME^XUSER(DUZ)
+"RTN","XOBVSYSI",219,0)
+ ;
+"RTN","XOBVSYSI",220,0)
+ QUIT
+"RTN","XOBVSYSI",221,0)
+ ;
+"RTN","XOBVSYSI",222,0)
+RPC(XOBY) ;
+"RTN","XOBVSYSI",223,0)
+ NEW XOBX,XOBLINE,XOBARR
+"RTN","XOBVSYSI",224,0)
+ D GETSINFO(.XOBARR)
+"RTN","XOBVSYSI",225,0)
+ SET XOBLINE=0
+"RTN","XOBVSYSI",226,0)
+ S XOBX="" F  S XOBX=$O(XOBARR(XOBX)) Q:XOBX']""  D
+"RTN","XOBVSYSI",227,0)
+ . SET XOBLINE=XOBLINE+1
+"RTN","XOBVSYSI",228,0)
+ . SET XOBY(XOBLINE)=XOBX_"~"_XOBARR(XOBX)
+"RTN","XOBVSYSI",229,0)
+ QUIT
+"RTN","XOBVSYSI",230,0)
+ ;
+"RTN","XOBVSYSI",231,0)
+TRUNCCH(XOBSTR) ; truncate before first non-numeric char
+"RTN","XOBVSYSI",232,0)
+ NEW XOBI,XOBSTOP,XOBSTR1
+"RTN","XOBVSYSI",233,0)
+ SET XOBSTOP=0,XOBSTR1=""
+"RTN","XOBVSYSI",234,0)
+ FOR XOBI=1:1:$L(XOBSTR) QUIT:XOBSTOP  DO
+"RTN","XOBVSYSI",235,0)
+ . IF "0123456789"'[$E(XOBSTR,XOBI) SET XOBSTOP=1 QUIT
+"RTN","XOBVSYSI",236,0)
+ . SET XOBSTR1=XOBSTR1_$E(XOBSTR,XOBI)
+"RTN","XOBVSYSI",237,0)
+ QUIT XOBSTR1
+"RTN","XOBVTCP")
+0^5^B48703549
+"RTN","XOBVTCP",1,0)
+XOBVTCP ;;2014-11-19  9:09 PM; 07/27/2002  13:00
+"RTN","XOBVTCP",2,0)
+ ;;1.6;VistALink;**11310000**;May 08, 2009;Build 4
+"RTN","XOBVTCP",3,0)
+ ;Per VHA directive 2004-038, this routine should not be modified.
+"RTN","XOBVTCP",4,0)
+ ;
+"RTN","XOBVTCP",5,0)
+ ; **11310000** VEN/SMH: Startup and Startcfg were hardcoded to only
+"RTN","XOBVTCP",6,0)
+ ;                       work for Cache. Limitation removed.
+"RTN","XOBVTCP",7,0)
+ ;
+"RTN","XOBVTCP",8,0)
+ QUIT
+"RTN","XOBVTCP",9,0)
+ ;
+"RTN","XOBVTCP",10,0)
+ ; -- called from protocol action at START^XOBUM1 
+"RTN","XOBVTCP",11,0)
+START(XOBPORT,XOBCFG) ;
+"RTN","XOBVTCP",12,0)
+ ; 
+"RTN","XOBVTCP",13,0)
+ ; -- set up environment
+"RTN","XOBVTCP",14,0)
+ NEW XOBOK
+"RTN","XOBVTCP",15,0)
+ SET XOBOK=0
+"RTN","XOBVTCP",16,0)
+ SET U="^" DO HOME^%ZIS
+"RTN","XOBVTCP",17,0)
+ ;
+"RTN","XOBVTCP",18,0)
+ ; -- if no port, set to default
+"RTN","XOBVTCP",19,0)
+ IF $GET(XOBPORT)="" NEW XOBPORT SET XOBPORT=8000
+"RTN","XOBVTCP",20,0)
+ ;
+"RTN","XOBVTCP",21,0)
+ IF $$LOCK(XOBPORT) DO
+"RTN","XOBVTCP",22,0)
+ . DO UNLOCK(XOBPORT)
+"RTN","XOBVTCP",23,0)
+ . ; -- JOB command same for CacheNT and DSM (SIS/LM ..and GT.M)
+"RTN","XOBVTCP",24,0)
+ . JOB LISTENER^XOBVTCPL(XOBPORT,$GET(XOBCFG))::5
+"RTN","XOBVTCP",25,0)
+ . SET XOBOK=$TEST
+"RTN","XOBVTCP",26,0)
+ ELSE  DO
+"RTN","XOBVTCP",27,0)
+ . SET XOBOK=0
+"RTN","XOBVTCP",28,0)
+ QUIT XOBOK
+"RTN","XOBVTCP",29,0)
+ ;
+"RTN","XOBVTCP",30,0)
+UCX ; -- old VMS TCPIP (UCX) multi-thread entry point [for DSM]
+"RTN","XOBVTCP",31,0)
+ ; -- Called from VistALink .com files
+"RTN","XOBVTCP",32,0)
+ ;
+"RTN","XOBVTCP",33,0)
+ NEW XOBEC
+"RTN","XOBVTCP",34,0)
+ DO ESET
+"RTN","XOBVTCP",35,0)
+ SET (IO,IO(0))="SYS$NET"
+"RTN","XOBVTCP",36,0)
+ ; **VMS specific code, need to share device**
+"RTN","XOBVTCP",37,0)
+ OPEN IO:(TCPDEV:BLOCKSIZE=512):60 ELSE  SET ^TMP("XOB DSM CONNECT FAILURE",$HOROLOG)="" QUIT
+"RTN","XOBVTCP",38,0)
+ USE IO
+"RTN","XOBVTCP",39,0)
+ SET XOBEC=$$NEWOK^XOBVTCPL()
+"RTN","XOBVTCP",40,0)
+ IF XOBEC DO LOGINERR^XOBVTCPL(XOBEC,IO)
+"RTN","XOBVTCP",41,0)
+ IF 'XOBEC DO SPAWN^XOBVLL
+"RTN","XOBVTCP",42,0)
+ QUIT
+"RTN","XOBVTCP",43,0)
+ ;
+"RTN","XOBVTCP",44,0)
+CACHEVMS ; -- VMS TCPIP (UCX) multi-thread entry point for Cache for VMS
+"RTN","XOBVTCP",45,0)
+ ; -- Called from VistALink .com files
+"RTN","XOBVTCP",46,0)
+ ;
+"RTN","XOBVTCP",47,0)
+ NEW XOBEC
+"RTN","XOBVTCP",48,0)
+ DO ESET
+"RTN","XOBVTCP",49,0)
+ SET (IO,IO(0))="SYS$NET"
+"RTN","XOBVTCP",50,0)
+ ;
+"RTN","XOBVTCP",51,0)
+ OPEN IO::5
+"RTN","XOBVTCP",52,0)
+ USE IO:(::"-M") ;Packet mode like DSM
+"RTN","XOBVTCP",53,0)
+ ;
+"RTN","XOBVTCP",54,0)
+ SET XOBEC=$$NEWOK^XOBVTCPL()
+"RTN","XOBVTCP",55,0)
+ IF XOBEC DO LOGINERR^XOBVTCPL(XOBEC,IO)
+"RTN","XOBVTCP",56,0)
+ IF 'XOBEC DO SPAWN^XOBVLL
+"RTN","XOBVTCP",57,0)
+ QUIT
+"RTN","XOBVTCP",58,0)
+ ;
+"RTN","XOBVTCP",59,0)
+CACHELNX ; -- multi-thread entry point for Cache for Linux
+"RTN","XOBVTCP",60,0)
+ ; -- Called from XINETD service files
+"RTN","XOBVTCP",61,0)
+ ;
+"RTN","XOBVTCP",62,0)
+ NEW XOBEC
+"RTN","XOBVTCP",63,0)
+ DO ESET
+"RTN","XOBVTCP",64,0)
+ SET (IO,IO(0))=$PRINCIPAL
+"RTN","XOBVTCP",65,0)
+ ;
+"RTN","XOBVTCP",66,0)
+ OPEN IO::5
+"RTN","XOBVTCP",67,0)
+ USE IO:(::"-M") ;Packet mode like DSM
+"RTN","XOBVTCP",68,0)
+ ;
+"RTN","XOBVTCP",69,0)
+ SET XOBEC=$$NEWOK^XOBVTCPL()
+"RTN","XOBVTCP",70,0)
+ IF XOBEC DO LOGINERR^XOBVTCPL(XOBEC,IO)
+"RTN","XOBVTCP",71,0)
+ IF 'XOBEC DO SPAWN^XOBVLL
+"RTN","XOBVTCP",72,0)
+ QUIT
+"RTN","XOBVTCP",73,0)
+ ;
+"RTN","XOBVTCP",74,0)
+GTMLNX ; -- Linux xinetd multi-thread entry point for GT.M
+"RTN","XOBVTCP",75,0)
+ ;
+"RTN","XOBVTCP",76,0)
+ NEW XOBEC,TMP,X,%
+"RTN","XOBVTCP",77,0)
+ DO ESET
+"RTN","XOBVTCP",78,0)
+ ;
+"RTN","XOBVTCP",79,0)
+ ; **GTM/linux specific code**
+"RTN","XOBVTCP",80,0)
+ SET (IO,IO(0))=$P,@("$ZT=""""")
+"RTN","XOBVTCP",81,0)
+ X "U IO:(nowrap:nodelimiter:IOERROR=""TRAP"")" ;Setup device
+"RTN","XOBVTCP",82,0)
+ S @("$ZINTERRUPT=""I $$JOBEXAM^ZU($ZPOSITION)"""),X=""
+"RTN","XOBVTCP",83,0)
+ X "ZSHOW ""D"":TMP"
+"RTN","XOBVTCP",84,0)
+ F %=1:1 Q:'$D(TMP("D",%))  S X=TMP("D",%) Q:X["LOCAL"
+"RTN","XOBVTCP",85,0)
+ S IO("IP")=$P($P(X,"REMOTE=",2),"@"),IO("PORT")=+$P($P(X,"LOCAL=",2),"@",2)
+"RTN","XOBVTCP",86,0)
+ ;End GT.M code
+"RTN","XOBVTCP",87,0)
+ ;
+"RTN","XOBVTCP",88,0)
+ SET XOBEC=$$NEWOK^XOBVTCPL()
+"RTN","XOBVTCP",89,0)
+ IF XOBEC DO LOGINERR^XOBVTCPL(XOBEC,IO)
+"RTN","XOBVTCP",90,0)
+ IF 'XOBEC DO COUNT^XUSCNT(1),SPAWN^XOBVLL,COUNT^XUSCNT(-1)
+"RTN","XOBVTCP",91,0)
+ QUIT
+"RTN","XOBVTCP",92,0)
+ ;
+"RTN","XOBVTCP",93,0)
+ ;Sample linux scripts
+"RTN","XOBVTCP",94,0)
+ ;xinetd script
+"RTN","XOBVTCP",95,0)
+ ;vvvvvvvvvvvvvvvvvvvvvvvvv
+"RTN","XOBVTCP",96,0)
+ ;service vistalink
+"RTN","XOBVTCP",97,0)
+ ;{
+"RTN","XOBVTCP",98,0)
+ ;   socket_type     = stream
+"RTN","XOBVTCP",99,0)
+ ;   port            = 18001
+"RTN","XOBVTCP",100,0)
+ ;   type            = UNLISTED
+"RTN","XOBVTCP",101,0)
+ ;   user            = vista
+"RTN","XOBVTCP",102,0)
+ ;   wait            = no
+"RTN","XOBVTCP",103,0)
+ ;   disable         = no
+"RTN","XOBVTCP",104,0)
+ ;   server          = /bin/bash
+"RTN","XOBVTCP",105,0)
+ ;   server_args     = /home/vista/dev/vistalink.sh
+"RTN","XOBVTCP",106,0)
+ ;   passenv         = REMOTE_HOST
+"RTN","XOBVTCP",107,0)
+ ;}
+"RTN","XOBVTCP",108,0)
+ ;^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+"RTN","XOBVTCP",109,0)
+ ;
+"RTN","XOBVTCP",110,0)
+ ;cat /home/vista/dev/vistalink.sh
+"RTN","XOBVTCP",111,0)
+ ;vvvvvvvvvvvvvvvvvvvvvvvvvvvv
+"RTN","XOBVTCP",112,0)
+ ;#!/bin/bash
+"RTN","XOBVTCP",113,0)
+ ;#RPC Broker
+"RTN","XOBVTCP",114,0)
+ ;cd /home/vista/dev
+"RTN","XOBVTCP",115,0)
+ ;. ./gtmprofile
+"RTN","XOBVTCP",116,0)
+ ;$gtm_dist/mumps -r GTMLNX^XOBVTCP
+"RTN","XOBVTCP",117,0)
+ ;exit 0
+"RTN","XOBVTCP",118,0)
+ ;^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+"RTN","XOBVTCP",119,0)
+ ;
+"RTN","XOBVTCP",120,0)
+SERVICE ; -- service entry point (for VMS TCP/IP & LINUX XINETD utilities)
+"RTN","XOBVTCP",121,0)
+ ; TODO: possible single entry point for os service calls; needs work and has not been tested
+"RTN","XOBVTCP",122,0)
+ NEW XOBEC,XOBMOS,XOBSOS
+"RTN","XOBVTCP",123,0)
+ DO ESET
+"RTN","XOBVTCP",124,0)
+ SET XOBMOS=$$OS^XOBVSKT()
+"RTN","XOBVTCP",125,0)
+ IF XOBMOS'["OpenM" SET $ECODE=",U98,"
+"RTN","XOBVTCP",126,0)
+ SET XOBSOS=$$SYSOS^XOBVLIB(XOBMOS)
+"RTN","XOBVTCP",127,0)
+ IF XOBMOS'["VMS"!(XOBMOS'["UNIX") SET $ECODE=",U97,"
+"RTN","XOBVTCP",128,0)
+ ;
+"RTN","XOBVTCP",129,0)
+ SET (IO,IO(0))=$SELECT(XOBSOS="VMS":"SYS$NET","UNIX":$PRINCIPAL)
+"RTN","XOBVTCP",130,0)
+ ;
+"RTN","XOBVTCP",131,0)
+ OPEN IO::5
+"RTN","XOBVTCP",132,0)
+ USE IO:(::"-M") ;Packet mode like DSM
+"RTN","XOBVTCP",133,0)
+ ;
+"RTN","XOBVTCP",134,0)
+ SET XOBEC=$$NEWOK^XOBVTCPL()
+"RTN","XOBVTCP",135,0)
+ IF XOBEC DO LOGINERR^XOBVTCPL(XOBEC,IO)
+"RTN","XOBVTCP",136,0)
+ IF 'XOBEC DO SPAWN^XOBVLL
+"RTN","XOBVTCP",137,0)
+ QUIT
+"RTN","XOBVTCP",138,0)
+ ;
+"RTN","XOBVTCP",139,0)
+ESET ;Set initial error trap
+"RTN","XOBVTCP",140,0)
+ SET U="^",$ETRAP="D ^%ZTER H" ;Set up the error trap
+"RTN","XOBVTCP",141,0)
+ QUIT
+"RTN","XOBVTCP",142,0)
+ ;
+"RTN","XOBVTCP",143,0)
+STARTUP ; -- called by TaskMan startup option [Option: XOBV LISTENER STARTUP]
+"RTN","XOBVTCP",144,0)
+ ;           and could be called by VMS .com procedure
+"RTN","XOBVTCP",145,0)
+ ;
+"RTN","XOBVTCP",146,0)
+ ; -- quit if not Cache OS
+"RTN","XOBVTCP",147,0)
+ ; IF $$GETOS()'["OpenM" GOTO CFGQ ; ven/smh commented out
+"RTN","XOBVTCP",148,0)
+ ; grr grr ven/smh **11310000**
+"RTN","XOBVTCP",149,0)
+ ; -- clear log of non-active listeners
+"RTN","XOBVTCP",150,0)
+ DO CLEARLOG
+"RTN","XOBVTCP",151,0)
+ ; -- get config for BOX-VOL and start it!
+"RTN","XOBVTCP",152,0)
+ DO STARTCFG($$GETCFG())
+"RTN","XOBVTCP",153,0)
+STARTUPQ ;
+"RTN","XOBVTCP",154,0)
+ QUIT
+"RTN","XOBVTCP",155,0)
+ ;
+"RTN","XOBVTCP",156,0)
+CLEARLOG ; -- clear log of non-active listeners
+"RTN","XOBVTCP",157,0)
+ NEW DIK,DA,Y,XOBI,XOB0,XOBPORT
+"RTN","XOBVTCP",158,0)
+ ;
+"RTN","XOBVTCP",159,0)
+ SET XOBI=0
+"RTN","XOBVTCP",160,0)
+ FOR  SET XOBI=$ORDER(^XOB(18.04,XOBI)) QUIT:'XOBI  DO
+"RTN","XOBVTCP",161,0)
+ . SET XOB0=$GET(^XOB(18.04,XOBI,0))
+"RTN","XOBVTCP",162,0)
+ . SET XOBPORT=+$PIECE(XOB0,U,2)
+"RTN","XOBVTCP",163,0)
+ . ; -- make sure listener is not running
+"RTN","XOBVTCP",164,0)
+ . IF $$LOCK(XOBPORT) DO
+"RTN","XOBVTCP",165,0)
+ . . SET DIK="^XOB(18.04,",DA=XOBI DO ^DIK
+"RTN","XOBVTCP",166,0)
+ . . DO UNLOCK(XOBPORT)
+"RTN","XOBVTCP",167,0)
+ ;
+"RTN","XOBVTCP",168,0)
+ QUIT
+"RTN","XOBVTCP",169,0)
+ ;
+"RTN","XOBVTCP",170,0)
+STARTCFG(XOBCFG) ; -- start a configurations listeners
+"RTN","XOBVTCP",171,0)
+ NEW CFG0,LSTR,LSTR0,XOBPORT,STARTUP,XOBOK
+"RTN","XOBVTCP",172,0)
+ SET CFG0=$GET(^XOB(18.03,XOBCFG,0))
+"RTN","XOBVTCP",173,0)
+ ;
+"RTN","XOBVTCP",174,0)
+ ; -- quit if no configuration
+"RTN","XOBVTCP",175,0)
+ IF CFG0="" GOTO CFGQ
+"RTN","XOBVTCP",176,0)
+ ;
+"RTN","XOBVTCP",177,0)
+ ; -- quit if not Cache...for now!
+"RTN","XOBVTCP",178,0)
+ ; IF $$GETOS()'["OpenM" GOTO CFGQ ; ven/smh commented out
+"RTN","XOBVTCP",179,0)
+ ; grr grr ven/smh **11310000**
+"RTN","XOBVTCP",180,0)
+ ;
+"RTN","XOBVTCP",181,0)
+ SET LSTR=0
+"RTN","XOBVTCP",182,0)
+ FOR  SET LSTR=$ORDER(^XOB(18.03,XOBCFG,"PORTS",LSTR)) QUIT:'LSTR  DO
+"RTN","XOBVTCP",183,0)
+ . SET LSTR0=$GET(^XOB(18.03,XOBCFG,"PORTS",LSTR,0))
+"RTN","XOBVTCP",184,0)
+ . SET XOBPORT=+$PIECE(LSTR0,U,1)
+"RTN","XOBVTCP",185,0)
+ . SET STARTUP=$PIECE(LSTR0,U,2)
+"RTN","XOBVTCP",186,0)
+ . ;
+"RTN","XOBVTCP",187,0)
+ . ; -- if ok to start, port # defined and not already started
+"RTN","XOBVTCP",188,0)
+ . IF XOBPORT,STARTUP,$$LOCK^XOBVTCP(XOBPORT) DO
+"RTN","XOBVTCP",189,0)
+ . . DO UNLOCK(XOBPORT)
+"RTN","XOBVTCP",190,0)
+ . . DO UPDATE^XOBVTCP(XOBPORT,1,XOBCFG)
+"RTN","XOBVTCP",191,0)
+ . . SET XOBOK=$$START(XOBPORT,XOBCFG)
+"RTN","XOBVTCP",192,0)
+ . . IF 'XOBOK DO UPDATE(XOBPORT,5,XOBCFG)
+"RTN","XOBVTCP",193,0)
+ ;
+"RTN","XOBVTCP",194,0)
+CFGQ ;
+"RTN","XOBVTCP",195,0)
+ QUIT
+"RTN","XOBVTCP",196,0)
+ ;
+"RTN","XOBVTCP",197,0)
+LOCK(XOBPORT) ;-- Lock port
+"RTN","XOBVTCP",198,0)
+ ;
+"RTN","XOBVTCP",199,0)
+ ;  Used to prevent another process from attempting to start the Listener
+"RTN","XOBVTCP",200,0)
+ ;  when it is already running.
+"RTN","XOBVTCP",201,0)
+ ;
+"RTN","XOBVTCP",202,0)
+ ;    Input:
+"RTN","XOBVTCP",203,0)
+ ;      XOBPORT - Port #
+"RTN","XOBVTCP",204,0)
+ ;
+"RTN","XOBVTCP",205,0)
+ ;   Output:
+"RTN","XOBVTCP",206,0)
+ ;      Function Value - Returns 1 if lock was successful, 0 otherwise
+"RTN","XOBVTCP",207,0)
+ ;
+"RTN","XOBVTCP",208,0)
+ QUIT $$ACTION("LOCK",XOBPORT)
+"RTN","XOBVTCP",209,0)
+ ;
+"RTN","XOBVTCP",210,0)
+ ;
+"RTN","XOBVTCP",211,0)
+UNLOCK(XOBPORT) ;-- Unlock port
+"RTN","XOBVTCP",212,0)
+ ;
+"RTN","XOBVTCP",213,0)
+ ;  Used to release a lock created by $$LOCK.
+"RTN","XOBVTCP",214,0)
+ ;
+"RTN","XOBVTCP",215,0)
+ ;    Input:
+"RTN","XOBVTCP",216,0)
+ ;      XOBPORT - Port #
+"RTN","XOBVTCP",217,0)
+ ;
+"RTN","XOBVTCP",218,0)
+ ;   Output:
+"RTN","XOBVTCP",219,0)
+ ;      None
+"RTN","XOBVTCP",220,0)
+ ;
+"RTN","XOBVTCP",221,0)
+ NEW X
+"RTN","XOBVTCP",222,0)
+ SET X=$$ACTION("UNLOCK",XOBPORT)
+"RTN","XOBVTCP",223,0)
+ QUIT
+"RTN","XOBVTCP",224,0)
+ ;
+"RTN","XOBVTCP",225,0)
+ACTION(ACTION,XOBPORT) ; -- do lock action
+"RTN","XOBVTCP",226,0)
+ NEW ENV,VOL,UCI,BOX
+"RTN","XOBVTCP",227,0)
+ ;
+"RTN","XOBVTCP",228,0)
+ SET XOBPORT=+$GET(XOBPORT)
+"RTN","XOBVTCP",229,0)
+ ;
+"RTN","XOBVTCP",230,0)
+ SET ENV=$$GETENV()
+"RTN","XOBVTCP",231,0)
+ SET VOL=$PIECE(ENV,U,2)
+"RTN","XOBVTCP",232,0)
+ SET UCI=$PIECE(ENV,U)
+"RTN","XOBVTCP",233,0)
+ SET BOX=$PIECE(ENV,U,4)
+"RTN","XOBVTCP",234,0)
+ ;
+"RTN","XOBVTCP",235,0)
+ IF ACTION="LOCK",XOBPORT LOCK +^XOB(18.01,"VistALink Listener",VOL,UCI,BOX,XOBPORT):1 QUIT $TEST
+"RTN","XOBVTCP",236,0)
+ IF ACTION="UNLOCK",XOBPORT LOCK -^XOB(18.01,"VistALink Listener",VOL,UCI,BOX,XOBPORT) QUIT 1
+"RTN","XOBVTCP",237,0)
+ QUIT 0
+"RTN","XOBVTCP",238,0)
+ ;
+"RTN","XOBVTCP",239,0)
+ ;
+"RTN","XOBVTCP",240,0)
+UPDATE(XOBPORT,XOBSTAT,XOBCFG) ; -- update VISTALINK LISTENER STARTUP LOG for listener
+"RTN","XOBVTCP",241,0)
+ NEW DIC,Y,X,XOBBOX
+"RTN","XOBVTCP",242,0)
+ SET XOBBOX=$$GETBOXN()
+"RTN","XOBVTCP",243,0)
+ ;
+"RTN","XOBVTCP",244,0)
+ ; -- set up lookup call
+"RTN","XOBVTCP",245,0)
+ SET DIC="^XOB(18.04,"
+"RTN","XOBVTCP",246,0)
+ SET DIC(0)="MLX"
+"RTN","XOBVTCP",247,0)
+ SET DIC("DR")=".02////"_XOBPORT
+"RTN","XOBVTCP",248,0)
+ SET DIC("S")="IF $P(^(0),U,2)="_XOBPORT
+"RTN","XOBVTCP",249,0)
+ SET X=XOBBOX
+"RTN","XOBVTCP",250,0)
+ ;
+"RTN","XOBVTCP",251,0)
+ DO ^DIC
+"RTN","XOBVTCP",252,0)
+ ; -- quit if lookup failed
+"RTN","XOBVTCP",253,0)
+ IF +Y>0 DO UPDLOG(+Y,XOBPORT,XOBSTAT,$GET(XOBCFG))
+"RTN","XOBVTCP",254,0)
+ QUIT
+"RTN","XOBVTCP",255,0)
+ ;
+"RTN","XOBVTCP",256,0)
+UPDLOG(XOBDA,XOBPORT,XOBSTAT,XOBCFG) ; -- do edit
+"RTN","XOBVTCP",257,0)
+ NEW DA,DIE,DR,Y,X
+"RTN","XOBVTCP",258,0)
+ ;
+"RTN","XOBVTCP",259,0)
+ LOCK +^XOB(18.04,XOBDA,0)
+"RTN","XOBVTCP",260,0)
+ ; -- set basic fields
+"RTN","XOBVTCP",261,0)
+ SET DA=XOBDA
+"RTN","XOBVTCP",262,0)
+ SET DIE="^XOB(18.04,"
+"RTN","XOBVTCP",263,0)
+ SET DR=".02////"_XOBPORT_";.03////"_XOBSTAT_";.05////^S X=$$NOW^XLFDT"
+"RTN","XOBVTCP",264,0)
+ ; -- set config if defined, otherwise delete
+"RTN","XOBVTCP",265,0)
+ SET DR=DR_";.06////"_$SELECT($GET(XOBCFG)]"":XOBCFG,1:"@")
+"RTN","XOBVTCP",266,0)
+ ; -- set user if defined, otherwise delete
+"RTN","XOBVTCP",267,0)
+ SET DR=DR_";.04////"_$SELECT($GET(DUZ)]"":DUZ,1:"@")
+"RTN","XOBVTCP",268,0)
+ ;
+"RTN","XOBVTCP",269,0)
+ DO ^DIE
+"RTN","XOBVTCP",270,0)
+ LOCK -^XOB(18.04,XOBDA,0)
+"RTN","XOBVTCP",271,0)
+ ;
+"RTN","XOBVTCP",272,0)
+ QUIT
+"RTN","XOBVTCP",273,0)
+ ;
+"RTN","XOBVTCP",274,0)
+GETENV() ; -- get environment variable
+"RTN","XOBVTCP",275,0)
+ ;-- Get environment of current system i.e. Y=UCI^VOL/DIR^NODE^BOX LOOKUP
+"RTN","XOBVTCP",276,0)
+ NEW Y
+"RTN","XOBVTCP",277,0)
+ DO GETENV^%ZOSV
+"RTN","XOBVTCP",278,0)
+ QUIT Y
+"RTN","XOBVTCP",279,0)
+ ;
+"RTN","XOBVTCP",280,0)
+GETOS() ;-- Get operating system
+"RTN","XOBVTCP",281,0)
+ ;
+"RTN","XOBVTCP",282,0)
+ ;  This function will determine which operating system is being used.
+"RTN","XOBVTCP",283,0)
+ ;
+"RTN","XOBVTCP",284,0)
+ ;   Input:
+"RTN","XOBVTCP",285,0)
+ ;     None
+"RTN","XOBVTCP",286,0)
+ ;
+"RTN","XOBVTCP",287,0)
+ ;  Output:
+"RTN","XOBVTCP",288,0)
+ ;     Operating system value i.e. OpenM-NT for OpenM.
+"RTN","XOBVTCP",289,0)
+ ;
+"RTN","XOBVTCP",290,0)
+ ;-- Get operating system
+"RTN","XOBVTCP",291,0)
+ QUIT $PIECE($GET(^%ZOSF("OS")),"^")
+"RTN","XOBVTCP",292,0)
+ ;
+"RTN","XOBVTCP",293,0)
+ ;
+"RTN","XOBVTCP",294,0)
+GETBOX() ; -- get box ien
+"RTN","XOBVTCP",295,0)
+ ;
+"RTN","XOBVTCP",296,0)
+ QUIT $$FIND1^DIC(14.7,"","BX",$PIECE($$GETENV(),U,4),"","","")
+"RTN","XOBVTCP",297,0)
+ ;
+"RTN","XOBVTCP",298,0)
+GETBOXN() ; -- get box name
+"RTN","XOBVTCP",299,0)
+ ;
+"RTN","XOBVTCP",300,0)
+ QUIT $PIECE($$GETENV(),U,4)
+"RTN","XOBVTCP",301,0)
+ ;
+"RTN","XOBVTCP",302,0)
+GETCFG() ; -- get config ien for current BOX-VOL pair
+"RTN","XOBVTCP",303,0)
+ QUIT +$PIECE($GET(^XOB(18.01,1,"CONFIG",+$ORDER(^XOB(18.01,1,"CONFIG","B",+$$GETBOX(),"")),0)),U,2)
+"RTN","XOBVTCP",304,0)
+ ;
+"RTN","XOBVTCPL")
+0^4^B29145656
+"RTN","XOBVTCPL",1,0)
+XOBVTCPL ;;2017-08-12  10:31 AM; 07/27/2002  13:00
+"RTN","XOBVTCPL",2,0)
+ ;;1.6;VistALink;**11310000**;May 08, 2009;Build 4
+"RTN","XOBVTCPL",3,0)
+ ;Per VHA directive 2004-038, this routine should not be modified.
+"RTN","XOBVTCPL",4,0)
+ ;
+"RTN","XOBVTCPL",5,0)
+ ; **11310000** VEN/SMH many many changes to support GT.M Native MTL.
+"RTN","XOBVTCPL",6,0)
+ ; NB: Works only on GT.M >= 6.1
+"RTN","XOBVTCPL",7,0)
+ QUIT
+"RTN","XOBVTCPL",8,0)
+ ;
+"RTN","XOBVTCPL",9,0)
+ ; -- Important: Should always be JOBed using START^XOBVTCP
+"RTN","XOBVTCPL",10,0)
+LISTENER(XOBPORT,XOBCFG) ; -- Start Listener
+"RTN","XOBVTCPL",11,0)
+ ;
+"RTN","XOBVTCPL",12,0)
+ ; -- quit if not Cache for NT or GT.M/Linux
+"RTN","XOBVTCPL",13,0)
+ N XOBVOS S XOBVOS=$$GETOS^XOBVTCP()
+"RTN","XOBVTCPL",14,0)
+ ; ven/smh - I applied demorgan's law. Now I don't have a clue what it means, but it should work.
+"RTN","XOBVTCPL",15,0)
+ I '((XOBVOS["OpenM-NT")!(XOBVOS["GT.M")) QUIT
+"RTN","XOBVTCPL",16,0)
+ NEW $ETRAP,$ESTACK SET $ETRAP="D ^%ZTER HALT"
+"RTN","XOBVTCPL",17,0)
+ ;
+"RTN","XOBVTCPL",18,0)
+ NEW X,POP,XOBDA,U,DTIME,DT,XOBIO
+"RTN","XOBVTCPL",19,0)
+ SET U="^",DTIME=900,DT=$$DT^XLFDT()
+"RTN","XOBVTCPL",20,0)
+ IF $GET(DUZ)="" NEW DUZ SET DUZ=.5,DUZ(0)="@"
+"RTN","XOBVTCPL",21,0)
+ ;
+"RTN","XOBVTCPL",22,0)
+ ; -- only start if not already started
+"RTN","XOBVTCPL",23,0)
+ ; VEN/SMH - Looks like Try/Catch/Finally
+"RTN","XOBVTCPL",24,0)
+ ; The status variable is really reallly confusing.
+"RTN","XOBVTCPL",25,0)
+ ; See, the $$ call blocks endlessly until we say let's exit.
+"RTN","XOBVTCPL",26,0)
+ ; If we exit, the status is 1, b/c that's what the $$ returns upon success/exit.
+"RTN","XOBVTCPL",27,0)
+ ; But if we can't open the port, we will get a zero. Which means we say that
+"RTN","XOBVTCPL",28,0)
+ ; we failed to start.
+"RTN","XOBVTCPL",29,0)
+ ; Thus, if Status is 1, then we CLOSE the port, since we are done with the
+"RTN","XOBVTCPL",30,0)
+ ; listening b/c we were asked to exit.
+"RTN","XOBVTCPL",31,0)
+ ; If status is 0, it means that we didn't open the port in the first place.
+"RTN","XOBVTCPL",32,0)
+ ; So say there is an error.
+"RTN","XOBVTCPL",33,0)
+ ; Hope that this clarifies it.
+"RTN","XOBVTCPL",34,0)
+ ; Yours Truly, Sam
+"RTN","XOBVTCPL",35,0)
+ DO SETNM^%ZOSV("VLinkM_"_$J) ;
+"RTN","XOBVTCPL",36,0)
+ N XOBVSTUS ; Status
+"RTN","XOBVTCPL",37,0)
+ IF $$LOCK^XOBVTCP(XOBPORT) D
+"RTN","XOBVTCPL",38,0)
+ . S:XOBVOS["OpenM" XOBVSTUS=$$OPENM(.XOBIO,XOBPORT)
+"RTN","XOBVTCPL",39,0)
+ . S:XOBVOS["GT.M" XOBVSTUS=$$GTM(.XOBIO,XOBPORT)
+"RTN","XOBVTCPL",40,0)
+ . ; -- listener started and now stopping
+"RTN","XOBVTCPL",41,0)
+ . I XOBVSTUS D
+"RTN","XOBVTCPL",42,0)
+ . . SET IO=XOBIO
+"RTN","XOBVTCPL",43,0)
+ . . DO CLOSE^%ZISTCP
+"RTN","XOBVTCPL",44,0)
+ . .; -- update status to 'stopped'
+"RTN","XOBVTCPL",45,0)
+ . .DO UPDATE^XOBVTCP(XOBPORT,4,$GET(XOBCFG))
+"RTN","XOBVTCPL",46,0)
+ . ELSE  DO
+"RTN","XOBVTCPL",47,0)
+ . . ; -- listener failed to start
+"RTN","XOBVTCPL",48,0)
+ . . ; -- update status to 'failed'
+"RTN","XOBVTCPL",49,0)
+ . . DO UPDATE^XOBVTCP(XOBPORT,5,$GET(XOBCFG))
+"RTN","XOBVTCPL",50,0)
+ . ;
+"RTN","XOBVTCPL",51,0)
+ . ; (finally)
+"RTN","XOBVTCPL",52,0)
+ . DO UNLOCK^XOBVTCP(XOBPORT)
+"RTN","XOBVTCPL",53,0)
+ QUIT
+"RTN","XOBVTCPL",54,0)
+ ;
+"RTN","XOBVTCPL",55,0)
+ ; -- open/start listener port
+"RTN","XOBVTCPL",56,0)
+OPENM(XOBIO,XOBPORT) ;
+"RTN","XOBVTCPL",57,0)
+ NEW XOBBOX,%ZA
+"RTN","XOBVTCPL",58,0)
+ SET XOBBOX=+$$GETBOX^XOBVTCP()
+"RTN","XOBVTCPL",59,0)
+ SET XOBIO="|TCP|"_XOBPORT
+"RTN","XOBVTCPL",60,0)
+ OPEN XOBIO:(:XOBPORT:"AT"):30
+"RTN","XOBVTCPL",61,0)
+ ;
+"RTN","XOBVTCPL",62,0)
+ ; -- if listener port could not be opened then gracefully quit
+"RTN","XOBVTCPL",63,0)
+ ;    (other namespace using port maybe?)
+"RTN","XOBVTCPL",64,0)
+ IF '$TEST QUIT 0
+"RTN","XOBVTCPL",65,0)
+ ;
+"RTN","XOBVTCPL",66,0)
+ ; -- indicate listener is 'running'
+"RTN","XOBVTCPL",67,0)
+ DO UPDATE^XOBVTCP(XOBPORT,2,$GET(XOBCFG))
+"RTN","XOBVTCPL",68,0)
+ ; -- read & spawn loop
+"RTN","XOBVTCPL",69,0)
+ FOR  DO  QUIT:$$EXIT(XOBBOX,XOBPORT)
+"RTN","XOBVTCPL",70,0)
+ . USE XOBIO
+"RTN","XOBVTCPL",71,0)
+ . READ *X:60 IF '$TEST QUIT
+"RTN","XOBVTCPL",72,0)
+ . JOB CHILDNT^XOBVTCPL():(:4:XOBIO:XOBIO):10 SET %ZA=$ZA
+"RTN","XOBVTCPL",73,0)
+ . IF %ZA\8196#2=1 WRITE *-2 ;Job failed to clear bit
+"RTN","XOBVTCPL",74,0)
+ QUIT 1
+"RTN","XOBVTCPL",75,0)
+ ;
+"RTN","XOBVTCPL",76,0)
+GTM(XOBIO,XOBPORT) ; GT.M M controlled listener (not xinetd); SIS/LM and VEN/SMH
+"RTN","XOBVTCPL",77,0)
+ ; ZEXCEPT: LISTEN,WAIT,detach (not variables)
+"RTN","XOBVTCPL",78,0)
+ NEW XOBBOX,XOBSTOP
+"RTN","XOBVTCPL",79,0)
+ ;
+"RTN","XOBVTCPL",80,0)
+ I +$P($ZV,"V",2)<6.1 QUIT 0  ; Not supported under 6.1 of GT.M
+"RTN","XOBVTCPL",81,0)
+ ;
+"RTN","XOBVTCPL",82,0)
+ S @("$ZINTERRUPT=""I $$JOBEXAM^ZU($ZPOSITION)""") ; for GT.M, set interrupt
+"RTN","XOBVTCPL",83,0)
+ ;
+"RTN","XOBVTCPL",84,0)
+ ; Get our "box" (#.01 from #14.7 (TSP))
+"RTN","XOBVTCPL",85,0)
+ SET XOBBOX=+$$GETBOX^XOBVTCP(),XOBSTOP=0
+"RTN","XOBVTCPL",86,0)
+ ;
+"RTN","XOBVTCPL",87,0)
+ ; Open server port
+"RTN","XOBVTCPL",88,0)
+ SET XOBIO="$SCK"_XOBPORT
+"RTN","XOBVTCPL",89,0)
+ OPEN XOBIO:(LISTEN=XOBPORT_":TCP":DELIM=$C(10,12,13):ATTACH="SERVER"):5:"SOCKET"  ; Like Cache AT mode
+"RTN","XOBVTCPL",90,0)
+ ;
+"RTN","XOBVTCPL",91,0)
+ ; -- if listener port could not be opened then gracefully quit
+"RTN","XOBVTCPL",92,0)
+ IF '$TEST QUIT 0
+"RTN","XOBVTCPL",93,0)
+ ;
+"RTN","XOBVTCPL",94,0)
+ ; -- indicate listener is 'running'
+"RTN","XOBVTCPL",95,0)
+ DO UPDATE^XOBVTCP(XOBPORT,2,$GET(XOBCFG))
+"RTN","XOBVTCPL",96,0)
+ ;
+"RTN","XOBVTCPL",97,0)
+ USE XOBIO  ; tada
+"RTN","XOBVTCPL",98,0)
+ ;
+"RTN","XOBVTCPL",99,0)
+ ; It only takes 5 microseconds or so to create a child socket; and then
+"RTN","XOBVTCPL",100,0)
+ ; this becomes available again.
+"RTN","XOBVTCPL",101,0)
+ W /LISTEN(5)
+"RTN","XOBVTCPL",102,0)
+ ;
+"RTN","XOBVTCPL",103,0)
+ ; Wait for 5 secs; quit if connection or if listener was asked to shut down.
+"RTN","XOBVTCPL",104,0)
+ F  D  QUIT:$$EXIT(XOBBOX,XOBPORT)
+"RTN","XOBVTCPL",105,0)
+ . W /WAIT(5) ; wait wait wait wait wait
+"RTN","XOBVTCPL",106,0)
+ . Q:$KEY=""  ; no connection; loop around, and check if we need to shut down.
+"RTN","XOBVTCPL",107,0)
+ . N CHILDSOCK S CHILDSOCK=$P($KEY,"|",2) ; child socket from server.
+"RTN","XOBVTCPL",108,0)
+ . U XOBIO:(detach=CHILDSOCK) ; detach it so that we can job it off.
+"RTN","XOBVTCPL",109,0)
+ . N Q S Q="""" ; next three lines build job command's argument.
+"RTN","XOBVTCPL",110,0)
+ . N ARG S ARG=Q_"SOCKET:"_CHILDSOCK_Q ; ditto
+"RTN","XOBVTCPL",111,0)
+ . N J S J="CHILDGTM:(input="_ARG_":output="_ARG_":error="_Q_"/dev/null"_Q_")" ; ditto
+"RTN","XOBVTCPL",112,0)
+ . J @J ; and take off!
+"RTN","XOBVTCPL",113,0)
+ ;
+"RTN","XOBVTCPL",114,0)
+ QUIT 1
+"RTN","XOBVTCPL",115,0)
+ ;
+"RTN","XOBVTCPL",116,0)
+CHILDNT() ;Child process for OpenM
+"RTN","XOBVTCPL",117,0)
+ NEW XOBEC
+"RTN","XOBVTCPL",118,0)
+ SET $ETRAP="D ^%ZTER L  HALT"
+"RTN","XOBVTCPL",119,0)
+ SET IO=$PRINCIPAL ;Reset IO to be $P
+"RTN","XOBVTCPL",120,0)
+ USE IO:(::"-M") ;Packet mode like DSM
+"RTN","XOBVTCPL",121,0)
+ ; -- do quit to save a stack level
+"RTN","XOBVTCPL",122,0)
+ SET XOBEC=$$NEWOK()
+"RTN","XOBVTCPL",123,0)
+ IF XOBEC DO LOGINERR(XOBEC,IO)
+"RTN","XOBVTCPL",124,0)
+ IF 'XOBEC DO VAR,SPAWN^XOBVLL
+"RTN","XOBVTCPL",125,0)
+ QUIT
+"RTN","XOBVTCPL",126,0)
+ ;
+"RTN","XOBVTCPL",127,0)
+CHILDGTM ;Child process for GT.M ; SIS/LM and VEN/SMH
+"RTN","XOBVTCPL",128,0)
+ NEW XOBEC
+"RTN","XOBVTCPL",129,0)
+ SET $ETRAP="D ^%ZTER L  HALT"
+"RTN","XOBVTCPL",130,0)
+ SET IO=$PRINCIPAL ; Jobbed Child Socket in V6.1 is now Principe.
+"RTN","XOBVTCPL",131,0)
+ ; No -M in GT.M.
+"RTN","XOBVTCPL",132,0)
+ ; -M: Read auto completes
+"RTN","XOBVTCPL",133,0)
+ ; -M: Buffered output which is flushed with *-3 or !.
+"RTN","XOBVTCPL",134,0)
+ ; -M: Max is 1024 chars to write or else error
+"RTN","XOBVTCPL",135,0)
+ ; -M: etc etc. Never mind. Too crazy. -M is supposed to emulate "packets"?
+"RTN","XOBVTCPL",136,0)
+ X "U IO:(nowrap:nodelimiter:IOERROR=""TRAP"")" ;Setup device ; VEN/SMH (but this isn't quite like "-M")
+"RTN","XOBVTCPL",137,0)
+ SET XOBEC=$$NEWOK()
+"RTN","XOBVTCPL",138,0)
+ IF XOBEC DO LOGINERR(XOBEC,IO)
+"RTN","XOBVTCPL",139,0)
+ IF 'XOBEC DO VAR,SPAWN^XOBVLL
+"RTN","XOBVTCPL",140,0)
+ QUIT
+"RTN","XOBVTCPL",141,0)
+ ;
+"RTN","XOBVTCPL",142,0)
+VAR ;Setup IO variables
+"RTN","XOBVTCPL",143,0)
+ SET IO(0)=IO,IO(1,IO)="",POP=0
+"RTN","XOBVTCPL",144,0)
+ SET IOT="TCP",IOF="#",IOST="P-TCP",IOST(0)=0
+"RTN","XOBVTCPL",145,0)
+ QUIT
+"RTN","XOBVTCPL",146,0)
+ ;
+"RTN","XOBVTCPL",147,0)
+NEWOK() ;Is it OK to start a new process
+"RTN","XOBVTCPL",148,0)
+ NEW XQVOL,XUCI,XUENV,XUVOL,X,Y,XOBCODE
+"RTN","XOBVTCPL",149,0)
+ DO XUVOL^XUS
+"RTN","XOBVTCPL",150,0)
+ IF $$INHIB1^XUSRB() QUIT 181004
+"RTN","XOBVTCPL",151,0)
+ IF $$INHIB2^XUSRB() QUIT 181003
+"RTN","XOBVTCPL",152,0)
+ QUIT 0
+"RTN","XOBVTCPL",153,0)
+ ;
+"RTN","XOBVTCPL",154,0)
+ ; -- process error
+"RTN","XOBVTCPL",155,0)
+LOGINERR(XOBEC,XOBPORT) ;
+"RTN","XOBVTCPL",156,0)
+ DO ERROR^XOBVLL(XOBEC,$$EZBLD^DIALOG(XOBEC),XOBPORT)
+"RTN","XOBVTCPL",157,0)
+ ;
+"RTN","XOBVTCPL",158,0)
+ ; -- give client time to process stream
+"RTN","XOBVTCPL",159,0)
+ HANG 2
+"RTN","XOBVTCPL",160,0)
+ QUIT
+"RTN","XOBVTCPL",161,0)
+ ;
+"RTN","XOBVTCPL",162,0)
+EXIT(XOBBOX,XOBPORT) ;
+"RTN","XOBVTCPL",163,0)
+ ; -- is status 'stopping'
+"RTN","XOBVTCPL",164,0)
+ QUIT ($PIECE($GET(^XOB(18.04,+$$GETLOGID(XOBBOX,XOBPORT),0)),U,3)=3)
+"RTN","XOBVTCPL",165,0)
+ ;
+"RTN","XOBVTCPL",166,0)
+GETLOGID(XOBBOX,XOBPORT) ;
+"RTN","XOBVTCPL",167,0)
+ QUIT +$ORDER(^XOB(18.04,"C",XOBBOX,XOBPORT,""))
+"RTN","XOBVTCPL",168,0)
+ ;
+"RTN","XOBVTCPL",169,0)
+GTMSTOP(XOBPORT) ;;SIS/LM - Convenience stop for GT.M
+"RTN","XOBVTCPL",170,0)
+ NEW XOBBOX SET XOBBOX=+$$GETBOX^XOBVTCP()
+"RTN","XOBVTCPL",171,0)
+ NEW XOBID SET XOBID=+$$GETLOGID(XOBBOX,XOBPORT)
+"RTN","XOBVTCPL",172,0)
+ QUIT:'XOBID  SET $PIECE(^XOB(18.04,XOBID,0),"^",3)=3
+"RTN","XOBVTCPL",173,0)
+ WRITE !,"Listener on port "_XOBPORT_" has been asked to stop!"
+"RTN","XOBVTCPL",174,0)
+ QUIT
+"VER")
+8.0^22.0
+**END**
+**END**

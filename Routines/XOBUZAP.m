@@ -1,8 +1,8 @@
-XOBUZAP ;;2014-11-19  8:55 PM; 08/4/2005  13:00
+XOBUZAP ;;2017-09-08  3:42 PM; 08/4/2005  13:00
  ;;1.6;Foundations;**11310000**;May 08, 2009
  ;Per VHA directive 2004-038, this routine should not be modified.
  ;
- ; VEN/SMH **11310000** CURNS supports GT.M as well.
+ ; VEN/SMH **11310000** GT.M support.
  QUIT
  ;
  ; ----------------------- Main Entry Points -----------------------
@@ -14,7 +14,7 @@ EN(XOBSEL) ; -- Interactive and main entry point for XOBU TERMINATE JOBS tool
  ;           XOBSEL("STATE")=<job state#> (see STATE tag for list of states)
  ;           XOBSEL("TITLE")=optional title text to be used by ListManager (upper right of LM screen)
  ;           XOBSEL("VISTA INFO REF")=optional reference to array or global containing "CLIENT IP" and "DUZ" nodes
- ;           
+ ;
  ; -- verify job selection critera
  IF '$$VERSEL(.XOBSEL) DO  GOTO ENQ
  . WRITE !,"Job selection criteria not specified correctly or is missing!"
@@ -26,16 +26,16 @@ ENQ ;
  ;
 ZAP(XOBSEL) ; -- Non-interactive entry point for XOBU TERMINATE JOBS tool
  ;                  API terminates all jobs that job selection criteria
- ;                  
+ ;
  ;  Input: XOBSEL array that specifies selection criteria (See above EN tag for information)
  ;
  ; Return: Count of how many jobs terminated OR
  ;         -1 if MUMPS implementation is not Cache
  ;         -2 if XOBSEL arrary is not passed in or is invalid.
- ;            
+ ;
  NEW XOBJOBS,XOBPID,XOBCNS,XOBCNT
  ; -- check if this is a Cache implementation
- IF '$$CACHE() SET XOBCNT=-1 GOTO ZAPQ
+ IF '$$CACHE()&('$$GTM()) SET XOBCNT=-1 GOTO ZAPQ
  ;
  ; -- verify job selection critera
  IF '$$VERSEL(.XOBSEL) SET XOBCNT=-2 GOTO ZAPQ
@@ -71,7 +71,7 @@ BUILD ; -- build list based on job selection criteria (XOBSEL)
  NEW XOBJOBS,XOBPID,XOBCNS
  DO KILL
  DO KILL^VALM10()
- IF '$$CACHE() DO  GOTO BUILDQ
+ IF '$$CACHE()&('$$GTM()) DO  GOTO BUILDQ
  . DO SET^VALM10(1,"",1)
  . DO SET^VALM10(2,"",2)
  . DO SET^VALM10(3,"   'Terminate' actions not supported for the current M implementation ["_$$MUMPS()_"].",3)
@@ -151,7 +151,7 @@ TERMALLQ ;
  QUIT
  ;
 TERMPID ; -- terminate pid/job
- ; -- Protocol: XOBU TERMINATE A JOB 
+ ; -- Protocol: XOBU TERMINATE A JOB
  NEW XOBI,VALMY,XOBPID,XOBRES
  DO EN^VALM2(XQORNOD(0),"OS")
  SET XOBI=+$ORDER(VALMY(""))
@@ -218,6 +218,10 @@ VERSELQ ;
 GETJOBS(XOBJOBS) ; -- build XOBJOBS()=pid information
  NEW XOBPID,XOBCNT
  SET XOBPID="",XOBCNT=0
+ I $$MUMPS()="GTM" D  QUIT
+ . N JOBS
+ . S XOBCNT=$$UNIXLSOF^ZSY(.JOBS)
+ . N I F I=0:0 S I=$O(JOBS(I)) Q:'I  S XOBJOBS(JOBS(I))=""
  FOR  SET XOBPID=$ORDER(^$JOB(XOBPID)) QUIT:XOBPID=""  DO
  . SET XOBCNT=XOBCNT+1,XOBJOBS(XOBPID)=""
  QUIT
@@ -232,12 +236,14 @@ CHECK(XOBSEL,XOBPID,XOBNS) ; -- check job info against selection criteria
  QUIT 0
  ;
 JOBINFO(XOBPID,XOBJINFO,XOBSEL) ; -- get PID info
+ I $$MUMPS()="GTM" D JOBGTM(XOBPID,.XOBJINFO,.XOBSEL)
  ; -- In future (Cache v5+) use instance proprties of %SYSTEM.Process
- SET XOBJINFO("STATE")=+$ZUTIL(67,4,XOBPID)
- SET XOBJINFO("ROUTINE")=$ZUTIL(67,5,XOBPID)
- SET XOBJINFO("NAMESPACE")=$ZUTIL(67,6,XOBPID)
- SET XOBJINFO("DEVICE")=$ZUTIL(67,7,XOBPID)
- SET XOBJINFO("OS USERNAME")=$ZUTIL(67,11,XOBPID) ; currently not used
+ I $$MUMPS()="OpenM" D
+ . SET XOBJINFO("STATE")=+$ZUTIL(67,4,XOBPID)
+ . SET XOBJINFO("ROUTINE")=$ZUTIL(67,5,XOBPID)
+ . SET XOBJINFO("NAMESPACE")=$ZUTIL(67,6,XOBPID)
+ . SET XOBJINFO("DEVICE")=$ZUTIL(67,7,XOBPID)
+ . SET XOBJINFO("OS USERNAME")=$ZUTIL(67,11,XOBPID) ; currently not used
  ;
  ; -- get VistA Info is available
  IF $GET(XOBSEL("VISTA INFO REF"))]"" DO
@@ -253,9 +259,28 @@ JOBINFO(XOBPID,XOBJINFO,XOBSEL) ; -- get PID info
  . SET XOBJINFO("CLIENT IP")=$SELECT(XOBY]"":XOBY,1:"<unknown>")
  QUIT
  ;
+JOBGTM(XOBPID,XOBJINFO,XOBSEL) ; -- get Job Info for GT.M
+ IF XOBPID=$JOB DO  QUIT
+ . SET XOBJINFO("STATE")="INTERACTIVE"
+ . SET XOBJINFO("ROUTINE")=$P($ST($ST,"PLACE"),U,2)
+ . SET XOBJINFO("NAMESPACE")=$ZGBLDIR
+ . SET XOBJINFO("DEVICE")=$PRINCIPAL
+ . SET XOBJINFO("OS USERNAME")="" ; currently not used
+ ;
+ DO INTRPT^ZSY(XOBPID)
+ NEW DATA MERGE DATA=^XUTL("XUSYS",XOBPID)
+ SET XOBJINFO("STATE")=5
+ SET XOBJINFO("ROUTINE")=$G(DATA("INTERRUPT"),"UNAVAILABLE")
+ IF XOBJINFO("ROUTINE")["^" SET XOBJINFO("ROUTINE")=$P(XOBJINFO("ROUTINE"),U,2)
+ SET XOBJINFO("NAMESPACE")=$ZGBLDIR
+ SET XOBJINFO("DEVICE")=$G(DATA("JE","D",1),"UNAVAILABLE")
+ SET XOBJINFO("OS USERNAME")="" ; currently not used
+ QUIT
+ ;
 TERMJOB(XOBPID) ; -- terminate pid/job
  ; -- In future (Cache v5+) use instance method %SYSTEM.Process.Terminate()
  ;QUIT 1  ; -- used for testing
+ I $$MUMPS()="GTM" D HALTONE^ZSY(XOBPID) Q 1
  QUIT $ZUTIL(4,XOBPID)
  ;
 BOXVOL() ; -- cpu volume pair
@@ -267,8 +292,12 @@ CURNS() ; -- get current namespace
  QUIT $ZUTIL(5)
  ;
 MUMPS() ; -- get MUMPS implementation
- QUIT $SELECT(^%ZOSF("OS")["OpenM":"OpenM",^("OS")["DSM":"DSM",^("OS")["UNIX":"UNIX",^("OS")["MSM":"MSM",1:"")
+ ; VEN/SMH **11310000**
+ ; QUIT $SELECT(^%ZOSF("OS")["OpenM":"OpenM",^("OS")["DSM":"DSM",^("OS")["UNIX":"UNIX",^("OS")["MSM":"MSM",1:"")
+ QUIT $SELECT(^%ZOSF("OS")["OpenM":"OpenM",^("OS")["DSM":"DSM",^("OS")["GT.M":"GTM",^("OS")["MSM":"MSM",1:"")
  ;
 CACHE() ; -- is this a Cache implementation
  QUIT $$MUMPS()["OpenM"
  ;
+GTM() ; -- is this GT.M or YottaDB?
+ QUIT $$MUMPS()["GTM"

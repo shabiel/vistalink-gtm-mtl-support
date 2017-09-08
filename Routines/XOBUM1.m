@@ -83,7 +83,7 @@ CHKOS() ;-- Check operating system
 VALID(XOBPORT) ;-- Validate port
  ;
  ;  This function will validate a port number passed in.
- ;  
+ ;
  ;   Input:
  ;     XOBPORT  - Port number for the Listener (Optional)
  ;
@@ -107,7 +107,7 @@ VALID(XOBPORT) ;-- Validate port
 GETPORT(XOBST) ;-- Prompt user for port number
  ;
  ;  This function will prompt the user for a valid port number.
- ;  
+ ;
  ;   Input:
  ;     XOBST - start = start Listener
  ;             stop  = stop Listener
@@ -151,7 +151,7 @@ STOP(LOGDA) ; -- stop a listener
  SET XOBPORT=$PIECE(LOG0,U,2)
  SET XOBSTAT=$PIECE(LOG0,U,3)
  SET XOBCFG=$PIECE(LOG0,U,6)
- ; 
+ ;
  ; -- must be valid entry with a running status
  IF XOBPORT,XOBSTAT=2 DO
  . DO UPDLOG^XOBVTCP(LOGDA,XOBPORT,3,XOBCFG)

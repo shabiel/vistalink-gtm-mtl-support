@@ -1,4 +1,4 @@
-XOBVTCPL ;;2014-11-19  9:06 PM; 07/27/2002  13:00
+XOBVTCPL ;;2017-08-12  10:31 AM; 07/27/2002  13:00
  ;;1.6;VistALink;**11310000**;May 08, 2009
  ;Per VHA directive 2004-038, this routine should not be modified.
  ;
@@ -32,6 +32,7 @@ LISTENER(XOBPORT,XOBCFG) ; -- Start Listener
  ; So say there is an error.
  ; Hope that this clarifies it.
  ; Yours Truly, Sam
+ DO SETNM^%ZOSV("VLinkM_"_$J) ;
  N XOBVSTUS ; Status
  IF $$LOCK^XOBVTCP(XOBPORT) D
  . S:XOBVOS["OpenM" XOBVSTUS=$$OPENM(.XOBIO,XOBPORT)
@@ -95,20 +96,19 @@ GTM(XOBIO,XOBPORT) ; GT.M M controlled listener (not xinetd); SIS/LM and VEN/SMH
  ;
  USE XOBIO  ; tada
  ;
- ; Listen with one buffer only (we are not intended to be high volume)
  ; It only takes 5 microseconds or so to create a child socket; and then
  ; this becomes available again.
- W /LISTEN
+ W /LISTEN(5)
  ;
  ; Wait for 5 secs; quit if connection or if listener was asked to shut down.
  F  D  QUIT:$$EXIT(XOBBOX,XOBPORT)
- . W /WAIT(5) ; wait wait wait
+ . W /WAIT(5) ; wait wait wait wait wait
  . Q:$KEY=""  ; no connection; loop around, and check if we need to shut down.
  . N CHILDSOCK S CHILDSOCK=$P($KEY,"|",2) ; child socket from server.
  . U XOBIO:(detach=CHILDSOCK) ; detach it so that we can job it off.
  . N Q S Q="""" ; next three lines build job command's argument.
  . N ARG S ARG=Q_"SOCKET:"_CHILDSOCK_Q ; ditto
- . N J S J="CHILDGTM:(input="_ARG_":output="_ARG_")" ; ditto
+ . N J S J="CHILDGTM:(input="_ARG_":output="_ARG_":error="_Q_"/dev/null"_Q_")" ; ditto
  . J @J ; and take off!
  ;
  QUIT 1
