@@ -1,4 +1,4 @@
-XOBSCAV ;;Feb 10, 2019@11:40; 12/09/2002  17:00
+XOBSCAV ;;Feb 10, 2019@11:29; 12/09/2002  17:00
  ;;1.6;VistALink Security;;May 08, 2009;Build 15
  ;Per VHA directive 2004-038, this routine should not be modified.
  QUIT
@@ -41,6 +41,8 @@ SENDSEC(XOBR,XOBMSGTP,XOBRSTYP,XOBMSG,XOBSTAT,XOBSCHEM) ; -- stream XML security
  ; XOBSTAT: type of result (e.g., success)
  ; XOBSCHEM: noNamespaceSchemaLocation
  ; 
+ NEW XOBSENDSTR SET XOBSENDSTR=""
+ ;
  NEW XOBFILL
  ; -- prepare socket for writing
  DO PRE^XOBVSKT
