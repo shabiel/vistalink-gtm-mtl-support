@@ -1,7 +1,6 @@
-XOBVSKT ;;2017-09-08  3:43 PM; 07/27/2002  13:00
- ;;1.6;VistALink;**11310000**;May 08, 2009
+XOBVSKT ;;2019-12-26  9:12 AM; 07/27/2002  13:00
+ ;;1.6;VistALink;**3,11310000**;May 08, 2009
  ;Per VHA directive 2004-038, this routine should not be modified.
- ;
  ; **11310000** ven/smh - GT.M support + TCP Socket send and receive optimization
  QUIT
  ;
@@ -9,13 +8,13 @@ XOBVSKT ;;2017-09-08  3:43 PM; 07/27/2002  13:00
  ;                          Methods for Read from/to TCP/IP Socket
  ; ------------------------------------------------------------------------------------
 READ(XOBROOT,XOBREAD,XOBTO,XOBFIRST,XOBSTOP,XOBDATA,XOBHDLR) ;
- NEW X,EOT,OUT,STR,LINE,PIECES,DONE,TOFLAG,XOBCNT,XOBLEN,XOBBH,XOBEH,BS,ES,XOBOK,XOBX
+ N X,EOT,OUT,STR,LINE,PIECES,DONE,TOFLAG,XOBCNT,XOBLEN,XOBBH,XOBEH,BS,ES,XOBOK,XOBX,SAML
  ;
- SET STR="",EOT=$CHAR(4),DONE=0,LINE=0,XOBOK=1
+ S STR="",EOT=$C(4),DONE=0,LINE=0,XOBOK=1,SAML=0
  ;
  ; -- READ tcp stream to global buffer | main calling tag NXTCALL^XOBVLL
  NEW READTRYCOUNT SET READTRYCOUNT=0
- FOR  READ XOBX#XOBREAD:XOBTO SET TOFLAG=$TEST DO:XOBFIRST CHK DO:'XOBSTOP!('DONE)  QUIT:DONE
+ F  R XOBX#XOBREAD:XOBTO S TOFLAG=$T D:XOBFIRST CHK D:'XOBSTOP!('DONE)  Q:DONE
  . ;
  . ; debugging
  . ; I $I(^SAM(^SAM,"READ"))
@@ -31,149 +30,152 @@ READ(XOBROOT,XOBREAD,XOBTO,XOBFIRST,XOBSTOP,XOBDATA,XOBHDLR) ;
  . . ; S ^SAM(^SAM,"READ",^SAM(^SAM,"READ"),"HANG")=$G(^("HANG"))+.01
  . ;
  . ; -- if length of (new intake + current) is too large for buffer then store current
- . IF $LENGTH(STR)+$LENGTH(XOBX)>400 DO ADD(STR) SET STR=""
- . SET STR=STR_XOBX
- . ;
- . ; -- add node at each line-feed character
- . ; COMMENTED OUT: Not needed anymore, and has side effect of stripping out line feeds in input
- . ;                array-type parameter values (in XML mode)
- . ; FOR  QUIT:STR'[$CHAR(10)  DO ADD($PIECE(STR,$CHAR(10))) SET STR=$PIECE(STR,$CHAR(10),2,999)
+ . I $L(STR)+$L(XOBX)>400 D ADD(STR) S STR=""
+ . S STR=STR_XOBX
  . ;
  . ; -- if end-of-text marker found then wrap up and quit
- . IF STR[EOT SET STR=$PIECE(STR,EOT) DO ADD(STR) SET DONE=1 QUIT
- . ;
+ . I STR[EOT S STR=$P(STR,EOT) D ADD(STR) S DONE=1 Q
+ . ; 
  . ; -- M XML parser cannot handle an element name split across nodes
  . ; Not needed in the M XML Parser v2.5 (https://github.com/shabiel/VISTA-xml-processing-utilities)
  . ;SET PIECES=$LENGTH(STR,">")
  . ;IF PIECES>1 DO ADD($PIECE(STR,">",1,PIECES-1)_">") SET STR=$PIECE(STR,">",PIECES,999)
  ;
- QUIT XOBOK
+ K ^TMP($J,"SAML")
+ I $G(^XTMP($J,"SAML")) D
+ . S NC=2,NC1=1 F  S NC=$O(^XTMP($J,"SAML",NC)) Q:$G(NC)'>0  S ^TMP($J,"SAML",NC1)=$G(^XTMP($J,"SAML",NC)),NC1=NC1+1
+ ;
+ Q XOBOK
  ;
 ADD(TXT) ; -- add new intake line
- SET LINE=LINE+1
- SET @XOBROOT@(LINE)=TXT
- QUIT
+ S LINE=LINE+1
+ S @XOBROOT@(LINE)=TXT
+ S:TXT["SAML"&($G(SAML)'=2) SAML=1 S:$G(SAML)=1&($G(TXT)["<soapenv:Envelope") SAML=2
+ S:TXT["]]" SAML=3
+ S:$G(SAML)=2 ^XTMP($J,"SAML",LINE)=$G(TXT)
+ S:$G(SAML)=3 ^XTMP($J,"SAML",LINE)=$P(TXT,"]]",1)_"]]"
+ Q
  ;
 CHK ; -- check if first read and change timeout and chars to read
- SET XOBFIRST=0
+ S XOBFIRST=0
  ;
  ; -- abort if time out occurred and nothing was read
- IF 'TOFLAG,$GET(XOBX)="" SET XOBSTOP=1,DONE=1,XOBOK=0 QUIT
+ I 'TOFLAG,$G(XOBX)="" S XOBSTOP=1,DONE=1,XOBOK=0 Q
  ;
  ; -- intercept for transport sinks
- IF $EXTRACT(XOBX)'="<" DO SINK
+ I $E(XOBX)'="<" D SINK
  ;
  ; -- set up for subsequent reads
- SET XOBREAD=4096,XOBTO=1
+ S XOBREAD=4096,XOBTO=1
  I XOBOS="GTM" S XOBTO=0
- QUIT
+ Q
  ;
  ; ------------------------------------------------------------------------------------
  ;                      Execute Proprietary Format Reader
  ; ------------------------------------------------------------------------------------
 SINK ;
  ; -- get size of sink indicator >> then get sink indicator >> load req handler
- SET XOBHDLR=$$MSGSINK^XOBVRH($$GETSTR(+$$GETSTR(2,.XOBX),.XOBX),.XOBHDLR)
+ S XOBHDLR=$$MSGSINK^XOBVRH($$GETSTR(+$$GETSTR(2,.XOBX),.XOBX),.XOBHDLR)
  ;
  ; -- execute proprietary stream reader
- IF $GET(XOBHDLR(XOBHDLR)) XECUTE $GET(XOBHDLR(XOBHDLR,"READER"))
+ I $G(XOBHDLR(XOBHDLR)) X $G(XOBHDLR(XOBHDLR,"READER"))
  ;
- SET DONE=1
- QUIT
+ S DONE=1
+ Q
  ;
  ; -- get string of length LEN from stream buffer
 GETSTR(LEN,XOBUF) ;
- NEW X
- FOR  QUIT:($LENGTH(XOBUF)'<LEN)  DO RMORE(LEN-$LENGTH(XOBUF),.XOBUF)
- SET X=$EXTRACT(XOBUF,1,LEN)
- SET XOBUF=$EXTRACT(XOBUF,LEN+1,999)
- QUIT X
+ N X
+ F  Q:($L(XOBUF)'<LEN)  D RMORE(LEN-$L(XOBUF),.XOBUF)
+ S X=$E(XOBUF,1,LEN)
+ S XOBUF=$E(XOBUF,LEN+1,999)
+ Q X
  ;
  ; -- read more from stream buffer but only needed amount
 RMORE(LEN,XOBUF) ;
- NEW X
- READ X#LEN:1 SET XOBUF=XOBUF_X
- QUIT
+ N X
+ R X#LEN:1 S XOBUF=XOBUF_X
+ Q
  ;
  ; ------------------------------------------------------------------------------------
  ;                      Methods for Opening and Closing Socket
  ; ------------------------------------------------------------------------------------
 OPEN(XOBPARMS) ; -- Open tcp/ip socket
- NEW I,POP
- SET POP=1
+ N I,POP
+ S POP=1
  ;
  ; -- set up os var
- DO OS
+ D OS
  ;
  ; -- preserve client io
- DO SAVDEV^%ZISUTL("XOB CLIENT")
+ D SAVDEV^%ZISUTL("XOB CLIENT")
  ;
- FOR I=1:1:XOBPARMS("RETRIES") DO CALL^%ZISTCP(XOBPARMS("ADDRESS"),XOBPARMS("PORT")) QUIT:'POP
+ F I=1:1:XOBPARMS("RETRIES") D CALL^%ZISTCP(XOBPARMS("ADDRESS"),XOBPARMS("PORT")) Q:'POP
  ; -- device open
- IF 'POP USE IO QUIT 1
+ I 'POP U IO Q 1
  ; -- device not open
- QUIT 0
+ Q 0
  ;
 CLOSE(XOBPARMS) ; -- close tcp/ip socket
  ; -- tell server to Stop() connection if close message is needed to close
- IF $GET(XOBPARMS("CLOSE MESSAGE"))]"" DO
- . DO PRE
- . DO WRITE($$XMLHDR^XOBVLIB()_XOBPARMS("CLOSE MESSAGE"))
- . DO POST
+ I $G(XOBPARMS("CLOSE MESSAGE"))]"" D
+ . D PRE
+ . D WRITE($$XMLHDR^XOBVLIB()_XOBPARMS("CLOSE MESSAGE"))
+ . D POST
  ;
- DO FINAL
- DO CLOSE^%ZISTCP
- DO USE^%ZISUTL("XOB CLIENT")
- DO RMDEV^%ZISUTL("XOB CLIENT")
- QUIT
+ D FINAL
+ D CLOSE^%ZISTCP
+ D USE^%ZISUTL("XOB CLIENT")
+ D RMDEV^%ZISUTL("XOB CLIENT")
+ Q
  ;
 INIT ; -- set up variables needed in tcp/ip processing
- KILL XOBNULL
+ K XOBNULL
  ;
  ; -- setup os var
- DO OS
+ D OS
  ;
  ; -- set RPC Broker os variable (so $$BROKER^XWBLIB returns true)
- SET XWBOS=XOBOS
+ S XWBOS=XOBOS
  ;
  ; -- setup null device called "NULL"
- SET %ZIS="0H",IOP="NULL" DO ^%ZIS
- IF 'POP DO
- . SET XOBNULL=IO
- . DO SAVDEV^%ZISUTL("XOBNULL")
- QUIT
+ S %ZIS="0H",IOP="NULL" D ^%ZIS
+ I 'POP D
+ . S XOBNULL=IO
+ . D SAVDEV^%ZISUTL("XOBNULL")
+ Q
  ;
 OS ; -- os var
  ; VEN/SMH **11310000**
  ; was SET XOBOS=$SELECT(^%ZOSF("OS")["OpenM":"OpenM",^("OS")["DSM":"DSM",^("OS")["UNIX":"UNIX",^("OS")["MSM":"MSM",1:"")
- SET XOBOS=$SELECT(^%ZOSF("OS")["OpenM":"OpenM",^("OS")["DSM":"DSM",^("OS")["GT.M":"GTM",^("OS")["MSM":"MSM",1:"")
- QUIT
+ S XOBOS=$SELECT(^%ZOSF("OS")["OpenM":"OpenM",^("OS")["DSM":"DSM",^("OS")["GT.M":"GTM",^("OS")["MSM":"MSM",1:"")
+ Q
  ;
 FINAL ; -- kill variables used in tcp/ip processing
  ;
  ; -- close null device
- IF $DATA(XOBNULL) DO
- . DO USE^%ZISUTL("XOBNULL")
- . DO CLOSE^%ZISUTL("XOBNULL")
- . KILL XOBNULL
+ I $D(XOBNULL) D
+ . D USE^%ZISUTL("XOBNULL")
+ . D CLOSE^%ZISUTL("XOBNULL")
+ . K XOBNULL
  ;
- KILL XOBOS,XWBOS
+ K XOBOS,XWBOS
  ;
- QUIT
+ Q
  ;
  ; ------------------------------------------------------------------------------------
  ;                          Methods for Writing to TCP/IP Socket
  ; ------------------------------------------------------------------------------------
 PRE ; -- prepare socket for writing
- SET $X=0
- QUIT
+ S $X=0
+ Q
  ;
 WRITE(STR) ; -- Write a data string to socket
  ; Optimized by OSEHRA/SMH to buffer.
  ; NB: No easy way to obtain MTU on M, so I will just assume best case scenario
  ; of MTU of 64k. Normally it's just 1500. The Linux Kernel will fragment down
  ; the packet.
- IF XOBOS="MSM" WRITE STR QUIT
+ I XOBOS="MSM" W STR Q
  ;
  ; Short Strings. Just buffer and quit.
  IF $LENGTH(STR)+$LENGTH(XOBSENDSTR)<32768 SET XOBSENDSTR=XOBSENDSTR_STR QUIT
@@ -187,9 +189,9 @@ WRITE(STR) ; -- Write a data string to socket
  QUIT
  ;
 POST ; -- send eot and flush socket buffer
- DO WRITE($CHAR(4))
- DO FLUSH
- QUIT
+ D WRITE($C(4))
+ D FLUSH
+ Q
  ;
 FLUSH ; flush buffer
  ; debugging
